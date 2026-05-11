@@ -1,0 +1,152 @@
+{
+  "task": "extraction",
+  "n_samples": 5,
+  "f1": 0.5365,
+  "precision": 0.5667,
+  "recall": 0.52,
+  "tokens_per_sec": 19.21,
+  "mean_output_tokens": 57.4,
+  "peak_memory_gb": 1.689,
+  "raw": [
+    {
+      "id": 1,
+      "gold": {
+        "job_title": "Software Engineer",
+        "company": "Stripe",
+        "location": "San Francisco",
+        "salary_range": "$140,000 - $180,000/year",
+        "years_experience_required": "3"
+      },
+      "pred": {
+        "job_title": "Software Engineer",
+        "company": "Stripe",
+        "location": "San Francisco",
+        "salary_range": "[140000, 180000]",
+        "years_experience_required": null
+      },
+      "raw_output": "```json\n{\n  \"job_title\": \"Software Engineer\",\n  \"company\": \"Stripe\",\n  \"location\": \"San Francisco\",\n  \"salary_range\": \"[140000, 180000]\",\n  \"years_experience_required\": null\n}\n```",
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6666666666666665,
+      "per_field": {
+        "job_title": "tp",
+        "company": "tp",
+        "location": "tp",
+        "salary_range": "wrong",
+        "years_experience_required": "fn"
+      }
+    },
+    {
+      "id": 2,
+      "gold": {
+        "job_title": "Data Scientist",
+        "company": "Acme Analytics",
+        "location": "Austin, TX",
+        "salary_range": "$120,000 - $150,000/year",
+        "years_experience_required": "5"
+      },
+      "pred": {
+        "job_title": "Data Scientist",
+        "company": "Acme Analytics",
+        "location": "Austin, TX",
+        "salary_range": "[120k, 150k]",
+        "years_experience_required": null
+      },
+      "raw_output": "```json\n{\n  \"job_title\": \"Data Scientist\",\n  \"company\": \"Acme Analytics\",\n  \"location\": \"Austin, TX\",\n  \"salary_range\": \"[120k, 150k]\",\n  \"years_experience_required\": null\n}\n```",
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6666666666666665,
+      "per_field": {
+        "job_title": "tp",
+        "company": "tp",
+        "location": "tp",
+        "salary_range": "wrong",
+        "years_experience_required": "fn"
+      }
+    },
+    {
+      "id": 3,
+      "gold": {
+        "job_title": "Product Manager",
+        "company": null,
+        "location": "Remote",
+        "salary_range": null,
+        "years_experience_required": "4"
+      },
+      "pred": {
+        "job_title": "Product Manager",
+        "company": "Not specified",
+        "location": "Not specified",
+        "salary_range": null,
+        "years_experience_required": null
+      },
+      "raw_output": "```json\n{\n  \"job_title\": \"Product Manager\",\n  \"company\": \"Not specified\",\n  \"location\": \"Not specified\",\n  \"salary_range\": null,\n  \"years_experience_required\": null\n}\n```",
+      "precision": 0.3333333333333333,
+      "recall": 0.3333333333333333,
+      "f1": 0.3333333333333333,
+      "per_field": {
+        "job_title": "tp",
+        "company": "fp",
+        "location": "wrong",
+        "salary_range": null,
+        "years_experience_required": "fn"
+      }
+    },
+    {
+      "id": 4,
+      "gold": {
+        "job_title": "DevOps Engineer",
+        "company": "CloudNine Inc.",
+        "location": "Seattle, WA",
+        "salary_range": "$110,000 - $135,000",
+        "years_experience_required": "2"
+      },
+      "pred": {
+        "job_title": "DevOps Engineer",
+        "company": "CloudNine Inc.",
+        "location": "Seattle, WA (hybrid)",
+        "salary_range": "[110000, 135000]",
+        "years_experience_required": null
+      },
+      "raw_output": "```json\n{\n  \"job_title\": \"DevOps Engineer\",\n  \"company\": \"CloudNine Inc.\",\n  \"location\": \"Seattle, WA (hybrid)\",\n  \"salary_range\": \"[110000, 135000]\",\n  \"years_experience_required\": null\n}\n```",
+      "precision": 0.5,
+      "recall": 0.4,
+      "f1": 0.4444444444444445,
+      "per_field": {
+        "job_title": "tp",
+        "company": "tp",
+        "location": "wrong",
+        "salary_range": "wrong",
+        "years_experience_required": "fn"
+      }
+    },
+    {
+      "id": 5,
+      "gold": {
+        "job_title": "Frontend Developer",
+        "company": null,
+        "location": "New York City",
+        "salary_range": "$85/hr",
+        "years_experience_required": null
+      },
+      "pred": {
+        "job_title": "Frontend Developer",
+        "company": "New York City startup",
+        "location": "New York City",
+        "salary_range": "[null, null]",
+        "years_experience_required": null
+      },
+      "raw_output": "```json\n{\n  \"job_title\": \"Frontend Developer\",\n  \"company\": \"New York City startup\",\n  \"location\": \"New York City\",\n  \"salary_range\": \"[null, null]\",\n  \"years_experience_required\": null\n}\n```",
+      "precision": 0.5,
+      "recall": 0.6666666666666666,
+      "f1": 0.5714285714285715,
+      "per_field": {
+        "job_title": "tp",
+        "company": "fp",
+        "location": "tp",
+        "salary_range": "wrong",
+        "years_experience_required": null
+      }
+    }
+  ]
+}

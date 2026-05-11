@@ -21,7 +21,7 @@ def load_model(model_key: str):
     else:
         device = "cpu"
     dtype = torch.float16 if device == "cuda" else torch.float32
-    model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=dtype)
+    model = AutoModelForCausalLM.from_pretrained(model_id, dtype=dtype)
     model = model.to(device).eval()
     print(f"Loaded on {device} ({dtype})")
     return model, tokenizer, device
@@ -29,11 +29,12 @@ def load_model(model_key: str):
 
 def generate(model, tokenizer, device, prompt: str, max_new_tokens: int = 256):
     if tokenizer.chat_template:
-        input_ids = tokenizer.apply_chat_template(
+        formatted = tokenizer.apply_chat_template(
             [{"role": "user", "content": prompt}],
-            return_tensors="pt",
+            tokenize=False,
             add_generation_prompt=True,
-        ).to(device)
+        )
+        input_ids = tokenizer(formatted, return_tensors="pt")["input_ids"].to(device)
     else:
         input_ids = tokenizer(prompt, return_tensors="pt")["input_ids"].to(device)
 

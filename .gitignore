@@ -7,6 +7,7 @@ __pycache__/
 dist/
 build/
 .DS_Store
+.venv/
 
 # HuggingFace model cache (lives in ~/.cache, but just in case)
 *.safetensors
