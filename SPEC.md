@@ -24,23 +24,27 @@ All models pulled from HuggingFace and run locally. No API keys required.
 
 ## Tasks
 
-### 1. Factual QA — TriviaQA
-- **Dataset:** `trivia_qa` (rc.nocontext split), 200 samples from the validation set
-- **Metric:** Exact match (normalized: lowercase, strip articles/punctuation)
-- **Prompt format:** Zero-shot instruction prompt, no few-shot examples
-- **Why:** Clean signal on world knowledge retrieval with no reasoning required
+These tasks are chosen to reflect how SLMs are actually deployed in production, not just
+what appears in academic leaderboards.
 
-### 2. Math Reasoning — GSM8K
-- **Dataset:** `gsm8k` (main split), 150 samples from the test set
-- **Metric:** Exact match on final numeric answer (extracted from chain-of-thought output)
-- **Prompt format:** Zero-shot chain-of-thought ("Think step by step.")
-- **Why:** Tests multi-step reasoning; well-known benchmark with published baselines
+### 1. Structured Extraction
+- **Dataset:** 150 synthetic job postings (generated once, committed to repo as `data/job_postings.jsonl`)
+- **Target fields:** `job_title`, `company`, `location`, `salary_range`, `years_experience_required`
+- **Metric:** Field-level F1 — precision and recall over extracted key-value pairs, normalized
+- **Prompt format:** "Extract the following fields as JSON: ..." — zero-shot, strict schema in prompt
+- **Why:** The most common real-world SLM use case. Tests instruction-following, JSON output reliability, and ability to handle missing/implicit fields
 
-### 3. Summarization — CNN/DailyMail
-- **Dataset:** `cnn_dailymail` (3.0.0), 100 samples from the test set
-- **Metric:** ROUGE-1, ROUGE-2, ROUGE-L
-- **Prompt format:** "Summarize the following article in 3-5 sentences."
-- **Why:** Open-ended generation task; ROUGE gives a comparable, if imperfect, signal
+### 2. RAG Q&A — SQuAD
+- **Dataset:** `rajpurkar/squad` (v1.1), 200 samples from the validation set
+- **Metric:** Exact match + token-level F1 (standard SQuAD metrics)
+- **Prompt format:** "Answer the question using only the provided passage. Question: {q} Passage: {p}"
+- **Why:** Directly simulates retrieval-augmented generation — the model is given the context, so this tests faithfulness and extraction from a retrieved chunk, not open-domain recall
+
+### 3. Intent Classification — Banking77
+- **Dataset:** `PolyAI/banking77`, 200 samples from the test set (77 banking-domain intents)
+- **Metric:** Accuracy (exact label match)
+- **Prompt format:** Few-shot with 3 examples per label group — models are shown the label list and asked to classify
+- **Why:** Intent routing is a high-volume, latency-sensitive SLM use case. Banking77 is dense (77 classes) and commonly used in industry benchmarks for this task
 
 ---
 
@@ -59,14 +63,15 @@ These go into a unified `results/summary.csv` so the notebook can plot accuracy 
 
 | Purpose | Tool |
 |---|---|
-| Eval harness | `lm-evaluation-harness` (EleutherAI) |
 | Model loading | `transformers` + `torch` |
-| Metrics | `rouge-score`, built-in harness metrics |
+| Datasets | `datasets` (HuggingFace) |
+| Metrics | `evaluate` (HuggingFace) — SQuAD metric built-in |
+| JSON parsing | `json`, `jsonschema` for extraction eval |
 | Analysis | `pandas`, `matplotlib`, `seaborn` |
 | Notebook | Jupyter |
 
-Use `lm-evaluation-harness` for TriviaQA and GSM8K (standard tasks already implemented).
-Write a lightweight custom eval loop for the summarization task (harness ROUGE support is limited).
+All three tasks use a custom eval loop (no external harness dependency). This keeps the
+code readable and makes the evaluation logic transparent to a reviewer.
 
 ---
 
@@ -75,20 +80,25 @@ Write a lightweight custom eval loop for the summarization task (harness ROUGE s
 ```
 lm-eval-demo/
 ├── SPEC.md
-├── README.md               # written last — tells the story of the findings
+├── README.md                   # written last — tells the story of the findings
 ├── requirements.txt
+├── data/
+│   └── job_postings.jsonl      # committed synthetic dataset for extraction task
 ├── evals/
-│   ├── run_evals.py        # CLI entrypoint: --model, --task, --n_samples
-│   ├── summarization.py    # custom summarization eval loop
-│   └── utils.py            # prompt formatting, answer extraction, timing helpers
+│   ├── run_evals.py            # CLI entrypoint: --model, --task, --n_samples
+│   ├── extraction.py           # structured extraction eval loop + field-level F1
+│   ├── rag_qa.py               # SQuAD eval loop + exact match / F1
+│   ├── classification.py       # Banking77 eval loop + accuracy
+│   └── utils.py                # model loading, prompt formatting, timing helpers
 ├── results/
-│   ├── summary.csv         # one row per model × task, all metrics
-│   └── raw/                # per-model JSON outputs (committed)
-│       ├── qwen_triviaqa.json
-│       ├── phi_triviaqa.json
+│   ├── summary.csv             # one row per model × task, all metrics
+│   └── raw/                    # per-model JSON outputs (committed)
+│       ├── qwen_extraction.json
+│       ├── qwen_rag_qa.json
+│       ├── qwen_classification.json
 │       └── ...
 └── notebooks/
-    └── analysis.ipynb      # plots, commentary, findings
+    └── analysis.ipynb          # plots, commentary, findings
 ```
 
 ---
@@ -98,15 +108,16 @@ lm-eval-demo/
 1. **Setup** — load `results/summary.csv`
 2. **Accuracy comparison** — grouped bar chart, model × task
 3. **Throughput vs. accuracy scatter** — one point per model, per task; size = memory
-4. **ROUGE breakdown** — R1 / R2 / RL side-by-side for summarization
-5. **Key finding** — 1–2 sentence thesis backed by the data
-6. **Limitations & next steps** — prompt sensitivity, contamination risk, what a bigger sweep would look like
+4. **Extraction deep-dive** — per-field F1 breakdown (which fields do models struggle with?)
+5. **Classification confusion** — which intent groups are hardest across all models?
+6. **Key finding** — 1–2 sentence thesis backed by the data
+7. **Limitations & next steps** — prompt sensitivity, few-shot count sensitivity, what a bigger sweep would look like
 
 ---
 
 ## Constraints
 
-- Eval subsets are capped (200 / 150 / 100 samples) so the full pipeline runs in under 2 hours on CPU
+- Eval subsets are capped (150 / 200 / 200 samples) so the full pipeline runs in under 2 hours on CPU
 - All datasets loaded via HuggingFace `datasets` — no manual downloads
 - Results JSON files committed so the notebook runs without re-running inference
 - No proprietary models, no API keys
