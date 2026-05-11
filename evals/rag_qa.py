@@ -42,14 +42,16 @@ def run(model, tokenizer, device, n_samples: int = 200) -> dict:
             print(f"  rag_qa: {i + 1}/{len(samples)}")
 
     squad_scores = _squad_metric.compute(predictions=predictions, references=references)
+    n = len(samples)
     tps_overall = total_tokens / total_time_s if total_time_s > 0 else 0.0
 
     return {
         "task": "rag_qa",
-        "n_samples": len(samples),
+        "n_samples": n,
         "exact_match": round(squad_scores["exact_match"], 4),
         "f1": round(squad_scores["f1"], 4),
         "tokens_per_sec": round(tps_overall, 2),
+        "mean_output_tokens": round(total_tokens / n, 1),
         "peak_memory_gb": round(peak_memory_gb(), 3),
         "raw": [
             {

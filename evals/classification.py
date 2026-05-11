@@ -76,14 +76,16 @@ def run(model, tokenizer, device, n_samples: int = 200) -> dict:
         if (i + 1) % 10 == 0:
             print(f"  classification: {i + 1}/{len(samples)}")
 
-    accuracy = sum(r["correct"] for r in results) / len(results)
+    n = len(results)
+    accuracy = sum(r["correct"] for r in results) / n
     tps_overall = total_tokens / total_time_s if total_time_s > 0 else 0.0
 
     return {
         "task": "classification",
-        "n_samples": len(results),
+        "n_samples": n,
         "accuracy": round(accuracy, 4),
         "tokens_per_sec": round(tps_overall, 2),
+        "mean_output_tokens": round(total_tokens / n, 1),
         "peak_memory_gb": round(peak_memory_gb(), 3),
         "raw": results,
     }

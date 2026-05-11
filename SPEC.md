@@ -43,7 +43,7 @@ what appears in academic leaderboards.
 ### 3. Intent Classification — Banking77
 - **Dataset:** `PolyAI/banking77`, 200 samples from the test set (77 banking-domain intents)
 - **Metric:** Accuracy (exact label match)
-- **Prompt format:** Few-shot with 3 examples per label group — models are shown the label list and asked to classify
+- **Prompt format:** Zero-shot with full label list in prompt + 5 random few-shot examples from the training split
 - **Why:** Intent routing is a high-volume, latency-sensitive SLM use case. Banking77 is dense (77 classes) and commonly used in industry benchmarks for this task
 
 ---
@@ -66,7 +66,7 @@ These go into a unified `results/summary.csv` so the notebook can plot accuracy 
 | Model loading | `transformers` + `torch` |
 | Datasets | `datasets` (HuggingFace) |
 | Metrics | `evaluate` (HuggingFace) — SQuAD metric built-in |
-| JSON parsing | `json`, `jsonschema` for extraction eval |
+| JSON parsing | `json` + regex fallback for extraction eval |
 | Analysis | `pandas`, `matplotlib`, `seaborn` |
 | Notebook | Jupyter |
 

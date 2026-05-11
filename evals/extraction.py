@@ -105,18 +105,20 @@ def run(model, tokenizer, device, n_samples: int = 150) -> dict:
         if (i + 1) % 10 == 0:
             print(f"  extraction: {i + 1}/{len(samples)}")
 
-    mean_f1 = sum(r["f1"] for r in results) / len(results)
-    mean_precision = sum(r["precision"] for r in results) / len(results)
-    mean_recall = sum(r["recall"] for r in results) / len(results)
+    n = len(results)
+    mean_f1 = sum(r["f1"] for r in results) / n
+    mean_precision = sum(r["precision"] for r in results) / n
+    mean_recall = sum(r["recall"] for r in results) / n
     tps_overall = total_tokens / total_time_s if total_time_s > 0 else 0.0
 
     return {
         "task": "extraction",
-        "n_samples": len(results),
+        "n_samples": n,
         "f1": round(mean_f1, 4),
         "precision": round(mean_precision, 4),
         "recall": round(mean_recall, 4),
         "tokens_per_sec": round(tps_overall, 2),
+        "mean_output_tokens": round(total_tokens / n, 1),
         "peak_memory_gb": round(peak_memory_gb(), 3),
         "raw": results,
     }

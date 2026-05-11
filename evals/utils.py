@@ -14,8 +14,13 @@ def load_model(model_key: str):
     model_id = MODEL_REGISTRY[model_key]
     print(f"Loading {model_id}...")
     tokenizer = AutoTokenizer.from_pretrained(model_id)
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+    if torch.cuda.is_available():
+        device = "cuda"
+    elif torch.backends.mps.is_available():
+        device = "mps"
+    else:
+        device = "cpu"
+    dtype = torch.float16 if device == "cuda" else torch.float32
     model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=dtype)
     model = model.to(device).eval()
     print(f"Loaded on {device} ({dtype})")
