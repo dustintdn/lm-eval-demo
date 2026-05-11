@@ -50,6 +50,7 @@ def run(model, tokenizer, device, n_samples: int = 200) -> dict:
     results = []
     total_tokens = 0
     total_time_s = 0.0
+    total_ttft_s = 0.0
 
     for i, sample in enumerate(samples):
         gold_label = labels[sample["label"]]
@@ -58,7 +59,7 @@ def run(model, tokenizer, device, n_samples: int = 200) -> dict:
             examples=few_shot_str,
             query=sample["text"],
         )
-        raw_output, n_tokens, tps = generate(model, tokenizer, device, prompt, max_new_tokens=16)
+        raw_output, n_tokens, tps, ttft = generate(model, tokenizer, device, prompt, max_new_tokens=16)
         pred_label = raw_output.strip().split("\n")[0].strip()
         correct = _match(pred_label, gold_label)
 
@@ -70,6 +71,7 @@ def run(model, tokenizer, device, n_samples: int = 200) -> dict:
         })
 
         total_tokens += n_tokens
+        total_ttft_s += ttft
         if tps > 0:
             total_time_s += n_tokens / tps
 
@@ -85,6 +87,7 @@ def run(model, tokenizer, device, n_samples: int = 200) -> dict:
         "n_samples": n,
         "accuracy": round(accuracy, 4),
         "tokens_per_sec": round(tps_overall, 2),
+        "mean_ttft_ms": round(total_ttft_s / n * 1000, 1),
         "mean_output_tokens": round(total_tokens / n, 1),
         "peak_memory_gb": round(peak_memory_gb(), 3),
         "raw": results,

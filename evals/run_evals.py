@@ -24,11 +24,16 @@ DEFAULT_N = {
 }
 
 
-def _update_summary(model_key: str, result: dict):
+def _update_summary(model_key: str, result: dict, load_time_s: float, disk_size_gb: float | None):
     summary_path = Path("results/summary.csv")
     task = result["task"]
 
-    row = {"model": model_key, **{k: v for k, v in result.items() if k != "raw"}}
+    row = {
+        "model": model_key,
+        "model_load_time_s": load_time_s,
+        "model_disk_size_gb": disk_size_gb,
+        **{k: v for k, v in result.items() if k != "raw"},
+    }
 
     existing = []
     if summary_path.exists():
@@ -49,12 +54,12 @@ def _update_summary(model_key: str, result: dict):
 
 def main():
     parser = argparse.ArgumentParser(description="Run LM evaluations")
-    parser.add_argument("--model", required=True, choices=list(MODEL_CHOICES := ["qwen", "phi", "llama"]))
+    parser.add_argument("--model", required=True, choices=["qwen", "phi", "llama"])
     parser.add_argument("--task", required=True, choices=list(TASKS) + ["all"])
     parser.add_argument("--n_samples", type=int, default=None, help="Override sample count")
     args = parser.parse_args()
 
-    model, tokenizer, device = load_model(args.model)
+    model, tokenizer, device, load_time_s, disk_size_gb = load_model(args.model)
 
     tasks_to_run = list(TASKS) if args.task == "all" else [args.task]
 
@@ -72,7 +77,7 @@ def main():
             json.dump(result, f, indent=2)
         print(f"Saved {out_path}")
 
-        _update_summary(args.model, result)
+        _update_summary(args.model, result, load_time_s, disk_size_gb)
 
         summary = {k: v for k, v in result.items() if k != "raw"}
         print(f"Results: {summary}")

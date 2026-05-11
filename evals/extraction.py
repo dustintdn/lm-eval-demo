@@ -82,10 +82,11 @@ def run(model, tokenizer, device, n_samples: int = 150) -> dict:
     results = []
     total_tokens = 0
     total_time_s = 0.0
+    total_ttft_s = 0.0
 
     for i, sample in enumerate(samples):
         prompt = PROMPT_TEMPLATE.format(text=sample["text"])
-        raw_output, n_tokens, tps = generate(model, tokenizer, device, prompt, max_new_tokens=128)
+        raw_output, n_tokens, tps, ttft = generate(model, tokenizer, device, prompt, max_new_tokens=128)
         pred = _parse_json(raw_output)
         metrics = _field_f1(pred, sample["labels"])
 
@@ -99,6 +100,7 @@ def run(model, tokenizer, device, n_samples: int = 150) -> dict:
         })
 
         total_tokens += n_tokens
+        total_ttft_s += ttft
         if tps > 0:
             total_time_s += n_tokens / tps
 
@@ -118,6 +120,7 @@ def run(model, tokenizer, device, n_samples: int = 150) -> dict:
         "precision": round(mean_precision, 4),
         "recall": round(mean_recall, 4),
         "tokens_per_sec": round(tps_overall, 2),
+        "mean_ttft_ms": round(total_ttft_s / n * 1000, 1),
         "mean_output_tokens": round(total_tokens / n, 1),
         "peak_memory_gb": round(peak_memory_gb(), 3),
         "raw": results,
