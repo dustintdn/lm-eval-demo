@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+.DS_Store
+
+# HuggingFace model cache (lives in ~/.cache, but just in case)
+*.safetensors
+*.bin
+*.gguf
+
+# Do NOT ignore results — they are committed intentionally
