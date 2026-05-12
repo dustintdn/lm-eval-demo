@@ -39,8 +39,8 @@ def _match(pred: str, gold: str) -> bool:
 
 
 def run(model, tokenizer, device, n_samples: int = 200) -> dict:
-    test_ds = load_dataset("PolyAI/banking77", split="test")
-    train_ds = load_dataset("PolyAI/banking77", split="train")
+    test_ds = load_dataset("banking77", split="test")
+    train_ds = load_dataset("banking77", split="train")
     labels: list[str] = test_ds.features["label"].names
 
     labels_str = "\n".join(f"- {l}" for l in labels)

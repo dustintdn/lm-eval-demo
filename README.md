@@ -1,10 +1,11 @@
 # SLM Evaluation
 
 Benchmarking three open-weight small language models on tasks that reflect how SLMs are
-actually used in production: structured extraction, retrieval-augmented Q&A, and intent
-classification.
+actually deployed in production: structured extraction, retrieval-augmented Q&A, and intent
+classification. The central question: **where do small models punch above their weight, and
+where do they fall short?**
 
-Results are committed to the repo — you can run the analysis notebook without re-running
+Results are committed to the repo — you can open the analysis notebook without re-running
 inference.
 
 ---
@@ -13,35 +14,108 @@ inference.
 
 | Model | Params | HuggingFace ID |
 |---|---|---|
-| Qwen | 0.5B | `Qwen/Qwen2.5-0.5B-Instruct` |
-| Phi-3.5 | 3.8B | `microsoft/Phi-3.5-mini-instruct` |
+| Qwen2.5 | 0.5B | `Qwen/Qwen2.5-0.5B-Instruct` |
+| Phi-3.5-mini | 3.8B | `microsoft/Phi-3.5-mini-instruct` |
 | Llama-3.2 | 3B | `meta-llama/Llama-3.2-3B-Instruct` |
 
-## Tasks
-
-| Task | Dataset | Metric |
-|---|---|---|
-| Structured Extraction | Synthetic job postings | Field-level F1 |
-| RAG Q&A | SQuAD v1.1 (passage provided) | Exact match + token F1 |
-| Intent Classification | Banking77 (77 classes) | Accuracy |
+These three models span a 7× parameter range and represent distinct design philosophies.
+Qwen2.5-0.5B is a genuine edge-deployment candidate; Phi-3.5-mini and Llama-3.2-3B compete
+in the same weight class but are trained differently. No API keys required — all weights are
+pulled from HuggingFace and run locally.
 
 ---
 
-## Key Findings
+## Tasks
 
-<!-- Fill in after running evals -->
+The tasks are chosen to reflect real SLM use cases rather than academic benchmarks.
+
+### 1. Structured Extraction
+
+**Dataset:** 150 synthetic job postings committed to `data/job_postings.jsonl`  
+**Prompt:** Zero-shot. The model is given the full job posting text and asked to return a
+JSON object with exactly five fields: `job_title`, `company`, `location`, `salary_range`,
+`years_experience_required`. Fields not mentioned in the posting should be `null`.  
+**Parsing:** Output is parsed as JSON directly; if that fails, a regex fallback extracts the
+first `{...}` block. Parse failures return an empty dict (all fields missing).  
+**Metrics:**
+- **Field-level F1** — precision and recall computed over extracted key-value pairs per
+  sample, averaged across the dataset. Each field is scored as TP (correct), FP (wrong
+  value or hallucinated), or FN (missing).
+- **JSON parse rate** — % of outputs that were valid JSON without the regex fallback.
+  A model with high F1 but low parse rate is unreliable in production.
+
+This task tests instruction-following, JSON output reliability, and handling of missing or
+implicit fields.
+
+### 2. RAG Q&A
+
+**Dataset:** `rajpurkar/squad` v1.1, first 200 samples from the validation split  
+**Prompt:** The model is given the passage and the question and asked to answer in one
+sentence using only the provided passage — no open-domain recall.  
+**Metrics:**
+- **Exact match** — % of predictions that match any gold answer string exactly (after
+  normalization)
+- **Token-level F1** — token overlap between prediction and gold answers; standard SQuAD
+  metric computed via HuggingFace `evaluate`
+
+This task simulates retrieval-augmented generation. The context is provided, so the
+metric is faithfulness and extraction quality, not world knowledge.
+
+### 3. Intent Classification
+
+**Dataset:** `PolyAI/banking77` test split, first 200 samples  
+**Prompt:** Zero-shot with the full list of 77 banking-domain intent labels in the prompt,
+plus 5 few-shot examples drawn from the training split (seeded, one example sampled per
+label from a representative pool).  
+**Metrics:**
+- **Accuracy** — exact label match (case-insensitive)
+- **Macro F1** — weights all 77 classes equally; penalizes models that are strong on
+  common intents but fail on rare ones
+
+Banking77 is dense (77 classes, many semantically similar) and commonly used in industry
+benchmarks for intent routing. With the full label list in the prompt, this also stresses
+long-context instruction-following.
+
+---
+
+## Measurements
+
+Every eval run records the following per-model and per-sample:
+
+| Metric | Description |
+|---|---|
+| `tokens_per_sec` | Decode throughput after the first token |
+| `mean_ttft_ms` | Mean time to first token in ms (prefill cost) |
+| `mean_output_tokens` | Average tokens generated per sample |
+| `peak_memory_gb` | Peak memory (GPU: `max_memory_allocated`; CPU/MPS: process RSS) |
+| `model_load_time_s` | Wall time to load weights from disk — cold-start cost |
+| `model_disk_size_gb` | Size of model files in the HuggingFace cache |
+
+All metrics flow into `results/summary.csv` (one row per model × task). The analysis
+notebook derives additional efficiency ratios: accuracy per billion params, accuracy per
+GB memory, accuracy per token/sec.
 
 ---
 
 ## Repo Structure
 
 ```
-evals/           eval loops for each task + CLI entrypoint
-data/            committed synthetic dataset (job postings)
-results/raw/     per-model JSON outputs — one file per model × task
-results/         summary.csv — one row per model × task, all metrics
-notebooks/       analysis.ipynb — plots and commentary
+evals/
+  run_evals.py        CLI entrypoint (--model, --task, --n_samples)
+  extraction.py       structured extraction eval loop + field-level F1
+  rag_qa.py           SQuAD eval loop + exact match / F1
+  classification.py   Banking77 eval loop + accuracy
+  utils.py            model loading, generation, timing helpers
+data/
+  job_postings.jsonl  committed synthetic dataset (150 job postings)
+results/
+  summary.csv         one row per model × task, all metrics
+  raw/                per-model JSON outputs — committed so the notebook runs offline
+notebooks/
+  analysis.ipynb      plots, per-field breakdowns, confusion analysis, findings
 ```
+
+---
 
 ## Running Evals
 
@@ -86,8 +160,8 @@ python -m evals.run_evals --model qwen --task all --n_samples 10
 **Valid `--task` values:** `extraction`, `rag_qa`, `classification`, `all`  
 **Default sample counts:** extraction = 150, rag\_qa = 200, classification = 200
 
-Re-running a model/task pair overwrites the existing raw JSON and updates that row
-in `summary.csv` — it does not create duplicates.
+Re-running a model/task pair overwrites the existing raw JSON and updates that row in
+`summary.csv` — it does not create duplicates.
 
 ### 4. Explore results
 
