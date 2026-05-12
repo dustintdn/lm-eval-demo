@@ -43,22 +43,59 @@ results/         summary.csv — one row per model × task, all metrics
 notebooks/       analysis.ipynb — plots and commentary
 ```
 
-## Quickstart
+## Running Evals
+
+### 1. Install dependencies
 
 ```bash
 pip install -r requirements.txt
-
-# run all tasks for a single model
-python -m evals.run_evals --model qwen --task all
-
-# run one task with a smaller sample count (faster)
-python -m evals.run_evals --model phi --task rag_qa --n_samples 50
 ```
 
-> **Note:** `meta-llama/Llama-3.2-3B-Instruct` requires accepting the license on
-> HuggingFace before it can be downloaded.
+### 2. Accept the Llama license (one-time)
 
-Once results are populated, open `notebooks/analysis.ipynb` to explore.
+`meta-llama/Llama-3.2-3B-Instruct` is gated. Visit the model page on HuggingFace,
+accept the license, then authenticate locally:
+
+```bash
+huggingface-cli login
+```
+
+Qwen and Phi are ungated — no login required for those.
+
+### 3. Run evals
+
+Each command loads the model once and runs the specified task(s), writing results to
+`results/raw/<model>_<task>.json` and updating `results/summary.csv`.
+
+```bash
+# Run all three tasks for a model (recommended — loads weights once)
+python -m evals.run_evals --model qwen --task all
+python -m evals.run_evals --model phi --task all
+python -m evals.run_evals --model llama --task all
+
+# Run a single task
+python -m evals.run_evals --model qwen --task extraction
+python -m evals.run_evals --model qwen --task rag_qa
+python -m evals.run_evals --model qwen --task classification
+
+# Reduce sample count for a quick smoke-test
+python -m evals.run_evals --model qwen --task all --n_samples 10
+```
+
+**Valid `--model` values:** `qwen`, `phi`, `llama`  
+**Valid `--task` values:** `extraction`, `rag_qa`, `classification`, `all`  
+**Default sample counts:** extraction = 150, rag\_qa = 200, classification = 200
+
+Re-running a model/task pair overwrites the existing raw JSON and updates that row
+in `summary.csv` — it does not create duplicates.
+
+### 4. Explore results
+
+Once all nine model × task combinations have been run, open the analysis notebook:
+
+```bash
+jupyter lab notebooks/analysis.ipynb
+```
 
 ---
 
