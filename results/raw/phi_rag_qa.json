@@ -1,0 +1,30 @@
+{
+  "task": "rag_qa",
+  "n_samples": 2,
+  "exact_match": 100.0,
+  "f1": 100.0,
+  "tokens_per_sec": 3.07,
+  "mean_ttft_ms": 801.2,
+  "mean_output_tokens": 4.5,
+  "peak_memory_gb": 0.369,
+  "raw": [
+    {
+      "question": "Which NFL team represented the AFC at Super Bowl 50?",
+      "pred": "Denver Broncos",
+      "gold": [
+        "Denver Broncos",
+        "Denver Broncos",
+        "Denver Broncos"
+      ]
+    },
+    {
+      "question": "Which NFL team represented the NFC at Super Bowl 50?",
+      "pred": "Carolina Panthers",
+      "gold": [
+        "Carolina Panthers",
+        "Carolina Panthers",
+        "Carolina Panthers"
+      ]
+    }
+  ]
+}

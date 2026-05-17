@@ -1,0 +1,23 @@
+{
+  "task": "classification",
+  "n_samples": 2,
+  "accuracy": 0.0,
+  "tokens_per_sec": 6.94,
+  "mean_ttft_ms": 213.2,
+  "mean_output_tokens": 4.0,
+  "peak_memory_gb": 0.945,
+  "raw": [
+    {
+      "query": "How do I locate my card?",
+      "gold": "card_arrival",
+      "pred": "get_physical_card",
+      "correct": false
+    },
+    {
+      "query": "I still have not received my new card, I ordered over a week ago.",
+      "gold": "card_arrival",
+      "pred": "pending_card_payment",
+      "correct": false
+    }
+  ]
+}
