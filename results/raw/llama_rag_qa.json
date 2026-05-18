@@ -1,16 +1,16 @@
 {
   "task": "rag_qa",
   "n_samples": 200,
-  "exact_match": 4.5,
-  "f1": 30.4214,
-  "tokens_per_sec": 8.94,
-  "mean_ttft_ms": 45.6,
-  "mean_output_tokens": 17.6,
-  "peak_memory_gb": 0.612,
+  "exact_match": 10.0,
+  "f1": 38.5602,
+  "tokens_per_sec": 6.74,
+  "mean_ttft_ms": 36.9,
+  "mean_output_tokens": 15.2,
+  "peak_memory_gb": 0.389,
   "raw": [
     {
       "question": "Which NFL team represented the AFC at Super Bowl 50?",
-      "pred": "The AFC champion Denver Broncos represented the NFL at Super Bowl 50.",
+      "pred": "The Denver Broncos represented the AFC at Super Bowl 50.",
       "gold": [
         "Denver Broncos",
         "Denver Broncos",
@@ -19,7 +19,7 @@
     },
     {
       "question": "Which NFL team represented the NFC at Super Bowl 50?",
-      "pred": "The NFC champion team at Super Bowl 50 was the Carolina Panthers.",
+      "pred": "The Carolina Panthers represented the NFC at Super Bowl 50.",
       "gold": [
         "Carolina Panthers",
         "Carolina Panthers",
@@ -28,7 +28,7 @@
     },
     {
       "question": "Where did Super Bowl 50 take place?",
-      "pred": "Super Bowl 50 took place at Levi's Stadium in the San Francisco Bay Area.",
+      "pred": "Super Bowl 50 took place at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",
       "gold": [
         "Santa Clara, California",
         "Levi's Stadium",
@@ -37,7 +37,7 @@
     },
     {
       "question": "Which NFL team won Super Bowl 50?",
-      "pred": "The American Football Conference (AFC) champion Denver Broncos won Super Bowl 50.",
+      "pred": "The Denver Broncos won Super Bowl 50.",
       "gold": [
         "Denver Broncos",
         "Denver Broncos",
@@ -46,7 +46,7 @@
     },
     {
       "question": "What color was used to emphasize the 50th anniversary of the Super Bowl?",
-      "pred": "The passage states that the league emphasized the \"golden anniversary\" with various gold-themed initiatives and temporarily suspended the tradition of naming each Super Bowl game with Roman numerals.",
+      "pred": "Gold.",
       "gold": [
         "gold",
         "gold",
@@ -55,7 +55,7 @@
     },
     {
       "question": "What was the theme of Super Bowl 50?",
-      "pred": "The theme of Super Bowl 50 was \"Golden Anniversary\".",
+      "pred": "The theme of Super Bowl 50 was the \"golden anniversary\" of the league, with gold-themed initiatives.",
       "gold": [
         "\"golden anniversary\"",
         "gold-themed",
@@ -73,7 +73,7 @@
     },
     {
       "question": "What is the AFC short for?",
-      "pred": "The AFC stands for American Football Conference.",
+      "pred": "American Football Conference.",
       "gold": [
         "American Football Conference",
         "American Football Conference",
@@ -82,7 +82,7 @@
     },
     {
       "question": "What was the theme of Super Bowl 50?",
-      "pred": "The theme of Super Bowl 50 was \"Golden Anniversary\".",
+      "pred": "The theme of Super Bowl 50 was the \"golden anniversary\" of the league, with gold-themed initiatives.",
       "gold": [
         "\"golden anniversary\"",
         "gold-themed",
@@ -91,7 +91,7 @@
     },
     {
       "question": "What does AFC stand for?",
-      "pred": "American Football Conference",
+      "pred": "American Football Conference.",
       "gold": [
         "American Football Conference",
         "American Football Conference",
@@ -109,7 +109,7 @@
     },
     {
       "question": "Who won Super Bowl 50?",
-      "pred": "The American Football Conference (AFC) champion Denver Broncos won Super Bowl 50.",
+      "pred": "The Denver Broncos won Super Bowl 50.",
       "gold": [
         "Denver Broncos",
         "Denver Broncos",
@@ -118,7 +118,7 @@
     },
     {
       "question": "What venue did Super Bowl 50 take place in?",
-      "pred": "The Super Bowl 50 game took place at Levi's Stadium in the San Francisco Bay Area.",
+      "pred": "Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",
       "gold": [
         "Levi's Stadium",
         "Levi's Stadium",
@@ -127,7 +127,7 @@
     },
     {
       "question": "What city did Super Bowl 50 take place in?",
-      "pred": "San Francisco Bay Area",
+      "pred": "Super Bowl 50 took place in Santa Clara, California.",
       "gold": [
         "Santa Clara",
         "Santa Clara",
@@ -136,7 +136,7 @@
     },
     {
       "question": "If Roman numerals were used, what would Super Bowl 50 have been called?",
-      "pred": "If Roman numerals were used, Super Bowl 50 would have been called \"Super Bowl L\".",
+      "pred": "Super Bowl L.",
       "gold": [
         "Super Bowl L",
         "L",
@@ -145,7 +145,7 @@
     },
     {
       "question": "Super Bowl 50 decided the NFL champion for what season?",
-      "pred": "The Super Bowl 50 decided the NFL champion for the 2015 season.",
+      "pred": "Super Bowl 50 decided the NFL champion for the 2015 season.",
       "gold": [
         "2015",
         "the 2015 season",
@@ -154,7 +154,7 @@
     },
     {
       "question": "What year did the Denver Broncos secure a Super Bowl title for the third time?",
-      "pred": "The Denver Broncos secured a Super Bowl title for the third time in 2015.",
+      "pred": "The Denver Broncos secured a Super Bowl title for the third time in 2016.",
       "gold": [
         "2015",
         "2016",
@@ -163,7 +163,7 @@
     },
     {
       "question": "What city did Super Bowl 50 take place in?",
-      "pred": "San Francisco Bay Area",
+      "pred": "Super Bowl 50 took place in Santa Clara, California.",
       "gold": [
         "Santa Clara",
         "Santa Clara",
@@ -172,7 +172,7 @@
     },
     {
       "question": "What stadium did Super Bowl 50 take place in?",
-      "pred": "The Super Bowl 50 took place at Levi's Stadium in the San Francisco Bay Area.",
+      "pred": "Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",
       "gold": [
         "Levi's Stadium",
         "Levi's Stadium",
@@ -181,7 +181,7 @@
     },
     {
       "question": "What was the final score of Super Bowl 50? ",
-      "pred": "The final score of Super Bowl 50 was 24-10 in favor of the Denver Broncos.",
+      "pred": "The Denver Broncos defeated the Carolina Panthers 24-10.",
       "gold": [
         "24\u201310",
         "24\u201310",
@@ -190,7 +190,7 @@
     },
     {
       "question": "What month, day and year did Super Bowl 50 take place? ",
-      "pred": "The Super Bowl 50 took place on February 7, 2016.",
+      "pred": "Super Bowl 50 took place on February 7, 2016.",
       "gold": [
         "February 7, 2016",
         "February 7, 2016",
@@ -199,7 +199,7 @@
     },
     {
       "question": "What year was Super Bowl 50?",
-      "pred": "Super Bowl 50 was held in 2015.",
+      "pred": "Super Bowl 50 was played in 2016.",
       "gold": [
         "2015",
         "2016",
@@ -208,7 +208,7 @@
     },
     {
       "question": "What team was the AFC champion?",
-      "pred": "The AFC champion was the Denver Broncos.",
+      "pred": "The Denver Broncos were the AFC champion.",
       "gold": [
         "Denver Broncos",
         "Denver Broncos",
@@ -217,7 +217,7 @@
     },
     {
       "question": "What team was the NFC champion?",
-      "pred": "The NFC champion was the Carolina Panthers.",
+      "pred": "The Carolina Panthers were the NFC champion.",
       "gold": [
         "Carolina Panthers",
         "Carolina Panthers",
@@ -226,7 +226,7 @@
     },
     {
       "question": "Who won Super Bowl 50?",
-      "pred": "The American Football Conference (AFC) champion Denver Broncos won Super Bowl 50.",
+      "pred": "The Denver Broncos won Super Bowl 50.",
       "gold": [
         "Denver Broncos",
         "Denver Broncos",
@@ -235,7 +235,7 @@
     },
     {
       "question": "Super Bowl 50 determined the NFL champion for what season?",
-      "pred": "The Super Bowl 50 determined the NFL champion for the 2015 season.",
+      "pred": "Super Bowl 50 determined the NFL champion for the 2015 season.",
       "gold": [
         "2015",
         "the 2015 season",
@@ -253,7 +253,7 @@
     },
     {
       "question": "Where was Super Bowl 50 held?",
-      "pred": "Super Bowl 50 was held at Levi's Stadium in the San Francisco Bay Area.",
+      "pred": "Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",
       "gold": [
         "Santa Clara, California.",
         "Levi's Stadium",
@@ -262,7 +262,7 @@
     },
     {
       "question": "The name of the NFL championship game is?",
-      "pred": "The name of the NFL championship game is Super Bowl 50.",
+      "pred": "The name of the NFL championship game is not explicitly stated in the passage, but it is referred to as \"Super Bowl 50\".",
       "gold": [
         "Super Bowl",
         "Super Bowl",
@@ -271,7 +271,7 @@
     },
     {
       "question": "What 2015 NFL team one the AFC playoff?",
-      "pred": "The 2015 AFC champion Denver Broncos won the Super Bowl 50.",
+      "pred": "The Denver Broncos won the AFC playoff.",
       "gold": [
         "Denver Broncos",
         "Denver Broncos",
@@ -280,7 +280,7 @@
     },
     {
       "question": "Which Carolina Panthers player was named Most Valuable Player?",
-      "pred": "Cam Newton was named the NFL Most Valuable Player for the Carolina Panthers.",
+      "pred": "Cam Newton was named the NFL Most Valuable Player.",
       "gold": [
         "Cam Newton",
         "Cam Newton",
@@ -289,7 +289,7 @@
     },
     {
       "question": "How many appearances have the Denver Broncos made in the Super Bowl?",
-      "pred": "The Denver Broncos have made eight appearances in the Super Bowl.",
+      "pred": "The Denver Broncos have made one Super Bowl appearance.",
       "gold": [
         "8",
         "eight",
@@ -316,7 +316,7 @@
     },
     {
       "question": "Who did the Broncos prevent from going to the Super Bowl?",
-      "pred": "The Broncos prevented the New England Patriots from going to the Super Bowl.",
+      "pred": "The New England Patriots.",
       "gold": [
         "New England Patriots",
         "the New England Patriots",
@@ -325,7 +325,7 @@
     },
     {
       "question": "Who did the Panthers beat in the NFC Championship Game?",
-      "pred": "The Panthers were defeated by the Arizona Cardinals in the NFC Championship Game.",
+      "pred": "The Panthers defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game.",
       "gold": [
         "Arizona Cardinals",
         "the Arizona Cardinals",
@@ -334,7 +334,7 @@
     },
     {
       "question": "Who lost to the Broncos in the AFC Championship?",
-      "pred": "The Broncos lost to the New England Patriots in the AFC Championship Game.",
+      "pred": "The New England Patriots lost to the Broncos in the AFC Championship Game.",
       "gold": [
         "New England Patriots",
         "the New England Patriots",
@@ -343,7 +343,7 @@
     },
     {
       "question": "Who were the defending Super Bowl champions?",
-      "pred": "The Broncos were the defending Super Bowl champions.",
+      "pred": "The New England Patriots were the defending Super Bowl champions.",
       "gold": [
         "New England Patriots",
         "the New England Patriots",
@@ -352,7 +352,7 @@
     },
     {
       "question": "How many teams have been in the Super Bowl eight times?",
-      "pred": "Four teams have been in the Super Bowl eight times: the Philadelphia Eagles, the Denver Broncos, the Dallas Cowboys, and the Pittsburgh Steelers.",
+      "pred": "Four teams have made eight Super Bowl appearances.",
       "gold": [
         "four",
         "four",
@@ -361,7 +361,7 @@
     },
     {
       "question": "Who was this season's NFL MVP?",
-      "pred": "Cam Newton was this season's NFL MVP.",
+      "pred": "Cam Newton was the NFL Most Valuable Player (MVP) of the season.",
       "gold": [
         "Cam Newton",
         "Cam Newton",
@@ -370,7 +370,7 @@
     },
     {
       "question": "What was the win/loss ratio in 2015 for the Carolina Panthers during their regular season?",
-      "pred": "The Carolina Panthers had a win/loss ratio of 15-1 in their regular season.",
+      "pred": "The Panthers finished the regular season with a 15-1 record.",
       "gold": [
         "15\u20131",
         "15\u20131",
@@ -379,7 +379,7 @@
     },
     {
       "question": "Which Carolina Panthers team member was picked as the team's MVP in 2015? ",
-      "pred": "Cam Newton was picked as the team's MVP in 2015.",
+      "pred": "Cam Newton was named the NFL Most Valuable Player (MVP) in 2015.",
       "gold": [
         "Cam Newton",
         "Cam Newton",
@@ -388,7 +388,7 @@
     },
     {
       "question": "What were the win/loss game stats for the Denver Bronco's regular season in 2015?",
-      "pred": "The Denver Broncos had a 12-4 regular season record in 2015.",
+      "pred": "The Denver Broncos finished the regular season with a 12-4 record.",
       "gold": [
         "12\u20134",
         "12\u20134",
@@ -397,7 +397,7 @@
     },
     {
       "question": "How many teams have played in the Super Bowl eight times?",
-      "pred": "Four teams have played in the Super Bowl eight times: the Philadelphia Eagles, the Denver Broncos, the Dallas Cowboys, and the Pittsburgh Steelers.",
+      "pred": "Four teams have made eight Super Bowl appearances.",
       "gold": [
         "4",
         "four",
@@ -406,7 +406,7 @@
     },
     {
       "question": "Which team did not get a chance to defend their Super Bowl XLIX win in Super Bowl 50?",
-      "pred": "The Denver Broncos did not get a chance to defend their Super Bowl XLIX win in Super Bowl 50.",
+      "pred": "The New England Patriots did not get a chance to defend their Super Bowl XLIX win in Super Bowl 50.",
       "gold": [
         "New England Patriots",
         "the New England Patriots",
@@ -424,7 +424,7 @@
     },
     {
       "question": "Who did Carolina beat in the NFC championship game?",
-      "pred": "The Panthers were defeated by the Arizona Cardinals in the NFC Championship Game.",
+      "pred": "The Panthers defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game.",
       "gold": [
         "Arizona Cardinals",
         "the Arizona Cardinals",
@@ -433,7 +433,7 @@
     },
     {
       "question": "How many times have the Panthers been in the Super Bowl?",
-      "pred": "The Panthers have made eight appearances in the Super Bowl.",
+      "pred": "The Panthers have been in the Super Bowl twice.",
       "gold": [
         "2",
         "second",
@@ -442,7 +442,7 @@
     },
     {
       "question": "Who did Denver beat in the AFC championship?",
-      "pred": "The Broncos defeated the New England Patriots in the AFC Championship Game.",
+      "pred": "The Denver Broncos defeated the New England Patriots in the AFC Championship Game.",
       "gold": [
         "New England Patriots",
         "the New England Patriots",
@@ -451,7 +451,7 @@
     },
     {
       "question": "Who was the Most Valuable Player for the 2015 NFL season?",
-      "pred": "Cam Newton was the Most Valuable Player for the 2015 NFL season.",
+      "pred": "Cam Newton was the NFL Most Valuable Player (MVP) for the 2015 NFL season.",
       "gold": [
         "Cam Newton",
         "Cam Newton",
@@ -460,7 +460,7 @@
     },
     {
       "question": "Who did Denver beat in the 2015 AFC Championship game?",
-      "pred": "The Broncos defeated the New England Patriots in the 2015 AFC Championship game.",
+      "pred": "The Denver Broncos defeated the New England Patriots 20\u201318 in the 2015 AFC Championship Game.",
       "gold": [
         "New England Patriots",
         "the New England Patriots",
@@ -469,7 +469,7 @@
     },
     {
       "question": "Who did the Carolina Panthers beat in the 2015 NFC Championship game?",
-      "pred": "The Carolina Panthers were defeated by the Arizona Cardinals in the 2015 NFC Championship game.",
+      "pred": "The Carolina Panthers defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game.",
       "gold": [
         "Arizona Cardinals",
         "the Arizona Cardinals",
@@ -478,7 +478,7 @@
     },
     {
       "question": "Who was the 2015 NFL MVP?",
-      "pred": "The 2015 NFL MVP was Cam Newton.",
+      "pred": "Cam Newton was the 2015 NFL MVP.",
       "gold": [
         "Cam Newton",
         "Cam Newton",
@@ -487,7 +487,7 @@
     },
     {
       "question": "Who did the Panthers beat to become the NFC champs?",
-      "pred": "The Panthers were beaten by the Arizona Cardinals to become the NFC champs.",
+      "pred": "The Panthers beat the Arizona Cardinals 49\u201315 in the NFC Championship Game.",
       "gold": [
         "Arizona Cardinals",
         "the Arizona Cardinals",
@@ -496,7 +496,7 @@
     },
     {
       "question": "What year did the Carolina Panthers form?",
-      "pred": "The Carolina Panthers formed in 1995.",
+      "pred": "The Carolina Panthers were founded in 1995.",
       "gold": [
         "1995.",
         "1995",
@@ -505,7 +505,7 @@
     },
     {
       "question": "Who was the Super Bowl 50 MVP?",
-      "pred": "Von Miller was the Super Bowl MVP.",
+      "pred": "Von Miller was the Super Bowl 50 MVP.",
       "gold": [
         "Von Miller",
         "Von Miller",
@@ -514,7 +514,7 @@
     },
     {
       "question": "How many fumbles did Von Miller force in Super Bowl 50?",
-      "pred": "Von Miller forced three fumbles in Super Bowl 50.",
+      "pred": "Von Miller forced two fumbles in Super Bowl 50.",
       "gold": [
         "2",
         "two",
@@ -541,7 +541,7 @@
     },
     {
       "question": "How many solo tackles did Von Miller make at Super Bowl 50?",
-      "pred": "Von Miller made five solo tackles at Super Bowl 50.",
+      "pred": "Von Miller made 5 solo tackles at Super Bowl 50.",
       "gold": [
         "five solo tackles",
         "five",
@@ -550,7 +550,7 @@
     },
     {
       "question": "Who was limited by Denver's defense?",
-      "pred": "Denver's defense sacked Newton seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown.",
+      "pred": "Cam Newton was limited by Denver's defense.",
       "gold": [
         "Newton was limited by Denver's defense",
         "Newton",
@@ -559,7 +559,7 @@
     },
     {
       "question": "How many times was Cam Newton sacked?",
-      "pred": "Newton was sacked seven times.",
+      "pred": "Cam Newton was sacked seven times.",
       "gold": [
         "seven",
         "seven",
@@ -568,7 +568,7 @@
     },
     {
       "question": "Who won the Super Bowl MVP?",
-      "pred": "Von Miller won the Super Bowl MVP.",
+      "pred": "Von Miller was named Super Bowl MVP.",
       "gold": [
         "Von Miller",
         "The Broncos",
@@ -577,7 +577,7 @@
     },
     {
       "question": "How many turnovers did Cam Newton have?",
-      "pred": "Newton had three turnovers.",
+      "pred": "Cam Newton had three turnovers, including a fumble that was recovered for a touchdown.",
       "gold": [
         "three",
         "three",
@@ -586,7 +586,7 @@
     },
     {
       "question": "How many fumbles did Von Miller force?",
-      "pred": "Von Miller forced nine fumbles.",
+      "pred": "Von Miller forced two fumbles.",
       "gold": [
         "two",
         "two",
@@ -595,7 +595,7 @@
     },
     {
       "question": "Who was given the esteemed status of MVP for Super Bowl 50?",
-      "pred": "Von Miller was given the esteemed status of MVP for Super Bowl 50.",
+      "pred": "Von Miller was named Super Bowl MVP for Super Bowl 50.",
       "gold": [
         "Von Miller",
         "Von Miller",
@@ -631,7 +631,7 @@
     },
     {
       "question": "Who won the MVP for the Super Bowl?",
-      "pred": "Von Miller won the Super Bowl MVP award.",
+      "pred": "Von Miller was named Super Bowl MVP.",
       "gold": [
         "Von Miller",
         "Von Miller",
@@ -640,7 +640,7 @@
     },
     {
       "question": "How many tackles did Von Miller get during the game?",
-      "pred": "Von Miller got 5 solo tackles during the game.",
+      "pred": "Von Miller recorded five solo tackles during the game.",
       "gold": [
         "5",
         "five",
@@ -649,7 +649,7 @@
     },
     {
       "question": "How many times was Cam Newton sacked in Super Bowl 50?",
-      "pred": "Newton was sacked seven times in Super Bowl 50.",
+      "pred": "Cam Newton was sacked seven times in Super Bowl 50.",
       "gold": [
         "seven",
         "seven",
@@ -658,7 +658,7 @@
     },
     {
       "question": "How many times did the Denver defense force Newton into turnovers?",
-      "pred": "Denver linebacker Von Miller forced Newton into three turnovers during the game.",
+      "pred": "The Denver defense forced Newton into three turnovers, including a fumble which they recovered for a touchdown.",
       "gold": [
         "three",
         "three",
@@ -667,7 +667,7 @@
     },
     {
       "question": "Which Newton turnover resulted in seven points for Denver?",
-      "pred": "The turnover that resulted in seven points for Denver was Newton's fumble recovery.",
+      "pred": "A fumble was recovered for a touchdown by Denver.",
       "gold": [
         "a fumble",
         "a fumble",
@@ -676,7 +676,7 @@
     },
     {
       "question": "Who was the Most Valuable Player of Super Bowl 50?",
-      "pred": "Von Miller was the Most Valuable Player of Super Bowl 50.",
+      "pred": "Von Miller was the Super Bowl MVP.",
       "gold": [
         "Von Miller",
         "Von Miller",
@@ -694,7 +694,7 @@
     },
     {
       "question": "How many times was the Panthers' quarterback sacked?",
-      "pred": "The Panthers' quarterback was sacked seven times.",
+      "pred": "The Panthers' quarterback, Cam Newton, was sacked seven times by Denver's defense.",
       "gold": [
         "seven",
         "seven",
@@ -703,7 +703,7 @@
     },
     {
       "question": "How many times did the Broncos cause turnovers in the game?",
-      "pred": "The Broncos caused turnovers seven times in the game.",
+      "pred": "The Broncos caused three turnovers in the game.",
       "gold": [
         "three",
         "three",
@@ -712,7 +712,7 @@
     },
     {
       "question": "What Denver player caused two fumbles for the Panthers?",
-      "pred": "Denver linebacker Von Miller caused two fumbles for the Panthers.",
+      "pred": "Von Miller caused two fumbles for the Panthers.",
       "gold": [
         "Von Miller",
         "Von Miller",
@@ -721,7 +721,7 @@
     },
     {
       "question": "How many tackles did Von Miller accomlish by himself in the game?",
-      "pred": "Von Miller accomplished five solo tackles in the game.",
+      "pred": "Von Miller recorded five solo tackles in the game.",
       "gold": [
         "five",
         "five",
@@ -730,7 +730,7 @@
     },
     {
       "question": "Which network broadcasted Super Bowl 50 in the U.S.?",
-      "pred": "CBS broadcast Super Bowl 50 in the U.S.",
+      "pred": "CBS broadcasted Super Bowl 50 in the U.S.",
       "gold": [
         "CBS",
         "CBS",
@@ -748,7 +748,7 @@
     },
     {
       "question": "Which group headlined the Super Bowl 50 halftime show?",
-      "pred": "The group that headlined the Super Bowl 50 halftime show was Coldplay.",
+      "pred": "Coldplay headlined the Super Bowl 50 halftime show, with special guest performers Beyonc\u00e9 and Bruno Mars.",
       "gold": [
         "Coldplay",
         "Coldplay",
@@ -757,7 +757,7 @@
     },
     {
       "question": "Which performers joined the headliner during the Super Bowl 50 halftime show?",
-      "pred": "Beyonc\u00e9 and Bruno Mars joined the headliner during the Super Bowl 50 halftime show.",
+      "pred": "Beyonc\u00e9 and Bruno Mars joined Coldplay as special guest performers during the Super Bowl 50 halftime show.",
       "gold": [
         "Beyonc\u00e9 and Bruno Mars",
         "Beyonc\u00e9 and Bruno Mars",
@@ -766,7 +766,7 @@
     },
     {
       "question": "At which Super Bowl did Beyonce headline the halftime show?",
-      "pred": "Beyonc\u00e9 led the halftime show at Super Bowl XLVII.",
+      "pred": "Beyonc\u00e9 headlined the halftime show at Super Bowl XLVIII.",
       "gold": [
         "Super Bowl XLVII",
         "Super Bowl XLVII",
@@ -775,7 +775,7 @@
     },
     {
       "question": "Who was the broadcaster for Super Bowl 50 in the United States?",
-      "pred": "CBS broadcast Super Bowl 50 in the United States.",
+      "pred": "CBS was the broadcaster for Super Bowl 50 in the United States.",
       "gold": [
         "CBS",
         "CBS",
@@ -793,7 +793,7 @@
     },
     {
       "question": "What halftime performer previously headlined Super Bowl XLVII?",
-      "pred": "The previous halftime performer who headlined Super Bowl XLVII was Bruno Mars.",
+      "pred": "Beyonc\u00e9.",
       "gold": [
         "Beyonc\u00e9",
         "Beyonc\u00e9",
@@ -802,7 +802,7 @@
     },
     {
       "question": "What halftime performer previously headlined Super Bowl XLVIII?",
-      "pred": "The previous halftime performer to headline Super Bowl XLVIII was Bruno Mars.",
+      "pred": "Bruno Mars headlined the Super Bowl XLVIII halftime show.",
       "gold": [
         "Bruno Mars",
         "Bruno Mars",
@@ -811,7 +811,7 @@
     },
     {
       "question": "Who was the main performer at this year's halftime show?",
-      "pred": "Beyonc\u00e9 and Bruno Mars were the main performers at this year's halftime show.",
+      "pred": "Coldplay was the main performer at the Super Bowl 50 halftime show, with special guest performers Beyonc\u00e9 and Bruno Mars.",
       "gold": [
         "Coldplay",
         "Coldplay",
@@ -820,7 +820,7 @@
     },
     {
       "question": "Which network broadcasted the 50th Super Bowl game? ",
-      "pred": "CBS broadcast the 50th Super Bowl game.",
+      "pred": "CBS broadcasted the 50th Super Bowl game.",
       "gold": [
         "CBS",
         "CBS",
@@ -829,7 +829,7 @@
     },
     {
       "question": "What was the average cost for a TV ad lasting 30 seconds during Super Bowl 50?",
-      "pred": "The average cost for a TV ad lasting 30 seconds during Super Bowl 50 was $5 million.",
+      "pred": "The average cost for a 30-second commercial during Super Bowl 50 was $5 million.",
       "gold": [
         "$5 million",
         "$5 million",
@@ -838,7 +838,7 @@
     },
     {
       "question": "Who was the male singer who performed as a special guest during Super Bowl 50?",
-      "pred": "Beyonc\u00e9 performed as a special guest during Super Bowl 50.",
+      "pred": "Bruno Mars was the male singer who performed as a special guest during Super Bowl 50.",
       "gold": [
         "Bruno Mars",
         "Bruno Mars",
@@ -847,7 +847,7 @@
     },
     {
       "question": "What ranking does the Super Bowl 50 halftime show have on the list of most watched TV broadcasts?",
-      "pred": "The Super Bowl 50 halftime show has ranked third-most watched U.S. broadcast ever.",
+      "pred": "The Super Bowl 50 halftime show was the third-most watched U.S. broadcast ever.",
       "gold": [
         "third",
         "third",
@@ -865,7 +865,7 @@
     },
     {
       "question": "How much money did a 1/2 minute commercial cost?",
-      "pred": "A 1/2 minute commercial cost an average of $5 million.",
+      "pred": "The passage does not mention the cost of a 1/2 minute commercial. It only mentions the cost of a 30-second commercial, which was $5 million.",
       "gold": [
         "$5 million",
         "$5 million",
@@ -874,7 +874,7 @@
     },
     {
       "question": "What band headlined half-time during Super Bowl 50?",
-      "pred": "The band that headlined the halftime show during Super Bowl 50 was Coldplay.",
+      "pred": "Coldplay headlined the Super Bowl 50 halftime show.",
       "gold": [
         "Coldplay",
         "Coldplay",
@@ -883,7 +883,7 @@
     },
     {
       "question": "What two artists came out with Coldplay during the half-time show?",
-      "pred": "Coldplay performed at the halftime show of Super Bowl 50.",
+      "pred": "Beyonc\u00e9 and Bruno Mars.",
       "gold": [
         "Beyonc\u00e9 and Bruno Mars",
         "Beyonc\u00e9 and Bruno Mars",
@@ -892,7 +892,7 @@
     },
     {
       "question": "Who broadcast the Super Bowl on TV?",
-      "pred": "CBS broadcast the Super Bowl 50 on TV.",
+      "pred": "CBS broadcast the Super Bowl 50 in the U.S.",
       "gold": [
         "CBS",
         "CBS",
@@ -901,7 +901,7 @@
     },
     {
       "question": "Who headlined the halftime show for Super Bowl 50?",
-      "pred": "Beyonc\u00e9 and Bruno Mars headed the halftime show for Super Bowl 50.",
+      "pred": "Coldplay, with special guest performers Beyonc\u00e9 and Bruno Mars.",
       "gold": [
         "Coldplay",
         "Coldplay",
@@ -910,7 +910,7 @@
     },
     {
       "question": "Who were special guests for the Super Bowl halftime show?",
-      "pred": "The special guests for the Super Bowl halftime show were Beyonc\u00e9 and Bruno Mars.",
+      "pred": "Beyonc\u00e9 and Bruno Mars.",
       "gold": [
         "Beyonc\u00e9 and Bruno Mars",
         "Beyonc\u00e9 and Bruno Mars",
@@ -919,7 +919,7 @@
     },
     {
       "question": "Which Super Bowl halftime show did Beyonc\u00e9 headline?",
-      "pred": "Beyonc\u00e9 led the halftime show at the Super Bowl 50 with Bruno Mars.",
+      "pred": "Beyonc\u00e9 headlined the Super Bowl XLVIII halftime show.",
       "gold": [
         "Super Bowl XLVII",
         "Super Bowl XLVII",
@@ -928,7 +928,7 @@
     },
     {
       "question": "What was the cost for a half minute ad?",
-      "pred": "The cost for a half-minute ad was $5 million.",
+      "pred": "The cost for a 30-second commercial was $5 million.",
       "gold": [
         "$5 million",
         "$5 million",
@@ -937,7 +937,7 @@
     },
     {
       "question": "Who lead the Super Bowl 50 halftime performance?",
-      "pred": "Coldplay led the Super Bowl 50 halftime performance.",
+      "pred": "Coldplay, with special guest performers Beyonc\u00e9 and Bruno Mars.",
       "gold": [
         "Coldplay",
         "Coldplay",
@@ -946,7 +946,7 @@
     },
     {
       "question": "What other two famous performers were part of the Super Bowl 50 halftime?",
-      "pred": "The other two famous performers part of the Super Bowl 50 halftime were Beyonc\u00e9 and Bruno Mars.",
+      "pred": "Beyonc\u00e9 and Bruno Mars.",
       "gold": [
         "Beyonc\u00e9 and Bruno Mars",
         "Beyonc\u00e9 and Bruno Mars",
@@ -973,7 +973,7 @@
     },
     {
       "question": "Which Super Bowl did Roger Goodell speak about?",
-      "pred": "The Super Bowl mentioned was the 50th Super Bowl.",
+      "pred": "Roger Goodell spoke about Super Bowl 50.",
       "gold": [
         "the 50th Super Bowl",
         "the 50th",
@@ -982,7 +982,7 @@
     },
     {
       "question": "In what year did Roger Goodell call Super Bowl 50 'an important game for us as a league'?",
-      "pred": "In early 2012, Roger Goodell called Super Bowl 50 \"an important game for us as a league\".",
+      "pred": "Roger Goodell called Super Bowl 50 'an important game for us as a league' in 2012.",
       "gold": [
         "2012",
         "2012",
@@ -991,7 +991,7 @@
     },
     {
       "question": "Who is the Commissioner of the National Football League?",
-      "pred": "The Commissioner of the National Football League is Roger Goodell.",
+      "pred": "Roger Goodell is the Commissioner of the National Football League.",
       "gold": [
         "Roger Goodell",
         "Roger Goodell",
@@ -1000,7 +1000,7 @@
     },
     {
       "question": "When did he make the quoted remarks about Super Bowl 50?",
-      "pred": "In early 2012.",
+      "pred": "Roger Goodell made the remarks about Super Bowl 50 in early 2012.",
       "gold": [
         "early 2012",
         "In early 2012",
@@ -1018,7 +1018,7 @@
     },
     {
       "question": "Who if the commissioner of the NFL?",
-      "pred": "The commissioner of the NFL is Roger Goodell.",
+      "pred": "Roger Goodell is the commissioner of the NFL.",
       "gold": [
         "Roger Goodell",
         "Roger Goodell",
@@ -1027,7 +1027,7 @@
     },
     {
       "question": "Who is the commissioner of the NFL?",
-      "pred": "The commissioner of the NFL is Roger Goodell.",
+      "pred": "Roger Goodell is the commissioner of the NFL.",
       "gold": [
         "Roger Goodell",
         "Roger Goodell",
@@ -1036,7 +1036,7 @@
     },
     {
       "question": "In early 2012, Goodell said that Super Bowl 50 would be what?",
-      "pred": "spectacular",
+      "pred": "Super Bowl 50 would be \"spectacular\".",
       "gold": [
         "spectacular",
         "an important game for us as a league",
@@ -1045,7 +1045,7 @@
     },
     {
       "question": "What one word did the NFL commissioner use to describe what Super Bowl 50 was intended to be?",
-      "pred": "spectacular",
+      "pred": "The NFL commissioner described Super Bowl 50 as \"spectacular\".",
       "gold": [
         "spectacular",
         "spectacular",
@@ -1054,7 +1054,7 @@
     },
     {
       "question": "What year did Roger Goodell announce that Super Bowl 50 would be \"important\"?",
-      "pred": "Roger Goodell announced that Super Bowl 50 would be \"important\" in early 2012.",
+      "pred": "Roger Goodell announced that Super Bowl 50 would be \"important\" in 2012.",
       "gold": [
         "2012",
         "2012",
@@ -1063,7 +1063,7 @@
     },
     {
       "question": "Which Louisiana venue was one of three considered for Super Bowl 50?",
-      "pred": "The Louisiana venue that was one of the three considered for Super Bowl 50 was the Sun Life Stadium in Miami.",
+      "pred": "The Mercedes-Benz Superdome in New Orleans was one of the three venues considered for Super Bowl 50.",
       "gold": [
         "New Orleans' Mercedes-Benz Superdome",
         "New Orleans' Mercedes-Benz Superdome",
@@ -1072,7 +1072,7 @@
     },
     {
       "question": "Which Florida venue was one of three considered for Super Bowl 50?",
-      "pred": "The San Francisco Bay Area's Levi's Stadium was one of the three venues considered for Super Bowl 50.",
+      "pred": "None, the passage does not mention a Florida venue.",
       "gold": [
         "Miami's Sun Life Stadium",
         "Miami's Sun Life Stadium",
@@ -1081,7 +1081,7 @@
     },
     {
       "question": "Which California venue was one of three considered for Super Bowl 50?",
-      "pred": "The San Francisco Bay Area's Levi's Stadium was one of the three venues considered for Super Bowl 50.",
+      "pred": "Levi's Stadium in the San Francisco Bay Area was one of the three venues considered for Super Bowl 50.",
       "gold": [
         "San Francisco Bay Area's Levi's Stadium",
         "San Francisco Bay Area's Levi's Stadium",
@@ -1090,7 +1090,7 @@
     },
     {
       "question": "What venue in Miami was a candidate for the site of Super Bowl 50?",
-      "pred": "Miami's Sun Life Stadium was a candidate for the site of Super Bowl 50.",
+      "pred": "Sun Life Stadium in Miami was a candidate for the site of Super Bowl 50.",
       "gold": [
         "Sun Life Stadium",
         "Sun Life Stadium",
@@ -1099,7 +1099,7 @@
     },
     {
       "question": "What site is located in the San Francisco Bay Area?",
-      "pred": "The San Francisco Bay Area's Levi's Stadium is located in the San Francisco Bay Area.",
+      "pred": "Levi's Stadium.",
       "gold": [
         "Levi's Stadium",
         "Levi's Stadium",
@@ -1108,7 +1108,7 @@
     },
     {
       "question": "What is the name of San Francisco's stadium when looked at as a possibility for Super Bowl 50?",
-      "pred": "The name of San Francisco's stadium when looked at as a possibility for Super Bowl 50 is Levi's Stadium.",
+      "pred": "Levi's Stadium.",
       "gold": [
         "Levi's Stadium",
         "Levi's Stadium",
@@ -1117,7 +1117,7 @@
     },
     {
       "question": "What was the name of New Orleans' superdome at the time that Super Bowl 50 took place?",
-      "pred": "The name of New Orleans' Superdome at the time of Super Bowl 50 was the Mercedes-Benz Superdome.",
+      "pred": "The passage does not mention the name of the Superdome in New Orleans at the time of Super Bowl 50.",
       "gold": [
         "Mercedes-Benz Superdome",
         "Mercedes-Benz Superdome",
@@ -1126,7 +1126,7 @@
     },
     {
       "question": "What was the given name of Miami's stadium at the time of Super Bowl 50?",
-      "pred": "The given name of Miami's stadium at the time of Super Bowl 50 was Sun Life Stadium.",
+      "pred": "Sun Life Stadium.",
       "gold": [
         "Sun Life Stadium",
         "Sun Life Stadium",
@@ -1135,7 +1135,7 @@
     },
     {
       "question": "What three stadiums did the NFL decide between for the game?",
-      "pred": "The NFL decided between the New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium for the game.",
+      "pred": "The NFL decided between the Mercedes-Benz Superdome in New Orleans, Sun Life Stadium in Miami, and Levi's Stadium in the San Francisco Bay Area.",
       "gold": [
         "New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium",
         "New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
@@ -1144,7 +1144,7 @@
     },
     {
       "question": "How many sites did the NFL narrow down Super Bowl 50's location to?",
-      "pred": "The NFL narrowed down the locations of Super Bowl 50 to New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
+      "pred": "The NFL narrowed the bids down to three sites: the Mercedes-Benz Superdome in New Orleans, Sun Life Stadium in Miami, and Levi's Stadium in the San Francisco Bay Area.",
       "gold": [
         "three",
         "three",
@@ -1153,7 +1153,7 @@
     },
     {
       "question": "One of the sites, Merceds-Benz Superdome, is located where?",
-      "pred": "New Orleans",
+      "pred": "New Orleans.",
       "gold": [
         "New Orleans",
         "New Orleans",
@@ -1162,7 +1162,7 @@
     },
     {
       "question": "What is the name of the stadium in Miami that was considered?",
-      "pred": "The name of the stadium in Miami that was considered is Sun Life Stadium.",
+      "pred": "The Sun Life Stadium in Miami was considered.",
       "gold": [
         "Sun Life Stadium",
         "Sun Life Stadium",
@@ -1171,7 +1171,7 @@
     },
     {
       "question": "What was the third city that was considered?",
-      "pred": "The third city that was considered was San Francisco Bay Area's Levi's Stadium.",
+      "pred": "The third city considered was the San Francisco Bay Area's Levi's Stadium.",
       "gold": [
         "San Francisco",
         "San Francisco",
@@ -1180,7 +1180,7 @@
     },
     {
       "question": "What is the name of the stadium in San Francisco Bay Area?",
-      "pred": "The name of the stadium in San Francisco Bay Area is Levi's Stadium.",
+      "pred": "Levi's Stadium.",
       "gold": [
         "Levi's Stadium.",
         "Levi's Stadium",
@@ -1189,7 +1189,7 @@
     },
     {
       "question": "What Florida stadium was considered for Super Bowl 50?",
-      "pred": "The San Francisco Bay Area's Levi's Stadium was considered for Super Bowl 50.",
+      "pred": "There is no mention of a Florida stadium in the passage.",
       "gold": [
         "Sun Life Stadium",
         "Sun Life Stadium",
@@ -1198,7 +1198,7 @@
     },
     {
       "question": "What New Orleans stadium was considered for Super Bowl 50?",
-      "pred": "New Orleans' Mercedes-Benz Superdome was considered for Super Bowl 50.",
+      "pred": "The Mercedes-Benz Superdome in New Orleans was considered for Super Bowl 50.",
       "gold": [
         "Mercedes-Benz Superdome",
         "Mercedes-Benz Superdome",
@@ -1207,7 +1207,7 @@
     },
     {
       "question": "What is the name of the stadium where Super Bowl 50 was played?",
-      "pred": "The name of the stadium where Super Bowl 50 was played is Levi's Stadium.",
+      "pred": "The passage does not mention the name of the stadium where Super Bowl 50 was played.",
       "gold": [
         "Levi's Stadium.",
         "Levi's Stadium",
@@ -1216,7 +1216,7 @@
     },
     {
       "question": "When were the two finalists for hosting Super Bowl 50 announced?",
-      "pred": "The two finalists for hosting Super Bowl 50 were Sun Life Stadium and Levi's Stadium.",
+      "pred": "The two finalists for hosting Super Bowl 50 were announced on October 16, 2012.",
       "gold": [
         "October 16, 2012",
         "October 16, 2012,",
@@ -1261,7 +1261,7 @@
     },
     {
       "question": "What was the other finalist besides Levi's Stadium?",
-      "pred": "The other finalist besides Levi's Stadium was Sun Life Stadium.",
+      "pred": "Sun Life Stadium.",
       "gold": [
         "Sun Life Stadium",
         "Sun Life Stadium",
@@ -1279,7 +1279,7 @@
     },
     {
       "question": "In what venue did Super Bowl XIX take place?",
-      "pred": "The Super Bowl XVIII took place at Stanford Stadium in Stanford, California.",
+      "pred": "Super Bowl XIX took place at Stanford Stadium in Stanford, California.",
       "gold": [
         "Stanford Stadium",
         "Stanford Stadium",
@@ -1288,7 +1288,7 @@
     },
     {
       "question": "On what date did the Florida legislature decide against the plan to renovate the Miami stadium?",
-      "pred": "May 3, 2013",
+      "pred": "The Florida legislature refused to approve the funding plan on May 3, 2013.",
       "gold": [
         "May 3, 2013",
         "May 3, 2013",
@@ -1297,7 +1297,7 @@
     },
     {
       "question": "In what year was the Super Bowl last held in the Miami/South Florida area?",
-      "pred": "The Super Bowl last held in the Miami/South Florida area was in 2010.",
+      "pred": "The most recent Super Bowl held in the Miami/South Florida area was Super Bowl XLIV in 2010.",
       "gold": [
         "2010",
         "2010",
@@ -1306,7 +1306,7 @@
     },
     {
       "question": "How many times has a Super Bowl taken place at Miami's Sun Life Stadium?",
-      "pred": "The passage states that the Miami bid depended on whether the stadium underwent renovations, but it does not provide specific numbers of Super Bowls held at this stadium. Therefore, based solely on the given information, we cannot determine how many times a Super Bowl has been held at Miami's Sun Life Stadium.",
+      "pred": "The passage does not provide information on how many times a Super Bowl has taken place at Miami's Sun Life Stadium.",
       "gold": [
         "two",
         "10",
@@ -1315,7 +1315,7 @@
     },
     {
       "question": "What was the last Super Bowl that took place at Sun Life Stadium in Miami? ",
-      "pred": "The last Super Bowl that took place at Sun Life Stadium in Miami was Super Bowl XLIV in 2010.",
+      "pred": "There is no information in the passage about the last Super Bowl that took place at Sun Life Stadium in Miami.",
       "gold": [
         "Super Bowl XLIV",
         "Super Bowl XLIV",
@@ -1324,7 +1324,7 @@
     },
     {
       "question": "In 2012, how many stadiums were named as finalists for hosting Super Bowl 50 before the final stadium was chosen?",
-      "pred": "In 2012, there were 10 stadiums named as finalists for hosting Super Bowl 50 before the final stadium was chosen.",
+      "pred": "Two stadiums were named as finalists for hosting Super Bowl 50 in 2012.",
       "gold": [
         "two",
         "two",
@@ -1333,7 +1333,7 @@
     },
     {
       "question": "What was the entity that stepped in and caused Miami's Sun Life Stadium to no longer be in the running to host Super Bowl 50?",
-      "pred": "The entity that stepped in and caused Miami's Sun Life Stadium to no longer be in the running to host Super Bowl 50 was the Florida legislature.",
+      "pred": "The Florida legislature refused to approve the funding plan to pay for renovations at Sun Life Stadium, causing Miami to lose its bid to host Super Bowl 50.",
       "gold": [
         "Florida legislature",
         "the Florida legislature",
@@ -1342,7 +1342,7 @@
     },
     {
       "question": "Prior to this consideration, when did San Francisco last host a Super Bowl?",
-      "pred": "The San Francisco Bay Area last hosted a Super Bowl in 1985, which was Super Bowl XIX.",
+      "pred": "San Francisco last hosted a Super Bowl in 1985.",
       "gold": [
         "1985",
         "1985",
@@ -1351,7 +1351,7 @@
     },
     {
       "question": "What other city has hosted the Super Bowl ten times?",
-      "pred": "The South Florida/Miami area has hosted the Super Bowl ten times.",
+      "pred": "New Orleans.",
       "gold": [
         "New Orleans",
         "New Orleans",
@@ -1360,7 +1360,7 @@
     },
     {
       "question": "What date were the top two stadium choices for Super Bowl 50 announced?",
-      "pred": "The top two stadium choices for Super Bowl 50 were Sun Life Stadium and Levi's Stadium.",
+      "pred": "The top two finalists for Super Bowl 50 were announced on October 16, 2012.",
       "gold": [
         "October 16, 2012",
         "October 16, 2012",
@@ -1369,7 +1369,7 @@
     },
     {
       "question": "How many times prios has the Sun Life Stadium had Super Bowls?",
-      "pred": "The Sun Life Stadium has hosted Super Bowls 10 times.",
+      "pred": "The passage does not mention the number of times the Sun Life Stadium has hosted a Super Bowl.",
       "gold": [
         "10.",
         "10",
@@ -1378,7 +1378,7 @@
     },
     {
       "question": "What city is tied with Miami for hosting the Super Bowl?",
-      "pred": "New Orleans",
+      "pred": "New Orleans.",
       "gold": [
         "New Orleans",
         "New Orleans",
@@ -1387,7 +1387,7 @@
     },
     {
       "question": "When was the last time San Francisco hosted a Super Bowl?",
-      "pred": "The last time San Francisco hosted a Super Bowl was in 1985, when they played against the New England Patriots at Stanford Stadium.",
+      "pred": "The San Francisco Bay Area last hosted a Super Bowl in 1985.",
       "gold": [
         "1985",
         "1985",
@@ -1396,7 +1396,7 @@
     },
     {
       "question": "Who decided not to approve paying for renovations at Sun Life Stadium that the league wanted for them to do to host Super Bowl 50?",
-      "pred": "The Florida legislature refused to approve the funding plan to pay for the renovations at Sun Life Stadium.",
+      "pred": "The Florida legislature refused to approve the funding plan to pay for renovations at Sun Life Stadium.",
       "gold": [
         "Florida legislature",
         "the Florida legislature",
@@ -1423,7 +1423,7 @@
     },
     {
       "question": "When did Lev's Stadium open?",
-      "pred": "On May 21, 2013.",
+      "pred": "Levi's Stadium opened in 2014.",
       "gold": [
         "2014",
         "in 2014",
@@ -1432,7 +1432,7 @@
     },
     {
       "question": "How much did it cost to build Levi's Stadium?",
-      "pred": "It cost $1.2 billion to build Levi's Stadium.",
+      "pred": "The cost to build Levi's Stadium was $1.2 billion.",
       "gold": [
         "$1.2 billion",
         "$1.2 billion",
@@ -1441,7 +1441,7 @@
     },
     {
       "question": "What California city last hosted the Super Bowl?",
-      "pred": "The last city to host the Super Bowl was San Diego, which hosted it in 2003.",
+      "pred": "San Diego was the last California city to host the Super Bowl, in 2003.",
       "gold": [
         "San Diego",
         "San Diego",
@@ -1459,7 +1459,7 @@
     },
     {
       "question": "On what date was Super Bowl 50 given to Levi's Stadium?",
-      "pred": "On May 21, 2013, Super Bowl 50 was given to Levi's Stadium.",
+      "pred": "There is no mention of Super Bowl 50 in the passage.",
       "gold": [
         "May 21, 2013",
         "May 21, 2013",
@@ -1468,7 +1468,7 @@
     },
     {
       "question": "How much did it cost to build Levi's Stadium?",
-      "pred": "It cost $1.2 billion to build Levi's Stadium.",
+      "pred": "The cost to build Levi's Stadium was $1.2 billion.",
       "gold": [
         "$1.2 billion",
         "$1.2 billion",
@@ -1477,7 +1477,7 @@
     },
     {
       "question": "Prior to Super Bowl 50, what was the last Super Bowl in California?",
-      "pred": "Prior to Super Bowl 50, the last Super Bowl in California was Super Bowl XXXVII, which took place in San Diego in 2003.",
+      "pred": "Super Bowl XXXVII, which took place in San Diego in 2003.",
       "gold": [
         "Super Bowl XXXVII",
         "Super Bowl XXXVII",
@@ -1486,7 +1486,7 @@
     },
     {
       "question": "In what city did the last Super Bowl in California occur?",
-      "pred": "The last Super Bowl in California occurred in 2003 when it was held in San Diego.",
+      "pred": "San Diego.",
       "gold": [
         "San Diego",
         "San Diego",
@@ -1495,7 +1495,7 @@
     },
     {
       "question": "What year did Levi's Stadium become fully approved to host Super Bowl 50?",
-      "pred": "Levi's Stadium became fully approved to host Super Bowl 50 on May 21, 2013.",
+      "pred": "The passage does not mention Super Bowl 50, but it does state that Levi's Stadium opened in 2014, the year after the NFL owners voted to award the game to it.",
       "gold": [
         "2013",
         "2013",
@@ -1504,7 +1504,7 @@
     },
     {
       "question": "When did Levi's stadium open to the public? ",
-      "pred": "On May 21, 2013.",
+      "pred": "Levi's Stadium opened in 2014.",
       "gold": [
         "2014",
         "2014",
@@ -1513,7 +1513,7 @@
     },
     {
       "question": "How much did it cost to build the stadium where Super Bowl 50 was played?",
-      "pred": "$1.2 billion",
+      "pred": "The stadium where Super Bowl 50 was played cost $1.2 billion to build.",
       "gold": [
         "$1.2 billion",
         "$1.2 billion",
@@ -1522,7 +1522,7 @@
     },
     {
       "question": "What year did a Super Bowl play in the bay area around San Francisco, prior to Super Bowl 50?",
-      "pred": "The answer is 1985.",
+      "pred": "Super Bowl XIX was held in the San Francisco Bay Area in 1985.",
       "gold": [
         "1985",
         "1985",
@@ -1531,7 +1531,7 @@
     },
     {
       "question": "Which Super Bowl was hosted in San Diego in 2003? ",
-      "pred": "The Super Bowl that was hosted in San Diego in 2003 was Super Bowl XXXVII.",
+      "pred": "Super Bowl XXXVII.",
       "gold": [
         "Super Bowl XXXVII",
         "Super Bowl XXXVII",
@@ -1540,7 +1540,7 @@
     },
     {
       "question": "When was San Francisco voted to be the location for Super Bowl 50?",
-      "pred": "San Francisco was voted to be the location for Super Bowl 50 in 2013.",
+      "pred": "The passage does not mention Super Bowl 50, but it does state that the stadium is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985.",
       "gold": [
         "May 21, 2013",
         "May 21, 2013,",
@@ -1549,7 +1549,7 @@
     },
     {
       "question": "When did Levi's Stadium open?",
-      "pred": "Levi's Stadium opened on May 21, 2013.",
+      "pred": "Levi's Stadium opened in 2014.",
       "gold": [
         "2014",
         "in 2014",
@@ -1558,7 +1558,7 @@
     },
     {
       "question": "When was the last Super Bowl in California?",
-      "pred": "The last Super Bowl in California was in 2003.",
+      "pred": "Super Bowl XXXVII took place in San Diego in 2003.",
       "gold": [
         "2003",
         "in 2003",
@@ -1567,7 +1567,7 @@
     },
     {
       "question": "Where was the meeting held when the NFL owners voted on the location for Super Bowl 50?",
-      "pred": "The meeting was held in Boston when the NFL owners voted on the location for Super Bowl 50.",
+      "pred": "The NFL owners voted on the location for Super Bowl 50 at their spring meetings in Boston.",
       "gold": [
         "Boston",
         "in Boston",
@@ -1576,7 +1576,7 @@
     },
     {
       "question": "When was Levi's Stadium picked for Super bowl 50?",
-      "pred": "Levi's Stadium was picked for Super Bowl 50 on May 21, 2013.",
+      "pred": "Levi's Stadium was awarded the Super Bowl in 2013, but it opened in 2014, so it was not picked for Super Bowl 50.",
       "gold": [
         "May 21, 2013",
         "May 21, 2013",
@@ -1585,7 +1585,7 @@
     },
     {
       "question": "When did Levi's Stadium open?",
-      "pred": "Levi's Stadium opened on May 21, 2013.",
+      "pred": "Levi's Stadium opened in 2014.",
       "gold": [
         "2014.",
         "in 2014",
@@ -1603,7 +1603,7 @@
     },
     {
       "question": "When was the last time California hosted a Super Bowl?",
-      "pred": "The last time California hosted a Super Bowl was in 2003.",
+      "pred": "Super Bowl XXXVII in 2003.",
       "gold": [
         "2003.",
         "2003",
@@ -1612,7 +1612,7 @@
     },
     {
       "question": "Who coached each Super Bowl 50 participant in their most recent Super Bowl appearance prior to Super Bowl 50?",
-      "pred": "John Fox coached the Carolina Panthers' most recent Super Bowl appearance prior to Super Bowl 50.",
+      "pred": "John Fox coached both the Carolina Panthers and the Denver Broncos in their most recent Super Bowl appearances prior to Super Bowl 50.",
       "gold": [
         "John Fox",
         "John Fox",
@@ -1621,7 +1621,7 @@
     },
     {
       "question": "How many NFL teams have finished the regular season with one loss?",
-      "pred": "The Carolina Panthers finished the regular season with one loss.",
+      "pred": "Ten teams have finished the regular season with only one loss.",
       "gold": [
         "ten",
         "ten",
@@ -1630,7 +1630,7 @@
     },
     {
       "question": "How many NFL teams have gone 15-1 in one season?",
-      "pred": "The passage states that the Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, which was their other appearance being Super Bowl XXXVIII. Therefore, it is accurate to say that the Broncos went 15-1 in one season twice (Super Bowl XLVIII and Super",
+      "pred": "One team, the Carolina Panthers, achieved a 15-1 record.",
       "gold": [
         "six",
         "six",
@@ -1639,7 +1639,7 @@
     },
     {
       "question": "Which team in Super Bowl 50 had a 15-1 record?",
-      "pred": "The Denver Broncos had a 15-1 record in Super Bowl 50.",
+      "pred": "The Carolina Panthers had a 15-1 record.",
       "gold": [
         "Carolina Panthers",
         "The Carolina Panthers",
@@ -1648,7 +1648,7 @@
     },
     {
       "question": "What was the last Super Bowl the Broncos participated in?",
-      "pred": "The Broncos made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII.",
+      "pred": "The Broncos' last Super Bowl appearance prior to Super Bowl 50 was Super Bowl XLVIII.",
       "gold": [
         "Super Bowl XLVIII",
         "Super Bowl XLVIII",
@@ -1657,7 +1657,7 @@
     },
     {
       "question": "Who was the head coach of the Broncos in Super Bowl XLVIII?",
-      "pred": "John Fox was the head coach of the Broncos in Super Bowl XLVIII.",
+      "pred": "The head coach of the Broncos in Super Bowl XLVIII was John Fox.",
       "gold": [
         "John Fox",
         "John Fox",
@@ -1666,7 +1666,7 @@
     },
     {
       "question": "What was the number of times the Denver Broncos played in a Super Bowl by the time they reached Super Bowl 50?",
-      "pred": "The Denver Broncos made their second Super Bowl appearance in franchise history, reaching Super Bowl XXXVIII.",
+      "pred": "By the time they reached Super Bowl 50, the Denver Broncos had made eight Super Bowl appearances.",
       "gold": [
         "eight",
         "eight",
@@ -1675,7 +1675,7 @@
     },
     {
       "question": "How many NFL teams have had only one loss by the end of a regular season?",
-      "pred": "The passage states that for the third straight season, the number one seeds from both conferences met in the Super Bowl, resulting in only one loss among all teams.",
+      "pred": "Ten teams have completed a regular season with only one loss.",
       "gold": [
         "ten",
         "ten",
@@ -1684,7 +1684,7 @@
     },
     {
       "question": "What was the first Super Bowl that the Carolina Panthers played in? ",
-      "pred": "The Carolina Panthers first played in Super Bowl XLVIII.",
+      "pred": "The passage does not mention the specific number of the Super Bowl the Panthers played in, only that it was their second appearance.",
       "gold": [
         "Super Bowl XXXVIII",
         "Super Bowl XXXVIII",
@@ -1693,7 +1693,7 @@
     },
     {
       "question": "How many teams can boast a 15\u20131 regular season record?",
-      "pred": "The passage states that \"one of only six teams to have acquired a 15-1 record.\" Therefore, the answer is six teams.",
+      "pred": "One team can boast a 15\u20131 regular season record.",
       "gold": [
         "six",
         "ten",
@@ -1702,7 +1702,7 @@
     },
     {
       "question": "What seed was the Carolina Panthers?",
-      "pred": "The Carolina Panthers were one of only ten teams to have completed a regular season with only one loss.",
+      "pred": "The Carolina Panthers were the number one seed.",
       "gold": [
         "number one",
         "number one",
@@ -1711,7 +1711,7 @@
     },
     {
       "question": "What seed was the Denver Broncos?",
-      "pred": "The Denver Broncos were one of four teams to have made eight appearances in the Super Bowl.",
+      "pred": "The Denver Broncos were the number one seed.",
       "gold": [
         "number one",
         "number one",
@@ -1720,7 +1720,7 @@
     },
     {
       "question": "Prior to Super Bowl 50, when were the Broncos last there?",
-      "pred": "The Broncos last appeared in Super Bowl 50 before Super Bowl 38.",
+      "pred": "The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII.",
       "gold": [
         "Super Bowl XLVIII",
         "Super Bowl XLVIII",
@@ -1729,7 +1729,7 @@
     },
     {
       "question": "Prior to Super Bowl 50, when were the Carolina Panthers last there?",
-      "pred": "Prior to Super Bowl 50, the Carolina Panthers last played in Super Bowl 48.",
+      "pred": "The Carolina Panthers were last in Super Bowl XXXVIII.",
       "gold": [
         "Super Bowl XXXVIII.",
         "Super Bowl XXXVIII",
@@ -1738,7 +1738,7 @@
     },
     {
       "question": "How many teams have had a 15-1 record for the regular season?",
-      "pred": "The passage states that \"one of only six teams to have acquired a 15\u20131 record.\"",
+      "pred": "One team, the Carolina Panthers, achieved a 15-1 record for the regular season.",
       "gold": [
         "six",
         "ten",
@@ -1747,7 +1747,7 @@
     },
     {
       "question": "How many games did the Panthers lose in the regular season before Super Bowl 50?",
-      "pred": "The Panthers lost 1 game in the regular season before Super Bowl 50.",
+      "pred": "The Panthers lost only one game in the regular season.",
       "gold": [
         "one",
         "1",
@@ -1756,7 +1756,7 @@
     },
     {
       "question": "How many teams up to Super Bowl 50 have been to the championship game eight times?",
-      "pred": "The passage states that the Panthers made their second Super Bowl appearance in franchise history, making it their eighth appearance in the Super Bowl.",
+      "pred": "Four teams have made eight appearances in the Super Bowl.",
       "gold": [
         "four",
         "four",
@@ -1765,7 +1765,7 @@
     },
     {
       "question": "Before Super Bowl 50, what was the coach's name that coached both teams for their last Super Bowl appearances?",
-      "pred": "John Fox",
+      "pred": "John Fox.",
       "gold": [
         "John Fox",
         "John Fox",
@@ -1783,7 +1783,7 @@
     },
     {
       "question": "Which Carolina Panthers wide receiver suffered a torn ACL before the season began?",
-      "pred": "DeAngelo Williams suffered a torn ACL before the season began.",
+      "pred": "Kelvin Benjamin suffered a torn ACL before the season began.",
       "gold": [
         "Kelvin Benjamin",
         "Kelvin Benjamin",
@@ -1792,7 +1792,7 @@
     },
     {
       "question": "How many teams have won 15 regular season games since the 16-game schedule was adopted?",
-      "pred": "Seven teams have won 15 regular season games since the 16-game schedule was adopted.",
+      "pred": "Seven teams have won at least 15 regular season games since the league expanded to a 16-game schedule in 1978.",
       "gold": [
         "7",
         "seventh",

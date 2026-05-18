@@ -1,107 +1,107 @@
 {
   "task": "classification",
   "n_samples": 200,
-  "accuracy": 0.155,
-  "tokens_per_sec": 4.16,
-  "mean_ttft_ms": 32.5,
-  "mean_output_tokens": 3.8,
-  "peak_memory_gb": 0.242,
+  "accuracy": 0.67,
+  "tokens_per_sec": 2.26,
+  "mean_ttft_ms": 22.1,
+  "mean_output_tokens": 4.0,
+  "peak_memory_gb": 0.276,
   "raw": [
     {
       "query": "How do I locate my card?",
       "gold": "card_arrival",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "I still have not received my new card, I ordered over a week ago.",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "I ordered a card but it has not arrived. Help please!",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "Is there a way to know when my card will arrive?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "My card has not arrived yet.",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "When will I get my card?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "Do you know if there is a tracking number for the new card you sent me?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "i have not received my card",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
+      "pred": "card_not_working",
       "correct": false
     },
     {
       "query": "still waiting on that card",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
+      "pred": "pending_transfer",
       "correct": false
     },
     {
       "query": "Is it normal to have to wait over a week for my new card?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "How do I track my card?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "How long does a card delivery take?",
       "gold": "card_arrival",
-      "pred": "pending_delivery_estimate",
+      "pred": "card_delivery_estimate",
       "correct": false
     },
     {
       "query": "I still don't have my card after 2 weeks.  What should I do?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
+      "pred": "lost_or_stolen_card",
       "correct": false
     },
     {
       "query": "still waiting on my new card",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
+      "pred": "order_physical_card",
       "correct": false
     },
     {
       "query": "I am still waiting for my card after 1 week.  Is this ok?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "I have been waiting longer than expected for my bank card, could you provide information on when it will arrive?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "I've been waiting longer than expected for my card.",
@@ -112,188 +112,188 @@
     {
       "query": "Why hasn't my card been delivered?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "Where is my new card? I have been waiting a week!",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "My card still hasn't arrived after 2 weeks. Is it lost?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "I did not get my card yet, is it lost?",
       "gold": "card_arrival",
-      "pred": "lost_or_stolen_card",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "Status of the card I ordered.",
       "gold": "card_arrival",
-      "pred": "pending_top_up",
+      "pred": "order_physical_card",
       "correct": false
     },
     {
       "query": "How long should my new card take to arrive?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "I ordered my card 2 weeks ago and it still isn't here? What do I do?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "My card has not arrived yet, where is it?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "What is the tracking number for my card that was mailed?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "I think something went wrong with my card delivery as I haven't received it yet.",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "I'm still waiting for delivery of my new card, why is it taking so long?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "I ordered a card a week ago, and it's still not here. What do I do?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
+      "pred": "order_physical_card",
       "correct": false
     },
     {
       "query": "i want to track the card you sent",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "My card hasn't arrived yet.",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "I was expecting my new card and am wondering why I haven't received it yet?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "How do I know when my card will arrive?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "I'm still waiting on my card to be delivered.",
       "gold": "card_arrival",
-      "pred": "pending_card_delivery_estimate",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "Does the card you sent have a way to track to it?",
       "gold": "card_arrival",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "I ordered a card and I still haven't received it. It's been two weeks. What can I do?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
+      "pred": "order_physical_card",
       "correct": false
     },
     {
       "query": "I'm starting to think my card is lost because it still hasn't arrived, can you help?",
       "gold": "card_arrival",
-      "pred": "lost_or_stolen_card",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "Is there tracking info available?",
       "gold": "card_arrival",
-      "pred": "pending_transfer",
+      "pred": "transfer_not_received_by_recipient",
       "correct": false
     },
     {
       "query": "What is the tracking number for the card you sent?",
       "gold": "card_arrival",
-      "pred": "pending_card_payment",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "Where is the tracking number for the card you sent me?",
       "gold": "card_arrival",
-      "pred": "pending_transfer",
-      "correct": false
+      "pred": "card_arrival",
+      "correct": true
     },
     {
       "query": "Why won't my card show up on the app?",
       "gold": "card_linking",
-      "pred": "pin_blocked",
+      "pred": "card_not_working",
       "correct": false
     },
     {
       "query": "I would like to reactivate my card.",
       "gold": "card_linking",
-      "pred": "get_physical_card",
+      "pred": "activate_my_card",
       "correct": false
     },
     {
       "query": "Where do I link the new card?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "I have received my card, can you help me put it in the app?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
+      "pred": "card_arrival",
       "correct": false
     },
     {
       "query": "How do I link a card that I already have?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "I received my new card, but I don't see it in the app anywhere.  What do I do?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
+      "pred": "card_arrival",
       "correct": false
     },
     {
       "query": "How do I re-add a card to the app?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
+      "pred": "activate_my_card",
       "correct": false
     },
     {
       "query": "How do I add the card to my account?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "Can I put my old card back into the system? I just found it/",
@@ -304,79 +304,79 @@
     {
       "query": "I have one of your cards already, how do I link it?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "How do I link a new card?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "Can I link an existing card?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "How do I link one your card if I have one already?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "How do I add a card to the app?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "Can I link my new card?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "Hello, I found the card I misplaced and I need to reactive it, how do I do that?",
       "gold": "card_linking",
-      "pred": "pending_refund",
+      "pred": "activate_my_card",
       "correct": false
     },
     {
       "query": "Can you tell me how to link one of your cards that I already have?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "How do I view the card I received in the app?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
+      "pred": "card_arrival",
       "correct": false
     },
     {
       "query": "Where on the website do I go to link my card?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "I found my card, can I add it to the app?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
+      "pred": "card_arrival",
       "correct": false
     },
     {
       "query": "How do I link to my credit card with you?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "I've received my card so now I need to know how to sync it to the app.",
       "gold": "card_linking",
-      "pred": "get_physical_card",
+      "pred": "card_arrival",
       "correct": false
     },
     {
@@ -388,104 +388,104 @@
     {
       "query": "How do I link this new card?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "Can I reactivate my lost card that I found this morning in my jacket pocket?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
+      "pred": "activate_my_card",
       "correct": false
     },
     {
       "query": "how do I link an already existing card?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "The app doesn't show the card I received.",
       "gold": "card_linking",
-      "pred": "get_physical_card",
+      "pred": "card_not_working",
       "correct": false
     },
     {
       "query": "how do I link a card I already have?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "I would like to link my card. How do I do it?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "Can you please show me where I can find the location to link my card?",
       "gold": "card_linking",
-      "pred": "get_location_to_link_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "Where do I go if I want to link my new card?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "Is there a way to make my old card usable with the app?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
+      "pred": "card_not_working",
       "correct": false
     },
     {
       "query": "Can I reactivate a card I thought I lost?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
+      "pred": "activate_my_card",
       "correct": false
     },
     {
       "query": "How do I link my card",
       "gold": "card_linking",
-      "pred": "get_card_linking",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "Where do I need to go in the app to enter my card info?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "I have found my lost or stolen card. Is there a way I can link the card with my account through my app again?",
       "gold": "card_linking",
-      "pred": "pending_card_payment",
+      "pred": "lost_or_stolen_card",
       "correct": false
     },
     {
       "query": "Could you help me reactivate my card? It was previously lost, but I found it this morning in my jacket.",
       "gold": "card_linking",
-      "pred": "reactivate_card",
+      "pred": "activate_my_card",
       "correct": false
     },
     {
       "query": "I already have one of your cards, how do I link them?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "How do I link my replacement card?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "Can I link another card to my account?",
       "gold": "card_linking",
-      "pred": "get_physical_card",
-      "correct": false
+      "pred": "card_linking",
+      "correct": true
     },
     {
       "query": "I need to know your exchange rates.",
@@ -496,8 +496,8 @@
     {
       "query": "What exchange rates do you offer?",
       "gold": "exchange_rate",
-      "pred": "exchange_rates",
-      "correct": false
+      "pred": "exchange_rate",
+      "correct": true
     },
     {
       "query": "How did you come up with your exchange rates?",
@@ -568,8 +568,8 @@
     {
       "query": "Is it a good time to exchange?",
       "gold": "exchange_rate",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "exchange_rate",
+      "correct": true
     },
     {
       "query": "What is the exchange rate like on this app?",
@@ -580,20 +580,20 @@
     {
       "query": "Do you have a list of exchange rates?",
       "gold": "exchange_rate",
-      "pred": "verify_my_identity",
-      "correct": false
+      "pred": "exchange_rate",
+      "correct": true
     },
     {
       "query": "Can you tell me where you get your exchange rates?",
       "gold": "exchange_rate",
-      "pred": "verify_my_identity",
-      "correct": false
+      "pred": "exchange_rate",
+      "correct": true
     },
     {
       "query": "Will I get a curreng foreign exchange rate?",
       "gold": "exchange_rate",
-      "pred": "verify_top_up",
-      "correct": false
+      "pred": "exchange_rate",
+      "correct": true
     },
     {
       "query": "What currencies is an exchange rate calculated in?",
@@ -604,8 +604,8 @@
     {
       "query": "Where do you get your exchange rates from?",
       "gold": "exchange_rate",
-      "pred": "exchange_via_app",
-      "correct": false
+      "pred": "exchange_rate",
+      "correct": true
     },
     {
       "query": "What is the base of the exchange rates?",
@@ -622,8 +622,8 @@
     {
       "query": "The exchange rates are?",
       "gold": "exchange_rate",
-      "pred": "verify_exchange_rates",
-      "correct": false
+      "pred": "exchange_rate",
+      "correct": true
     },
     {
       "query": "What do you base your exchange rates on?",
@@ -670,14 +670,14 @@
     {
       "query": "Where did your guys exchange rates come from?",
       "gold": "exchange_rate",
-      "pred": "verify_source_of_funds",
-      "correct": false
+      "pred": "exchange_rate",
+      "correct": true
     },
     {
       "query": "How are you determining your exchange rates?",
       "gold": "exchange_rate",
-      "pred": "verify_my_identity",
-      "correct": false
+      "pred": "exchange_rate",
+      "correct": true
     },
     {
       "query": "I'm trying to figure out the current exchange rate.",
@@ -688,8 +688,8 @@
     {
       "query": "From where are you getting your exchange rates?",
       "gold": "exchange_rate",
-      "pred": "get_exchange_rates",
-      "correct": false
+      "pred": "exchange_rate",
+      "correct": true
     },
     {
       "query": "Can you tell me the foreign exchange rate?",
@@ -700,8 +700,8 @@
     {
       "query": "why do your exchange rates change",
       "gold": "exchange_rate",
-      "pred": "verify_source_of_funds",
-      "correct": false
+      "pred": "exchange_rate",
+      "correct": true
     },
     {
       "query": "What kind of foreign exchange rate will I get when I exchange my money?",
@@ -718,8 +718,8 @@
     {
       "query": "when does the rate get determined",
       "gold": "exchange_rate",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "exchange_rate",
+      "correct": true
     },
     {
       "query": "What is the current exchange rate for me?",
@@ -736,49 +736,49 @@
     {
       "query": "I made a currency exchange and think I was charged more than I should of been.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_charge",
       "correct": false
     },
     {
       "query": "the card payment exchange rate is wrong",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
-      "correct": false
+      "pred": "card_payment_wrong_exchange_rate",
+      "correct": true
     },
     {
       "query": "The exchange rate was wrong when I bought something outside the country.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "The exchange rate on my purchase is wrong.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "This rate is too low. Are you sure your using the right exchange rate.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "I bought something, but the exchange rate looks wrong.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "card_payment_wrong_exchange_rate",
+      "correct": true
     },
     {
       "query": "The rate applied to my foreign purchase was incorrect",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "I bought something in a foreign currency but the rate applied is wrong!",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "change_pin",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
@@ -790,109 +790,109 @@
     {
       "query": "You did not apply the correct exchange rate for an item that I bought.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_charge",
       "correct": false
     },
     {
       "query": "The rate of exchange for my card payment is incorrect",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "The rate for a currency exchange was wrong when I bought something.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "Why is the exchange rate wrong when I purchase something abroad?",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_exchange_rate_for_cash_withdrawal",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "I bought an item and noticed the exchange rate was not correct.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
-      "correct": false
+      "pred": "card_payment_wrong_exchange_rate",
+      "correct": true
     },
     {
       "query": "I bought something overseas and the wrong exchange rate is on my statement.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "pending_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "The exchange rate for my transaction last Saturday seems to have been wrong I got charged extra.  Please fix.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
-      "correct": false
+      "pred": "card_payment_wrong_exchange_rate",
+      "correct": true
     },
     {
       "query": "Why is your exchange rate for my card payment wrong",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "Why am I being charged more ?",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "extra_charge_on_statement",
       "correct": false
     },
     {
       "query": "I purchased an item and the exchange rate I was given was incorrect.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "I don't think my card payment exchange rate is correct.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
-      "correct": false
+      "pred": "card_payment_wrong_exchange_rate",
+      "correct": true
     },
     {
       "query": "When I made a purchase last Saturday, I was charged extra. Did I receive the right exchange rate?",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
-      "correct": false
+      "pred": "card_payment_wrong_exchange_rate",
+      "correct": true
     },
     {
       "query": "They charged me wrong for a currency exchange on a purchase.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_my_identity",
+      "pred": "exchange_charge",
       "correct": false
     },
     {
       "query": "I believe my card payment exchange rate is incorrect.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
-      "correct": false
+      "pred": "card_payment_wrong_exchange_rate",
+      "correct": true
     },
     {
       "query": "Hi, I have been overcharged for my payment last Saturday. I guess exchange rate was wrong.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
-      "correct": false
+      "pred": "card_payment_wrong_exchange_rate",
+      "correct": true
     },
     {
       "query": "The exchange rate seems off on this transaction",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "The exchange rate given to me wasn't correct, after i purchased an item",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "Hi, I don't think your exchange rate is right. I need you to check the official interbank exchange please.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
@@ -904,43 +904,43 @@
     {
       "query": "I wasn't applied the correct exchange rate for an item I bought",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
-      "correct": false
+      "pred": "card_payment_wrong_exchange_rate",
+      "correct": true
     },
     {
       "query": "the conversion value for my card payments is incorrect.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "The wrong exchange rate was used when I bought something with a foriegn currency.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "I paid for something in foreign currency but noticed the exchange rate is incorrect.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "The incorrect rate was used in my foreign purchase",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
-      "correct": false
+      "pred": "card_payment_wrong_exchange_rate",
+      "correct": true
     },
     {
       "query": "Why was the exchange rate incorrect for an item I recently bought?",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "Why is my exchange rate wrong for an item I bought?",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
@@ -952,110 +952,110 @@
     {
       "query": "Your exchange rate is totally wrong for my card payment",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "exchange_rate",
-      "correct": false
+      "pred": "card_payment_wrong_exchange_rate",
+      "correct": true
     },
     {
       "query": "The wrong rate was applied to an item I bought in a currency different from mine. Can this be changed?",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "I go the wrong exchange rate applied to my purchase in a foreign country.",
       "gold": "card_payment_wrong_exchange_rate",
-      "pred": "verify_top_up",
+      "pred": "exchange_rate",
       "correct": false
     },
     {
       "query": "My statement has a dollar I have been charged showing up on it.",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "Why is there a fee for an extra pound in my statement?",
       "gold": "extra_charge_on_statement",
-      "pred": "failed_transfer",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "I'm not okay with this fee on my statement.",
       "gold": "extra_charge_on_statement",
-      "pred": "failed_transfer",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "Why is there an extra dollar charged to my account?",
       "gold": "extra_charge_on_statement",
-      "pred": "verify_my_identity",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "There is a fee I don't recognize on my statement.",
       "gold": "extra_charge_on_statement",
-      "pred": "failed_transfer",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "I would like a refund on the extra pound I was charged.",
       "gold": "extra_charge_on_statement",
-      "pred": "refund_not showing up",
+      "pred": "request_refund",
       "correct": false
     },
     {
       "query": "Can you explain what this random $1 charge is?",
       "gold": "extra_charge_on_statement",
-      "pred": "pin_blocked",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "What is this $1 charge on my statement?",
       "gold": "extra_charge_on_statement",
-      "pred": "failed_transfer",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "Why does my statement have these extra charges?",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "I do not remember purchasing anything for 1\u00a3, and it is on my statement. Can you please tell me what that is about?",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
+      "pred": "card_payment_fee_charged",
       "correct": false
     },
     {
       "query": "I can see an extra 1\u00a3 charge on my app. Why did you charge me extra?",
       "gold": "extra_charge_on_statement",
-      "pred": "pin_blocked",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "Can you tell me why I noticed a $1 charge on my statement?",
       "gold": "extra_charge_on_statement",
-      "pred": "failed_transfer",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "When will the $1 transaction be credited to me?",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
+      "pred": "transfer_into_account",
       "correct": false
     },
     {
       "query": "Where did this fee come from?",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
+      "pred": "exchange_charge",
       "correct": false
     },
     {
       "query": "I noticed an extra $1 charge on my statement, can you tell me why that is?",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "There is an extra $1 charge",
@@ -1072,110 +1072,110 @@
     {
       "query": "Why is there an extra 1 pound charge on my card?",
       "gold": "extra_charge_on_statement",
-      "pred": "verify_top_up",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "Why are there so many fees on my statement?",
       "gold": "extra_charge_on_statement",
-      "pred": "failed_transfer",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "What would be the reason there's an extra fee on my statement?",
       "gold": "extra_charge_on_statement",
-      "pred": "failed_transfer",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "Where did this 1 euro fee come from?",
       "gold": "extra_charge_on_statement",
-      "pred": "exchange_via_app",
+      "pred": "exchange_charge",
       "correct": false
     },
     {
       "query": "I got a extra \u20ac1 fee in my statement",
       "gold": "extra_charge_on_statement",
-      "pred": "failed_transfer",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "I have a 1 euro fee on my statement.",
       "gold": "extra_charge_on_statement",
-      "pred": "failed_transfer",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "Why was I overcharged a pound!?",
       "gold": "extra_charge_on_statement",
-      "pred": "verify_my_identity",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "Something went wrong, I was charged an extra pound?",
       "gold": "extra_charge_on_statement",
-      "pred": "pin_blocked",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "Where did the extra fee on my statement come from?",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "There is an extra charge on my app that I was not told about or I was aware of!",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "I am seeing an extra fee on my statement what is that for?",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "What is this \u20ac1 fee in my statement?",
       "gold": "extra_charge_on_statement",
-      "pred": "failed_transfer",
+      "pred": "exchange_charge",
       "correct": false
     },
     {
       "query": "I am a new customer, and I happened to look at my app and there is a charge I am not familiar with.  Could you tell me why the extra charge is there?",
       "gold": "extra_charge_on_statement",
-      "pred": "verify_my_identity",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "For some reason my account's been charged an extra dollar.",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "There is a transaction for $1 and I don't know why it was charged.",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
+      "pred": "transaction_charged_twice",
       "correct": false
     },
     {
       "query": "Can you help me with a weird charge?  It's a pound charge that never goes away from the statement view on the app I'm using.  It's not described as anything but \"Pending\", and that status has never changed during the last two days.",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
+      "pred": "transfer_fee_charged",
       "correct": false
     },
     {
       "query": "What is the purpose of the extra fee that is showing up on my statement?",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "$1 extra has been charged on my statement, why is that?",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "What is the extra  \u20ac1 fee in my statement",
@@ -1186,26 +1186,26 @@
     {
       "query": "It's been two weeks, why has the transaction for $1.00 not been reversed?",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
+      "pred": "Refund_not_showing_up",
       "correct": false
     },
     {
       "query": "What is the \u20ac1 fee for?",
       "gold": "extra_charge_on_statement",
-      "pred": "exchange_rate",
+      "pred": "exchange_charge",
       "correct": false
     },
     {
       "query": "I'm quite confused as to what is going on. There is some odd extra pound charge on my statement in the app that's just listed as pending and doesn't go away since a couple days.",
       "gold": "extra_charge_on_statement",
-      "pred": "pending_top_up",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     },
     {
       "query": "Can you please check why I am having this extra fee on my statement.",
       "gold": "extra_charge_on_statement",
-      "pred": "failed_transfer",
-      "correct": false
+      "pred": "extra_charge_on_statement",
+      "correct": true
     }
   ]
 }
