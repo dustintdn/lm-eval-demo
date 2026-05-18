@@ -2,10 +2,11 @@
   "task": "classification",
   "n_samples": 200,
   "accuracy": 0.67,
-  "tokens_per_sec": 2.26,
-  "mean_ttft_ms": 22.1,
+  "macro_f1": 0.1699,
+  "tokens_per_sec": 2.65,
+  "mean_ttft_ms": 17.2,
   "mean_output_tokens": 4.0,
-  "peak_memory_gb": 0.276,
+  "peak_memory_gb": 0.922,
   "raw": [
     {
       "query": "How do I locate my card?",

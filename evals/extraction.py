@@ -22,18 +22,18 @@ Job Posting:
 {text}"""
 
 
-def _parse_json(raw: str) -> dict:
+def _parse_json(raw: str) -> tuple[dict, bool]:
     raw = raw.strip()
     try:
-        return json.loads(raw)
+        return json.loads(raw), True
     except json.JSONDecodeError:
         match = re.search(r"\{.*?\}", raw, re.DOTALL)
         if match:
             try:
-                return json.loads(match.group())
+                return json.loads(match.group()), False
             except json.JSONDecodeError:
                 pass
-    return {}
+    return {}, False
 
 
 def _normalize(v) -> str | None:
@@ -83,11 +83,13 @@ def run(model, tokenizer, device, n_samples: int = 150) -> dict:
     total_tokens = 0
     total_time_s = 0.0
     total_ttft_s = 0.0
+    clean_parses = 0
 
     for i, sample in enumerate(samples):
         prompt = PROMPT_TEMPLATE.format(text=sample["text"])
         raw_output, n_tokens, tps, ttft = generate(model, tokenizer, device, prompt, max_new_tokens=128)
-        pred = _parse_json(raw_output)
+        pred, clean = _parse_json(raw_output)
+        clean_parses += int(clean)
         metrics = _field_f1(pred, sample["labels"])
 
         results.append({
@@ -95,6 +97,7 @@ def run(model, tokenizer, device, n_samples: int = 150) -> dict:
             "gold": sample["labels"],
             "pred": pred,
             "raw_output": raw_output,
+            "json_parse": clean,
             **{k: v for k, v in metrics.items() if k != "per_field"},
             "per_field": metrics["per_field"],
         })
@@ -119,6 +122,7 @@ def run(model, tokenizer, device, n_samples: int = 150) -> dict:
         "f1": round(mean_f1, 4),
         "precision": round(mean_precision, 4),
         "recall": round(mean_recall, 4),
+        "json_parse_rate": round(clean_parses / n, 4),
         "tokens_per_sec": round(tps_overall, 2),
         "mean_ttft_ms": round(total_ttft_s / n * 1000, 1),
         "mean_output_tokens": round(total_tokens / n, 1),

@@ -3,13 +3,15 @@
   "n_samples": 200,
   "exact_match": 4.5,
   "f1": 30.4214,
-  "tokens_per_sec": 8.94,
-  "mean_ttft_ms": 45.6,
+  "faithfulness_rate": 0.055,
+  "tokens_per_sec": 35.34,
+  "mean_ttft_ms": 30.3,
   "mean_output_tokens": 17.6,
-  "peak_memory_gb": 0.612,
+  "peak_memory_gb": 1.942,
   "raw": [
     {
       "question": "Which NFL team represented the AFC at Super Bowl 50?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The AFC champion Denver Broncos represented the NFL at Super Bowl 50.",
       "gold": [
         "Denver Broncos",
@@ -19,6 +21,7 @@
     },
     {
       "question": "Which NFL team represented the NFC at Super Bowl 50?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The NFC champion team at Super Bowl 50 was the Carolina Panthers.",
       "gold": [
         "Carolina Panthers",
@@ -28,6 +31,7 @@
     },
     {
       "question": "Where did Super Bowl 50 take place?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "Super Bowl 50 took place at Levi's Stadium in the San Francisco Bay Area.",
       "gold": [
         "Santa Clara, California",
@@ -37,6 +41,7 @@
     },
     {
       "question": "Which NFL team won Super Bowl 50?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The American Football Conference (AFC) champion Denver Broncos won Super Bowl 50.",
       "gold": [
         "Denver Broncos",
@@ -46,6 +51,7 @@
     },
     {
       "question": "What color was used to emphasize the 50th anniversary of the Super Bowl?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The passage states that the league emphasized the \"golden anniversary\" with various gold-themed initiatives and temporarily suspended the tradition of naming each Super Bowl game with Roman numerals.",
       "gold": [
         "gold",
@@ -55,6 +61,7 @@
     },
     {
       "question": "What was the theme of Super Bowl 50?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The theme of Super Bowl 50 was \"Golden Anniversary\".",
       "gold": [
         "\"golden anniversary\"",
@@ -64,6 +71,7 @@
     },
     {
       "question": "What day was the game played on?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The game was played on February 7, 2016.",
       "gold": [
         "February 7, 2016",
@@ -73,6 +81,7 @@
     },
     {
       "question": "What is the AFC short for?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The AFC stands for American Football Conference.",
       "gold": [
         "American Football Conference",
@@ -82,6 +91,7 @@
     },
     {
       "question": "What was the theme of Super Bowl 50?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The theme of Super Bowl 50 was \"Golden Anniversary\".",
       "gold": [
         "\"golden anniversary\"",
@@ -91,6 +101,7 @@
     },
     {
       "question": "What does AFC stand for?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "American Football Conference",
       "gold": [
         "American Football Conference",
@@ -100,6 +111,7 @@
     },
     {
       "question": "What day was the Super Bowl played on?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The Super Bowl was played on February 7, 2016.",
       "gold": [
         "February 7, 2016",
@@ -109,6 +121,7 @@
     },
     {
       "question": "Who won Super Bowl 50?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The American Football Conference (AFC) champion Denver Broncos won Super Bowl 50.",
       "gold": [
         "Denver Broncos",
@@ -118,6 +131,7 @@
     },
     {
       "question": "What venue did Super Bowl 50 take place in?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The Super Bowl 50 game took place at Levi's Stadium in the San Francisco Bay Area.",
       "gold": [
         "Levi's Stadium",
@@ -127,6 +141,7 @@
     },
     {
       "question": "What city did Super Bowl 50 take place in?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "San Francisco Bay Area",
       "gold": [
         "Santa Clara",
@@ -136,6 +151,7 @@
     },
     {
       "question": "If Roman numerals were used, what would Super Bowl 50 have been called?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "If Roman numerals were used, Super Bowl 50 would have been called \"Super Bowl L\".",
       "gold": [
         "Super Bowl L",
@@ -145,6 +161,7 @@
     },
     {
       "question": "Super Bowl 50 decided the NFL champion for what season?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The Super Bowl 50 decided the NFL champion for the 2015 season.",
       "gold": [
         "2015",
@@ -154,6 +171,7 @@
     },
     {
       "question": "What year did the Denver Broncos secure a Super Bowl title for the third time?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The Denver Broncos secured a Super Bowl title for the third time in 2015.",
       "gold": [
         "2015",
@@ -163,6 +181,7 @@
     },
     {
       "question": "What city did Super Bowl 50 take place in?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "San Francisco Bay Area",
       "gold": [
         "Santa Clara",
@@ -172,6 +191,7 @@
     },
     {
       "question": "What stadium did Super Bowl 50 take place in?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The Super Bowl 50 took place at Levi's Stadium in the San Francisco Bay Area.",
       "gold": [
         "Levi's Stadium",
@@ -181,6 +201,7 @@
     },
     {
       "question": "What was the final score of Super Bowl 50? ",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The final score of Super Bowl 50 was 24-10 in favor of the Denver Broncos.",
       "gold": [
         "24\u201310",
@@ -190,6 +211,7 @@
     },
     {
       "question": "What month, day and year did Super Bowl 50 take place? ",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The Super Bowl 50 took place on February 7, 2016.",
       "gold": [
         "February 7, 2016",
@@ -199,6 +221,7 @@
     },
     {
       "question": "What year was Super Bowl 50?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "Super Bowl 50 was held in 2015.",
       "gold": [
         "2015",
@@ -208,6 +231,7 @@
     },
     {
       "question": "What team was the AFC champion?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The AFC champion was the Denver Broncos.",
       "gold": [
         "Denver Broncos",
@@ -217,6 +241,7 @@
     },
     {
       "question": "What team was the NFC champion?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The NFC champion was the Carolina Panthers.",
       "gold": [
         "Carolina Panthers",
@@ -226,6 +251,7 @@
     },
     {
       "question": "Who won Super Bowl 50?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The American Football Conference (AFC) champion Denver Broncos won Super Bowl 50.",
       "gold": [
         "Denver Broncos",
@@ -235,6 +261,7 @@
     },
     {
       "question": "Super Bowl 50 determined the NFL champion for what season?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The Super Bowl 50 determined the NFL champion for the 2015 season.",
       "gold": [
         "2015",
@@ -244,6 +271,7 @@
     },
     {
       "question": "Which team won Super Bowl 50.",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The Denver Broncos won Super Bowl 50.",
       "gold": [
         "Denver Broncos",
@@ -253,6 +281,7 @@
     },
     {
       "question": "Where was Super Bowl 50 held?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "Super Bowl 50 was held at Levi's Stadium in the San Francisco Bay Area.",
       "gold": [
         "Santa Clara, California.",
@@ -262,6 +291,7 @@
     },
     {
       "question": "The name of the NFL championship game is?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The name of the NFL championship game is Super Bowl 50.",
       "gold": [
         "Super Bowl",
@@ -271,6 +301,7 @@
     },
     {
       "question": "What 2015 NFL team one the AFC playoff?",
+      "context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
       "pred": "The 2015 AFC champion Denver Broncos won the Super Bowl 50.",
       "gold": [
         "Denver Broncos",
@@ -280,6 +311,7 @@
     },
     {
       "question": "Which Carolina Panthers player was named Most Valuable Player?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "Cam Newton was named the NFL Most Valuable Player for the Carolina Panthers.",
       "gold": [
         "Cam Newton",
@@ -289,6 +321,7 @@
     },
     {
       "question": "How many appearances have the Denver Broncos made in the Super Bowl?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Denver Broncos have made eight appearances in the Super Bowl.",
       "gold": [
         "8",
@@ -298,6 +331,7 @@
     },
     {
       "question": "What year was the Carolina Panthers franchise founded?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Carolina Panthers franchise was founded in 1995.",
       "gold": [
         "1995",
@@ -307,6 +341,7 @@
     },
     {
       "question": "What team did the Panthers defeat?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Panthers defeated the Arizona Cardinals in the NFC Championship Game.",
       "gold": [
         "Arizona Cardinals",
@@ -316,6 +351,7 @@
     },
     {
       "question": "Who did the Broncos prevent from going to the Super Bowl?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Broncos prevented the New England Patriots from going to the Super Bowl.",
       "gold": [
         "New England Patriots",
@@ -325,6 +361,7 @@
     },
     {
       "question": "Who did the Panthers beat in the NFC Championship Game?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Panthers were defeated by the Arizona Cardinals in the NFC Championship Game.",
       "gold": [
         "Arizona Cardinals",
@@ -334,6 +371,7 @@
     },
     {
       "question": "Who lost to the Broncos in the AFC Championship?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Broncos lost to the New England Patriots in the AFC Championship Game.",
       "gold": [
         "New England Patriots",
@@ -343,6 +381,7 @@
     },
     {
       "question": "Who were the defending Super Bowl champions?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Broncos were the defending Super Bowl champions.",
       "gold": [
         "New England Patriots",
@@ -352,6 +391,7 @@
     },
     {
       "question": "How many teams have been in the Super Bowl eight times?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "Four teams have been in the Super Bowl eight times: the Philadelphia Eagles, the Denver Broncos, the Dallas Cowboys, and the Pittsburgh Steelers.",
       "gold": [
         "four",
@@ -361,6 +401,7 @@
     },
     {
       "question": "Who was this season's NFL MVP?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "Cam Newton was this season's NFL MVP.",
       "gold": [
         "Cam Newton",
@@ -370,6 +411,7 @@
     },
     {
       "question": "What was the win/loss ratio in 2015 for the Carolina Panthers during their regular season?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Carolina Panthers had a win/loss ratio of 15-1 in their regular season.",
       "gold": [
         "15\u20131",
@@ -379,6 +421,7 @@
     },
     {
       "question": "Which Carolina Panthers team member was picked as the team's MVP in 2015? ",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "Cam Newton was picked as the team's MVP in 2015.",
       "gold": [
         "Cam Newton",
@@ -388,6 +431,7 @@
     },
     {
       "question": "What were the win/loss game stats for the Denver Bronco's regular season in 2015?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Denver Broncos had a 12-4 regular season record in 2015.",
       "gold": [
         "12\u20134",
@@ -397,6 +441,7 @@
     },
     {
       "question": "How many teams have played in the Super Bowl eight times?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "Four teams have played in the Super Bowl eight times: the Philadelphia Eagles, the Denver Broncos, the Dallas Cowboys, and the Pittsburgh Steelers.",
       "gold": [
         "4",
@@ -406,6 +451,7 @@
     },
     {
       "question": "Which team did not get a chance to defend their Super Bowl XLIX win in Super Bowl 50?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Denver Broncos did not get a chance to defend their Super Bowl XLIX win in Super Bowl 50.",
       "gold": [
         "New England Patriots",
@@ -415,6 +461,7 @@
     },
     {
       "question": "Who is the quarterback for the Panthers?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "Cam Newton is the quarterback for the Panthers.",
       "gold": [
         "Cam Newton",
@@ -424,6 +471,7 @@
     },
     {
       "question": "Who did Carolina beat in the NFC championship game?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Panthers were defeated by the Arizona Cardinals in the NFC Championship Game.",
       "gold": [
         "Arizona Cardinals",
@@ -433,6 +481,7 @@
     },
     {
       "question": "How many times have the Panthers been in the Super Bowl?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Panthers have made eight appearances in the Super Bowl.",
       "gold": [
         "2",
@@ -442,6 +491,7 @@
     },
     {
       "question": "Who did Denver beat in the AFC championship?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Broncos defeated the New England Patriots in the AFC Championship Game.",
       "gold": [
         "New England Patriots",
@@ -451,6 +501,7 @@
     },
     {
       "question": "Who was the Most Valuable Player for the 2015 NFL season?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "Cam Newton was the Most Valuable Player for the 2015 NFL season.",
       "gold": [
         "Cam Newton",
@@ -460,6 +511,7 @@
     },
     {
       "question": "Who did Denver beat in the 2015 AFC Championship game?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Broncos defeated the New England Patriots in the 2015 AFC Championship game.",
       "gold": [
         "New England Patriots",
@@ -469,6 +521,7 @@
     },
     {
       "question": "Who did the Carolina Panthers beat in the 2015 NFC Championship game?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Carolina Panthers were defeated by the Arizona Cardinals in the 2015 NFC Championship game.",
       "gold": [
         "Arizona Cardinals",
@@ -478,6 +531,7 @@
     },
     {
       "question": "Who was the 2015 NFL MVP?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The 2015 NFL MVP was Cam Newton.",
       "gold": [
         "Cam Newton",
@@ -487,6 +541,7 @@
     },
     {
       "question": "Who did the Panthers beat to become the NFC champs?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Panthers were beaten by the Arizona Cardinals to become the NFC champs.",
       "gold": [
         "Arizona Cardinals",
@@ -496,6 +551,7 @@
     },
     {
       "question": "What year did the Carolina Panthers form?",
+      "context": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12\u20134 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20\u201318 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
       "pred": "The Carolina Panthers formed in 1995.",
       "gold": [
         "1995.",
@@ -505,6 +561,7 @@
     },
     {
       "question": "Who was the Super Bowl 50 MVP?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller was the Super Bowl MVP.",
       "gold": [
         "Von Miller",
@@ -514,6 +571,7 @@
     },
     {
       "question": "How many fumbles did Von Miller force in Super Bowl 50?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller forced three fumbles in Super Bowl 50.",
       "gold": [
         "2",
@@ -523,6 +581,7 @@
     },
     {
       "question": "Which team held the scoring lead throughout the entire game?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "The Broncos held the scoring lead throughout the entire game.",
       "gold": [
         "Broncos",
@@ -532,6 +591,7 @@
     },
     {
       "question": "Which Denver linebacker was named Super Bowl MVP?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller was named Super Bowl MVP.",
       "gold": [
         "linebacker Von Miller",
@@ -541,6 +601,7 @@
     },
     {
       "question": "How many solo tackles did Von Miller make at Super Bowl 50?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller made five solo tackles at Super Bowl 50.",
       "gold": [
         "five solo tackles",
@@ -550,6 +611,7 @@
     },
     {
       "question": "Who was limited by Denver's defense?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Denver's defense sacked Newton seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown.",
       "gold": [
         "Newton was limited by Denver's defense",
@@ -559,6 +621,7 @@
     },
     {
       "question": "How many times was Cam Newton sacked?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Newton was sacked seven times.",
       "gold": [
         "seven",
@@ -568,6 +631,7 @@
     },
     {
       "question": "Who won the Super Bowl MVP?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller won the Super Bowl MVP.",
       "gold": [
         "Von Miller",
@@ -577,6 +641,7 @@
     },
     {
       "question": "How many turnovers did Cam Newton have?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Newton had three turnovers.",
       "gold": [
         "three",
@@ -586,6 +651,7 @@
     },
     {
       "question": "How many fumbles did Von Miller force?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller forced nine fumbles.",
       "gold": [
         "two",
@@ -595,6 +661,7 @@
     },
     {
       "question": "Who was given the esteemed status of MVP for Super Bowl 50?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller was given the esteemed status of MVP for Super Bowl 50.",
       "gold": [
         "Von Miller",
@@ -604,6 +671,7 @@
     },
     {
       "question": "What position does Von Miller play for the Denver Broncos?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller plays linebacker for the Denver Broncos.",
       "gold": [
         "linebacker",
@@ -613,6 +681,7 @@
     },
     {
       "question": "What was the number of solo tackles that Von Miller had in Super Bowl 50?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller had 5 solo tackles in Super Bowl 50.",
       "gold": [
         "5",
@@ -622,6 +691,7 @@
     },
     {
       "question": "How many forced fumbles did Von Miller have during the Super Bowl 50 game?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller had two forced fumbles during the Super Bowl 50 game.",
       "gold": [
         "2",
@@ -631,6 +701,7 @@
     },
     {
       "question": "Who won the MVP for the Super Bowl?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller won the Super Bowl MVP award.",
       "gold": [
         "Von Miller",
@@ -640,6 +711,7 @@
     },
     {
       "question": "How many tackles did Von Miller get during the game?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller got 5 solo tackles during the game.",
       "gold": [
         "5",
@@ -649,6 +721,7 @@
     },
     {
       "question": "How many times was Cam Newton sacked in Super Bowl 50?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Newton was sacked seven times in Super Bowl 50.",
       "gold": [
         "seven",
@@ -658,6 +731,7 @@
     },
     {
       "question": "How many times did the Denver defense force Newton into turnovers?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Denver linebacker Von Miller forced Newton into three turnovers during the game.",
       "gold": [
         "three",
@@ -667,6 +741,7 @@
     },
     {
       "question": "Which Newton turnover resulted in seven points for Denver?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "The turnover that resulted in seven points for Denver was Newton's fumble recovery.",
       "gold": [
         "a fumble",
@@ -676,6 +751,7 @@
     },
     {
       "question": "Who was the Most Valuable Player of Super Bowl 50?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller was the Most Valuable Player of Super Bowl 50.",
       "gold": [
         "Von Miller",
@@ -685,6 +761,7 @@
     },
     {
       "question": "What position does Von Miller play?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller plays linebacker.",
       "gold": [
         "linebacker",
@@ -694,6 +771,7 @@
     },
     {
       "question": "How many times was the Panthers' quarterback sacked?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "The Panthers' quarterback was sacked seven times.",
       "gold": [
         "seven",
@@ -703,6 +781,7 @@
     },
     {
       "question": "How many times did the Broncos cause turnovers in the game?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "The Broncos caused turnovers seven times in the game.",
       "gold": [
         "three",
@@ -712,6 +791,7 @@
     },
     {
       "question": "What Denver player caused two fumbles for the Panthers?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Denver linebacker Von Miller caused two fumbles for the Panthers.",
       "gold": [
         "Von Miller",
@@ -721,6 +801,7 @@
     },
     {
       "question": "How many tackles did Von Miller accomlish by himself in the game?",
+      "context": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2\u00bd sacks, and two forced fumbles.",
       "pred": "Von Miller accomplished five solo tackles in the game.",
       "gold": [
         "five",
@@ -730,6 +811,7 @@
     },
     {
       "question": "Which network broadcasted Super Bowl 50 in the U.S.?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "CBS broadcast Super Bowl 50 in the U.S.",
       "gold": [
         "CBS",
@@ -739,6 +821,7 @@
     },
     {
       "question": "What was the average cost for a 30 second commercial during Super Bowl 50?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "The average cost for a 30-second commercial during Super Bowl 50 was $5 million.",
       "gold": [
         "$5 million",
@@ -748,6 +831,7 @@
     },
     {
       "question": "Which group headlined the Super Bowl 50 halftime show?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "The group that headlined the Super Bowl 50 halftime show was Coldplay.",
       "gold": [
         "Coldplay",
@@ -757,6 +841,7 @@
     },
     {
       "question": "Which performers joined the headliner during the Super Bowl 50 halftime show?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "Beyonc\u00e9 and Bruno Mars joined the headliner during the Super Bowl 50 halftime show.",
       "gold": [
         "Beyonc\u00e9 and Bruno Mars",
@@ -766,6 +851,7 @@
     },
     {
       "question": "At which Super Bowl did Beyonce headline the halftime show?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "Beyonc\u00e9 led the halftime show at Super Bowl XLVII.",
       "gold": [
         "Super Bowl XLVII",
@@ -775,6 +861,7 @@
     },
     {
       "question": "Who was the broadcaster for Super Bowl 50 in the United States?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "CBS broadcast Super Bowl 50 in the United States.",
       "gold": [
         "CBS",
@@ -784,6 +871,7 @@
     },
     {
       "question": "What was the average cost of a 30-second commercial?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "The average cost of a 30-second commercial was $5 million.",
       "gold": [
         "$5 million",
@@ -793,6 +881,7 @@
     },
     {
       "question": "What halftime performer previously headlined Super Bowl XLVII?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "The previous halftime performer who headlined Super Bowl XLVII was Bruno Mars.",
       "gold": [
         "Beyonc\u00e9",
@@ -802,6 +891,7 @@
     },
     {
       "question": "What halftime performer previously headlined Super Bowl XLVIII?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "The previous halftime performer to headline Super Bowl XLVIII was Bruno Mars.",
       "gold": [
         "Bruno Mars",
@@ -811,6 +901,7 @@
     },
     {
       "question": "Who was the main performer at this year's halftime show?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "Beyonc\u00e9 and Bruno Mars were the main performers at this year's halftime show.",
       "gold": [
         "Coldplay",
@@ -820,6 +911,7 @@
     },
     {
       "question": "Which network broadcasted the 50th Super Bowl game? ",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "CBS broadcast the 50th Super Bowl game.",
       "gold": [
         "CBS",
@@ -829,6 +921,7 @@
     },
     {
       "question": "What was the average cost for a TV ad lasting 30 seconds during Super Bowl 50?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "The average cost for a TV ad lasting 30 seconds during Super Bowl 50 was $5 million.",
       "gold": [
         "$5 million",
@@ -838,6 +931,7 @@
     },
     {
       "question": "Who was the male singer who performed as a special guest during Super Bowl 50?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "Beyonc\u00e9 performed as a special guest during Super Bowl 50.",
       "gold": [
         "Bruno Mars",
@@ -847,6 +941,7 @@
     },
     {
       "question": "What ranking does the Super Bowl 50 halftime show have on the list of most watched TV broadcasts?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "The Super Bowl 50 halftime show has ranked third-most watched U.S. broadcast ever.",
       "gold": [
         "third",
@@ -856,6 +951,7 @@
     },
     {
       "question": "What station aired the Super Bowl?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "CBS aired the Super Bowl.",
       "gold": [
         "CBS",
@@ -865,6 +961,7 @@
     },
     {
       "question": "How much money did a 1/2 minute commercial cost?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "A 1/2 minute commercial cost an average of $5 million.",
       "gold": [
         "$5 million",
@@ -874,6 +971,7 @@
     },
     {
       "question": "What band headlined half-time during Super Bowl 50?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "The band that headlined the halftime show during Super Bowl 50 was Coldplay.",
       "gold": [
         "Coldplay",
@@ -883,6 +981,7 @@
     },
     {
       "question": "What two artists came out with Coldplay during the half-time show?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "Coldplay performed at the halftime show of Super Bowl 50.",
       "gold": [
         "Beyonc\u00e9 and Bruno Mars",
@@ -892,6 +991,7 @@
     },
     {
       "question": "Who broadcast the Super Bowl on TV?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "CBS broadcast the Super Bowl 50 on TV.",
       "gold": [
         "CBS",
@@ -901,6 +1001,7 @@
     },
     {
       "question": "Who headlined the halftime show for Super Bowl 50?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "Beyonc\u00e9 and Bruno Mars headed the halftime show for Super Bowl 50.",
       "gold": [
         "Coldplay",
@@ -910,6 +1011,7 @@
     },
     {
       "question": "Who were special guests for the Super Bowl halftime show?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "The special guests for the Super Bowl halftime show were Beyonc\u00e9 and Bruno Mars.",
       "gold": [
         "Beyonc\u00e9 and Bruno Mars",
@@ -919,6 +1021,7 @@
     },
     {
       "question": "Which Super Bowl halftime show did Beyonc\u00e9 headline?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "Beyonc\u00e9 led the halftime show at the Super Bowl 50 with Bruno Mars.",
       "gold": [
         "Super Bowl XLVII",
@@ -928,6 +1031,7 @@
     },
     {
       "question": "What was the cost for a half minute ad?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "The cost for a half-minute ad was $5 million.",
       "gold": [
         "$5 million",
@@ -937,6 +1041,7 @@
     },
     {
       "question": "Who lead the Super Bowl 50 halftime performance?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "Coldplay led the Super Bowl 50 halftime performance.",
       "gold": [
         "Coldplay",
@@ -946,6 +1051,7 @@
     },
     {
       "question": "What other two famous performers were part of the Super Bowl 50 halftime?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "The other two famous performers part of the Super Bowl 50 halftime were Beyonc\u00e9 and Bruno Mars.",
       "gold": [
         "Beyonc\u00e9 and Bruno Mars",
@@ -955,6 +1061,7 @@
     },
     {
       "question": "What performer lead the Super Bowl XLVIII halftime show?",
+      "context": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game. The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively. It was the third-most watched U.S. broadcast ever.",
       "pred": "Bruno Mars led the Super Bowl XLVIII halftime show.",
       "gold": [
         "Bruno Mars",
@@ -964,6 +1071,7 @@
     },
     {
       "question": "Who was the NFL Commissioner in early 2012?",
+      "context": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" and that it would be \"an important game for us as a league\".",
       "pred": "Roger Goodell was the NFL Commissioner in early 2012.",
       "gold": [
         "Roger Goodell",
@@ -973,6 +1081,7 @@
     },
     {
       "question": "Which Super Bowl did Roger Goodell speak about?",
+      "context": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" and that it would be \"an important game for us as a league\".",
       "pred": "The Super Bowl mentioned was the 50th Super Bowl.",
       "gold": [
         "the 50th Super Bowl",
@@ -982,6 +1091,7 @@
     },
     {
       "question": "In what year did Roger Goodell call Super Bowl 50 'an important game for us as a league'?",
+      "context": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" and that it would be \"an important game for us as a league\".",
       "pred": "In early 2012, Roger Goodell called Super Bowl 50 \"an important game for us as a league\".",
       "gold": [
         "2012",
@@ -991,6 +1101,7 @@
     },
     {
       "question": "Who is the Commissioner of the National Football League?",
+      "context": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" and that it would be \"an important game for us as a league\".",
       "pred": "The Commissioner of the National Football League is Roger Goodell.",
       "gold": [
         "Roger Goodell",
@@ -1000,6 +1111,7 @@
     },
     {
       "question": "When did he make the quoted remarks about Super Bowl 50?",
+      "context": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" and that it would be \"an important game for us as a league\".",
       "pred": "In early 2012.",
       "gold": [
         "early 2012",
@@ -1009,6 +1121,7 @@
     },
     {
       "question": "Who was the commissioner of the NFL in 2012? ",
+      "context": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" and that it would be \"an important game for us as a league\".",
       "pred": "Roger Goodell was the commissioner of the NFL in 2012.",
       "gold": [
         "Roger Goodell",
@@ -1018,6 +1131,7 @@
     },
     {
       "question": "Who if the commissioner of the NFL?",
+      "context": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" and that it would be \"an important game for us as a league\".",
       "pred": "The commissioner of the NFL is Roger Goodell.",
       "gold": [
         "Roger Goodell",
@@ -1027,6 +1141,7 @@
     },
     {
       "question": "Who is the commissioner of the NFL?",
+      "context": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" and that it would be \"an important game for us as a league\".",
       "pred": "The commissioner of the NFL is Roger Goodell.",
       "gold": [
         "Roger Goodell",
@@ -1036,6 +1151,7 @@
     },
     {
       "question": "In early 2012, Goodell said that Super Bowl 50 would be what?",
+      "context": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" and that it would be \"an important game for us as a league\".",
       "pred": "spectacular",
       "gold": [
         "spectacular",
@@ -1045,6 +1161,7 @@
     },
     {
       "question": "What one word did the NFL commissioner use to describe what Super Bowl 50 was intended to be?",
+      "context": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" and that it would be \"an important game for us as a league\".",
       "pred": "spectacular",
       "gold": [
         "spectacular",
@@ -1054,6 +1171,7 @@
     },
     {
       "question": "What year did Roger Goodell announce that Super Bowl 50 would be \"important\"?",
+      "context": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" and that it would be \"an important game for us as a league\".",
       "pred": "Roger Goodell announced that Super Bowl 50 would be \"important\" in early 2012.",
       "gold": [
         "2012",
@@ -1063,6 +1181,7 @@
     },
     {
       "question": "Which Louisiana venue was one of three considered for Super Bowl 50?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The Louisiana venue that was one of the three considered for Super Bowl 50 was the Sun Life Stadium in Miami.",
       "gold": [
         "New Orleans' Mercedes-Benz Superdome",
@@ -1072,6 +1191,7 @@
     },
     {
       "question": "Which Florida venue was one of three considered for Super Bowl 50?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The San Francisco Bay Area's Levi's Stadium was one of the three venues considered for Super Bowl 50.",
       "gold": [
         "Miami's Sun Life Stadium",
@@ -1081,6 +1201,7 @@
     },
     {
       "question": "Which California venue was one of three considered for Super Bowl 50?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The San Francisco Bay Area's Levi's Stadium was one of the three venues considered for Super Bowl 50.",
       "gold": [
         "San Francisco Bay Area's Levi's Stadium",
@@ -1090,6 +1211,7 @@
     },
     {
       "question": "What venue in Miami was a candidate for the site of Super Bowl 50?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "Miami's Sun Life Stadium was a candidate for the site of Super Bowl 50.",
       "gold": [
         "Sun Life Stadium",
@@ -1099,6 +1221,7 @@
     },
     {
       "question": "What site is located in the San Francisco Bay Area?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The San Francisco Bay Area's Levi's Stadium is located in the San Francisco Bay Area.",
       "gold": [
         "Levi's Stadium",
@@ -1108,6 +1231,7 @@
     },
     {
       "question": "What is the name of San Francisco's stadium when looked at as a possibility for Super Bowl 50?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The name of San Francisco's stadium when looked at as a possibility for Super Bowl 50 is Levi's Stadium.",
       "gold": [
         "Levi's Stadium",
@@ -1117,6 +1241,7 @@
     },
     {
       "question": "What was the name of New Orleans' superdome at the time that Super Bowl 50 took place?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The name of New Orleans' Superdome at the time of Super Bowl 50 was the Mercedes-Benz Superdome.",
       "gold": [
         "Mercedes-Benz Superdome",
@@ -1126,6 +1251,7 @@
     },
     {
       "question": "What was the given name of Miami's stadium at the time of Super Bowl 50?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The given name of Miami's stadium at the time of Super Bowl 50 was Sun Life Stadium.",
       "gold": [
         "Sun Life Stadium",
@@ -1135,6 +1261,7 @@
     },
     {
       "question": "What three stadiums did the NFL decide between for the game?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The NFL decided between the New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium for the game.",
       "gold": [
         "New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium",
@@ -1144,6 +1271,7 @@
     },
     {
       "question": "How many sites did the NFL narrow down Super Bowl 50's location to?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The NFL narrowed down the locations of Super Bowl 50 to New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "gold": [
         "three",
@@ -1153,6 +1281,7 @@
     },
     {
       "question": "One of the sites, Merceds-Benz Superdome, is located where?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "New Orleans",
       "gold": [
         "New Orleans",
@@ -1162,6 +1291,7 @@
     },
     {
       "question": "What is the name of the stadium in Miami that was considered?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The name of the stadium in Miami that was considered is Sun Life Stadium.",
       "gold": [
         "Sun Life Stadium",
@@ -1171,6 +1301,7 @@
     },
     {
       "question": "What was the third city that was considered?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The third city that was considered was San Francisco Bay Area's Levi's Stadium.",
       "gold": [
         "San Francisco",
@@ -1180,6 +1311,7 @@
     },
     {
       "question": "What is the name of the stadium in San Francisco Bay Area?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The name of the stadium in San Francisco Bay Area is Levi's Stadium.",
       "gold": [
         "Levi's Stadium.",
@@ -1189,6 +1321,7 @@
     },
     {
       "question": "What Florida stadium was considered for Super Bowl 50?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The San Francisco Bay Area's Levi's Stadium was considered for Super Bowl 50.",
       "gold": [
         "Sun Life Stadium",
@@ -1198,6 +1331,7 @@
     },
     {
       "question": "What New Orleans stadium was considered for Super Bowl 50?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "New Orleans' Mercedes-Benz Superdome was considered for Super Bowl 50.",
       "gold": [
         "Mercedes-Benz Superdome",
@@ -1207,6 +1341,7 @@
     },
     {
       "question": "What is the name of the stadium where Super Bowl 50 was played?",
+      "context": "The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.",
       "pred": "The name of the stadium where Super Bowl 50 was played is Levi's Stadium.",
       "gold": [
         "Levi's Stadium.",
@@ -1216,6 +1351,7 @@
     },
     {
       "question": "When were the two finalists for hosting Super Bowl 50 announced?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The two finalists for hosting Super Bowl 50 were Sun Life Stadium and Levi's Stadium.",
       "gold": [
         "October 16, 2012",
@@ -1225,6 +1361,7 @@
     },
     {
       "question": "How many times has the South Florida/Miami area hosted the Super Bowl?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The South Florida/Miami area has hosted the Super Bowl 10 times.",
       "gold": [
         "10",
@@ -1234,6 +1371,7 @@
     },
     {
       "question": "What was the most recent Super Bowl hosted in the South Florida/Miami area?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The most recent Super Bowl hosted in the South Florida/Miami area was Super Bowl XLIV in 2010.",
       "gold": [
         "Super Bowl XLIV",
@@ -1243,6 +1381,7 @@
     },
     {
       "question": "When was the most recent Super Bowl hosted in the South Florida/Miami area?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The most recent Super Bowl hosted in the South Florida/Miami area was Super Bowl XLIV in 2010.",
       "gold": [
         "2010",
@@ -1252,6 +1391,7 @@
     },
     {
       "question": "When did the San Francisco Bay area last host the Super Bowl?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The San Francisco Bay Area last hosted the Super Bowl in 1985.",
       "gold": [
         "1985",
@@ -1261,6 +1401,7 @@
     },
     {
       "question": "What was the other finalist besides Levi's Stadium?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The other finalist besides Levi's Stadium was Sun Life Stadium.",
       "gold": [
         "Sun Life Stadium",
@@ -1270,6 +1411,7 @@
     },
     {
       "question": "When were the finalists announced?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The finalists were announced on October 16, 2012.",
       "gold": [
         "October 16, 2012",
@@ -1279,6 +1421,7 @@
     },
     {
       "question": "In what venue did Super Bowl XIX take place?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The Super Bowl XVIII took place at Stanford Stadium in Stanford, California.",
       "gold": [
         "Stanford Stadium",
@@ -1288,6 +1431,7 @@
     },
     {
       "question": "On what date did the Florida legislature decide against the plan to renovate the Miami stadium?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "May 3, 2013",
       "gold": [
         "May 3, 2013",
@@ -1297,6 +1441,7 @@
     },
     {
       "question": "In what year was the Super Bowl last held in the Miami/South Florida area?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The Super Bowl last held in the Miami/South Florida area was in 2010.",
       "gold": [
         "2010",
@@ -1306,6 +1451,7 @@
     },
     {
       "question": "How many times has a Super Bowl taken place at Miami's Sun Life Stadium?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The passage states that the Miami bid depended on whether the stadium underwent renovations, but it does not provide specific numbers of Super Bowls held at this stadium. Therefore, based solely on the given information, we cannot determine how many times a Super Bowl has been held at Miami's Sun Life Stadium.",
       "gold": [
         "two",
@@ -1315,6 +1461,7 @@
     },
     {
       "question": "What was the last Super Bowl that took place at Sun Life Stadium in Miami? ",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The last Super Bowl that took place at Sun Life Stadium in Miami was Super Bowl XLIV in 2010.",
       "gold": [
         "Super Bowl XLIV",
@@ -1324,6 +1471,7 @@
     },
     {
       "question": "In 2012, how many stadiums were named as finalists for hosting Super Bowl 50 before the final stadium was chosen?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "In 2012, there were 10 stadiums named as finalists for hosting Super Bowl 50 before the final stadium was chosen.",
       "gold": [
         "two",
@@ -1333,6 +1481,7 @@
     },
     {
       "question": "What was the entity that stepped in and caused Miami's Sun Life Stadium to no longer be in the running to host Super Bowl 50?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The entity that stepped in and caused Miami's Sun Life Stadium to no longer be in the running to host Super Bowl 50 was the Florida legislature.",
       "gold": [
         "Florida legislature",
@@ -1342,6 +1491,7 @@
     },
     {
       "question": "Prior to this consideration, when did San Francisco last host a Super Bowl?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The San Francisco Bay Area last hosted a Super Bowl in 1985, which was Super Bowl XIX.",
       "gold": [
         "1985",
@@ -1351,6 +1501,7 @@
     },
     {
       "question": "What other city has hosted the Super Bowl ten times?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The South Florida/Miami area has hosted the Super Bowl ten times.",
       "gold": [
         "New Orleans",
@@ -1360,6 +1511,7 @@
     },
     {
       "question": "What date were the top two stadium choices for Super Bowl 50 announced?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The top two stadium choices for Super Bowl 50 were Sun Life Stadium and Levi's Stadium.",
       "gold": [
         "October 16, 2012",
@@ -1369,6 +1521,7 @@
     },
     {
       "question": "How many times prios has the Sun Life Stadium had Super Bowls?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The Sun Life Stadium has hosted Super Bowls 10 times.",
       "gold": [
         "10.",
@@ -1378,6 +1531,7 @@
     },
     {
       "question": "What city is tied with Miami for hosting the Super Bowl?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "New Orleans",
       "gold": [
         "New Orleans",
@@ -1387,6 +1541,7 @@
     },
     {
       "question": "When was the last time San Francisco hosted a Super Bowl?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The last time San Francisco hosted a Super Bowl was in 1985, when they played against the New England Patriots at Stanford Stadium.",
       "gold": [
         "1985",
@@ -1396,6 +1551,7 @@
     },
     {
       "question": "Who decided not to approve paying for renovations at Sun Life Stadium that the league wanted for them to do to host Super Bowl 50?",
+      "context": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Florida/Miami area has previously hosted the event 10 times (tied for most with New Orleans), with the most recent one being Super Bowl XLIV in 2010. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations. However, on May 3, 2013, the Florida legislature refused to approve the funding plan to pay for the renovations, dealing a significant blow to Miami's chances.",
       "pred": "The Florida legislature refused to approve the funding plan to pay for the renovations at Sun Life Stadium.",
       "gold": [
         "Florida legislature",
@@ -1405,6 +1561,7 @@
     },
     {
       "question": "When was Levi's Stadium awarded the right to host Super Bowl 50?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "Levi's Stadium was awarded the right to host Super Bowl 50 on May 21, 2013.",
       "gold": [
         "May 21, 2013",
@@ -1414,6 +1571,7 @@
     },
     {
       "question": "Who voted on the venue for Super Bowl 50?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "NFL owners voted on the venue for Super Bowl 50.",
       "gold": [
         "NFL owners",
@@ -1423,6 +1581,7 @@
     },
     {
       "question": "When did Lev's Stadium open?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "On May 21, 2013.",
       "gold": [
         "2014",
@@ -1432,6 +1591,7 @@
     },
     {
       "question": "How much did it cost to build Levi's Stadium?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "It cost $1.2 billion to build Levi's Stadium.",
       "gold": [
         "$1.2 billion",
@@ -1441,6 +1601,7 @@
     },
     {
       "question": "What California city last hosted the Super Bowl?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "The last city to host the Super Bowl was San Diego, which hosted it in 2003.",
       "gold": [
         "San Diego",
@@ -1450,6 +1611,7 @@
     },
     {
       "question": "Where did the spring meetings of the NFL owners take place?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "The spring meetings of the NFL owners took place in Boston.",
       "gold": [
         "Boston",
@@ -1459,6 +1621,7 @@
     },
     {
       "question": "On what date was Super Bowl 50 given to Levi's Stadium?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "On May 21, 2013, Super Bowl 50 was given to Levi's Stadium.",
       "gold": [
         "May 21, 2013",
@@ -1468,6 +1631,7 @@
     },
     {
       "question": "How much did it cost to build Levi's Stadium?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "It cost $1.2 billion to build Levi's Stadium.",
       "gold": [
         "$1.2 billion",
@@ -1477,6 +1641,7 @@
     },
     {
       "question": "Prior to Super Bowl 50, what was the last Super Bowl in California?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "Prior to Super Bowl 50, the last Super Bowl in California was Super Bowl XXXVII, which took place in San Diego in 2003.",
       "gold": [
         "Super Bowl XXXVII",
@@ -1486,6 +1651,7 @@
     },
     {
       "question": "In what city did the last Super Bowl in California occur?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "The last Super Bowl in California occurred in 2003 when it was held in San Diego.",
       "gold": [
         "San Diego",
@@ -1495,6 +1661,7 @@
     },
     {
       "question": "What year did Levi's Stadium become fully approved to host Super Bowl 50?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "Levi's Stadium became fully approved to host Super Bowl 50 on May 21, 2013.",
       "gold": [
         "2013",
@@ -1504,6 +1671,7 @@
     },
     {
       "question": "When did Levi's stadium open to the public? ",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "On May 21, 2013.",
       "gold": [
         "2014",
@@ -1513,6 +1681,7 @@
     },
     {
       "question": "How much did it cost to build the stadium where Super Bowl 50 was played?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "$1.2 billion",
       "gold": [
         "$1.2 billion",
@@ -1522,6 +1691,7 @@
     },
     {
       "question": "What year did a Super Bowl play in the bay area around San Francisco, prior to Super Bowl 50?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "The answer is 1985.",
       "gold": [
         "1985",
@@ -1531,6 +1701,7 @@
     },
     {
       "question": "Which Super Bowl was hosted in San Diego in 2003? ",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "The Super Bowl that was hosted in San Diego in 2003 was Super Bowl XXXVII.",
       "gold": [
         "Super Bowl XXXVII",
@@ -1540,6 +1711,7 @@
     },
     {
       "question": "When was San Francisco voted to be the location for Super Bowl 50?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "San Francisco was voted to be the location for Super Bowl 50 in 2013.",
       "gold": [
         "May 21, 2013",
@@ -1549,6 +1721,7 @@
     },
     {
       "question": "When did Levi's Stadium open?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "Levi's Stadium opened on May 21, 2013.",
       "gold": [
         "2014",
@@ -1558,6 +1731,7 @@
     },
     {
       "question": "When was the last Super Bowl in California?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "The last Super Bowl in California was in 2003.",
       "gold": [
         "2003",
@@ -1567,6 +1741,7 @@
     },
     {
       "question": "Where was the meeting held when the NFL owners voted on the location for Super Bowl 50?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "The meeting was held in Boston when the NFL owners voted on the location for Super Bowl 50.",
       "gold": [
         "Boston",
@@ -1576,6 +1751,7 @@
     },
     {
       "question": "When was Levi's Stadium picked for Super bowl 50?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "Levi's Stadium was picked for Super Bowl 50 on May 21, 2013.",
       "gold": [
         "May 21, 2013",
@@ -1585,6 +1761,7 @@
     },
     {
       "question": "When did Levi's Stadium open?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "Levi's Stadium opened on May 21, 2013.",
       "gold": [
         "2014.",
@@ -1594,6 +1771,7 @@
     },
     {
       "question": "How much did Levi's Stadium cost?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "Levi's Stadium cost $1.2 billion.",
       "gold": [
         "$1.2 billion",
@@ -1603,6 +1781,7 @@
     },
     {
       "question": "When was the last time California hosted a Super Bowl?",
+      "context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
       "pred": "The last time California hosted a Super Bowl was in 2003.",
       "gold": [
         "2003.",
@@ -1612,6 +1791,7 @@
     },
     {
       "question": "Who coached each Super Bowl 50 participant in their most recent Super Bowl appearance prior to Super Bowl 50?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "John Fox coached the Carolina Panthers' most recent Super Bowl appearance prior to Super Bowl 50.",
       "gold": [
         "John Fox",
@@ -1621,6 +1801,7 @@
     },
     {
       "question": "How many NFL teams have finished the regular season with one loss?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The Carolina Panthers finished the regular season with one loss.",
       "gold": [
         "ten",
@@ -1630,6 +1811,7 @@
     },
     {
       "question": "How many NFL teams have gone 15-1 in one season?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The passage states that the Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, which was their other appearance being Super Bowl XXXVIII. Therefore, it is accurate to say that the Broncos went 15-1 in one season twice (Super Bowl XLVIII and Super",
       "gold": [
         "six",
@@ -1639,6 +1821,7 @@
     },
     {
       "question": "Which team in Super Bowl 50 had a 15-1 record?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The Denver Broncos had a 15-1 record in Super Bowl 50.",
       "gold": [
         "Carolina Panthers",
@@ -1648,6 +1831,7 @@
     },
     {
       "question": "What was the last Super Bowl the Broncos participated in?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The Broncos made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII.",
       "gold": [
         "Super Bowl XLVIII",
@@ -1657,6 +1841,7 @@
     },
     {
       "question": "Who was the head coach of the Broncos in Super Bowl XLVIII?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "John Fox was the head coach of the Broncos in Super Bowl XLVIII.",
       "gold": [
         "John Fox",
@@ -1666,6 +1851,7 @@
     },
     {
       "question": "What was the number of times the Denver Broncos played in a Super Bowl by the time they reached Super Bowl 50?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The Denver Broncos made their second Super Bowl appearance in franchise history, reaching Super Bowl XXXVIII.",
       "gold": [
         "eight",
@@ -1675,6 +1861,7 @@
     },
     {
       "question": "How many NFL teams have had only one loss by the end of a regular season?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The passage states that for the third straight season, the number one seeds from both conferences met in the Super Bowl, resulting in only one loss among all teams.",
       "gold": [
         "ten",
@@ -1684,6 +1871,7 @@
     },
     {
       "question": "What was the first Super Bowl that the Carolina Panthers played in? ",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The Carolina Panthers first played in Super Bowl XLVIII.",
       "gold": [
         "Super Bowl XXXVIII",
@@ -1693,6 +1881,7 @@
     },
     {
       "question": "How many teams can boast a 15\u20131 regular season record?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The passage states that \"one of only six teams to have acquired a 15-1 record.\" Therefore, the answer is six teams.",
       "gold": [
         "six",
@@ -1702,6 +1891,7 @@
     },
     {
       "question": "What seed was the Carolina Panthers?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The Carolina Panthers were one of only ten teams to have completed a regular season with only one loss.",
       "gold": [
         "number one",
@@ -1711,6 +1901,7 @@
     },
     {
       "question": "What seed was the Denver Broncos?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The Denver Broncos were one of four teams to have made eight appearances in the Super Bowl.",
       "gold": [
         "number one",
@@ -1720,6 +1911,7 @@
     },
     {
       "question": "Prior to Super Bowl 50, when were the Broncos last there?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The Broncos last appeared in Super Bowl 50 before Super Bowl 38.",
       "gold": [
         "Super Bowl XLVIII",
@@ -1729,6 +1921,7 @@
     },
     {
       "question": "Prior to Super Bowl 50, when were the Carolina Panthers last there?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "Prior to Super Bowl 50, the Carolina Panthers last played in Super Bowl 48.",
       "gold": [
         "Super Bowl XXXVIII.",
@@ -1738,6 +1931,7 @@
     },
     {
       "question": "How many teams have had a 15-1 record for the regular season?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The passage states that \"one of only six teams to have acquired a 15\u20131 record.\"",
       "gold": [
         "six",
@@ -1747,6 +1941,7 @@
     },
     {
       "question": "How many games did the Panthers lose in the regular season before Super Bowl 50?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The Panthers lost 1 game in the regular season before Super Bowl 50.",
       "gold": [
         "one",
@@ -1756,6 +1951,7 @@
     },
     {
       "question": "How many teams up to Super Bowl 50 have been to the championship game eight times?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "The passage states that the Panthers made their second Super Bowl appearance in franchise history, making it their eighth appearance in the Super Bowl.",
       "gold": [
         "four",
@@ -1765,6 +1961,7 @@
     },
     {
       "question": "Before Super Bowl 50, what was the coach's name that coached both teams for their last Super Bowl appearances?",
+      "context": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers became one of only ten teams to have completed a regular season with only one loss, and one of only six teams to have acquired a 15\u20131 record, while the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl. The Broncos made their second Super Bowl appearance in three years, having reached Super Bowl XLVIII, while the Panthers made their second Super Bowl appearance in franchise history, their other appearance being Super Bowl XXXVIII. Coincidentally, both teams were coached by John Fox in their last Super Bowl appearance prior to Super Bowl 50.",
       "pred": "John Fox",
       "gold": [
         "John Fox",
@@ -1774,6 +1971,7 @@
     },
     {
       "question": "Whic Carolina Panthers running back was waived?",
+      "context": "Despite waiving longtime running back DeAngelo Williams and losing top wide receiver Kelvin Benjamin to a torn ACL in the preseason, the Carolina Panthers had their best regular season in franchise history, becoming the seventh team to win at least 15 regular season games since the league expanded to a 16-game schedule in 1978. Carolina started the season 14\u20130, not only setting franchise records for the best start and the longest single-season winning streak, but also posting the best start to a season by an NFC team in NFL history, breaking the 13\u20130 record previously shared with the 2009 New Orleans Saints and the 2011 Green Bay Packers. With their NFC-best 15\u20131 regular season record, the Panthers clinched home-field advantage throughout the NFC playoffs for the first time in franchise history. Ten players were selected to the Pro Bowl (the most in franchise history) along with eight All-Pro selections.",
       "pred": "DeAngelo Williams was waived.",
       "gold": [
         "DeAngelo Williams",
@@ -1783,6 +1981,7 @@
     },
     {
       "question": "Which Carolina Panthers wide receiver suffered a torn ACL before the season began?",
+      "context": "Despite waiving longtime running back DeAngelo Williams and losing top wide receiver Kelvin Benjamin to a torn ACL in the preseason, the Carolina Panthers had their best regular season in franchise history, becoming the seventh team to win at least 15 regular season games since the league expanded to a 16-game schedule in 1978. Carolina started the season 14\u20130, not only setting franchise records for the best start and the longest single-season winning streak, but also posting the best start to a season by an NFC team in NFL history, breaking the 13\u20130 record previously shared with the 2009 New Orleans Saints and the 2011 Green Bay Packers. With their NFC-best 15\u20131 regular season record, the Panthers clinched home-field advantage throughout the NFC playoffs for the first time in franchise history. Ten players were selected to the Pro Bowl (the most in franchise history) along with eight All-Pro selections.",
       "pred": "DeAngelo Williams suffered a torn ACL before the season began.",
       "gold": [
         "Kelvin Benjamin",
@@ -1792,6 +1991,7 @@
     },
     {
       "question": "How many teams have won 15 regular season games since the 16-game schedule was adopted?",
+      "context": "Despite waiving longtime running back DeAngelo Williams and losing top wide receiver Kelvin Benjamin to a torn ACL in the preseason, the Carolina Panthers had their best regular season in franchise history, becoming the seventh team to win at least 15 regular season games since the league expanded to a 16-game schedule in 1978. Carolina started the season 14\u20130, not only setting franchise records for the best start and the longest single-season winning streak, but also posting the best start to a season by an NFC team in NFL history, breaking the 13\u20130 record previously shared with the 2009 New Orleans Saints and the 2011 Green Bay Packers. With their NFC-best 15\u20131 regular season record, the Panthers clinched home-field advantage throughout the NFC playoffs for the first time in franchise history. Ten players were selected to the Pro Bowl (the most in franchise history) along with eight All-Pro selections.",
       "pred": "Seven teams have won 15 regular season games since the 16-game schedule was adopted.",
       "gold": [
         "7",
@@ -1801,6 +2001,7 @@
     },
     {
       "question": "In what year did the NFL switch to a 16-game regular season?",
+      "context": "Despite waiving longtime running back DeAngelo Williams and losing top wide receiver Kelvin Benjamin to a torn ACL in the preseason, the Carolina Panthers had their best regular season in franchise history, becoming the seventh team to win at least 15 regular season games since the league expanded to a 16-game schedule in 1978. Carolina started the season 14\u20130, not only setting franchise records for the best start and the longest single-season winning streak, but also posting the best start to a season by an NFC team in NFL history, breaking the 13\u20130 record previously shared with the 2009 New Orleans Saints and the 2011 Green Bay Packers. With their NFC-best 15\u20131 regular season record, the Panthers clinched home-field advantage throughout the NFC playoffs for the first time in franchise history. Ten players were selected to the Pro Bowl (the most in franchise history) along with eight All-Pro selections.",
       "pred": "The NFL switched to a 16-game regular season in 1978.",
       "gold": [
         "1978",

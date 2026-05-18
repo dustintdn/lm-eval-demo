@@ -47,11 +47,17 @@ def run(model, tokenizer, device, n_samples: int = 200) -> dict:
     n = len(samples)
     tps_overall = total_tokens / total_time_s if total_time_s > 0 else 0.0
 
+    faithful = sum(
+        1 for i in range(n)
+        if predictions[i]["prediction_text"].lower() in samples[i]["context"].lower()
+    )
+
     return {
         "task": "rag_qa",
         "n_samples": n,
         "exact_match": round(squad_scores["exact_match"], 4),
         "f1": round(squad_scores["f1"], 4),
+        "faithfulness_rate": round(faithful / n, 4),
         "tokens_per_sec": round(tps_overall, 2),
         "mean_ttft_ms": round(total_ttft_s / n * 1000, 1),
         "mean_output_tokens": round(total_tokens / n, 1),
@@ -59,9 +65,10 @@ def run(model, tokenizer, device, n_samples: int = 200) -> dict:
         "raw": [
             {
                 "question": samples[i]["question"],
+                "context": samples[i]["context"],
                 "pred": predictions[i]["prediction_text"],
                 "gold": references[i]["answers"]["text"],
             }
-            for i in range(len(samples))
+            for i in range(n)
         ],
     }

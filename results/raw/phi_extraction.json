@@ -4,10 +4,11 @@
   "f1": 0.5614,
   "precision": 0.5556,
   "recall": 0.5719,
-  "tokens_per_sec": 6.08,
-  "mean_ttft_ms": 516.7,
+  "json_parse_rate": 0.0,
+  "tokens_per_sec": 7.66,
+  "mean_ttft_ms": 402.2,
   "mean_output_tokens": 84.2,
-  "peak_memory_gb": 0.319,
+  "peak_memory_gb": 0.423,
   "raw": [
     {
       "id": 1,
@@ -26,6 +27,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Software Engineer\",\n  \"company\": \"Stripe\",\n  \"location\": \"San Francisco\",\n  \"salary_range\": \"$140,000 - $180,000/year\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -54,6 +56,7 @@
         "years_experience_required": "5+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Data Scientist\",\n  \"company\": \"Acme Analytics\",\n  \"location\": \"Austin, TX\",\n  \"salary_range\": \"120000-150000\",\n  \"years_experience_required\": \"5+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -82,6 +85,7 @@
         "years_experience_required": "4-6 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Product Manager\",\n  \"company\": \"Fully Distributed Team\",\n  \"location\": \"Remote - anywhere in the US\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"4-6 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.25,
       "recall": 0.3333333333333333,
       "f1": 0.28571428571428575,
@@ -110,6 +114,7 @@
         "years_experience_required": "2+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"DevOps Engineer\",\n  \"company\": \"CloudNine Inc.\",\n  \"location\": \"Seattle, WA (hybrid)\",\n  \"salary_range\": \"$110,000 \u2013 $135,000\",\n  \"years_experience_required\": \"2+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -138,6 +143,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Frontend Developer\",\n  \"company\": \"fast-moving startup\",\n  \"location\": \"New York City\",\n  \"salary_range\": \"$85/hr\",\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 1.0,
       "f1": 0.8571428571428571,
@@ -166,6 +172,7 @@
         "years_experience_required": "1-3"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Quantitative Analyst\",\n  \"company\": \"Jane Street\",\n  \"location\": \"New York\",\n  \"salary_range\": \"200000 to 400000\",\n  \"years_experience_required\": \"1-3\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -194,6 +201,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Technical Recruiter\",\n  \"company\": \"Beacon HR\",\n  \"location\": \"Chicago\",\n  \"salary_range\": \"Starts at $55,000\",\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.6,
       "f1": 0.6666666666666665,
@@ -222,6 +230,7 @@
         "years_experience_required": "3 years in a customer-facing SaaS role"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Customer Success Manager\",\n  \"company\": \"FullContact\",\n  \"location\": \"Denver\",\n  \"salary_range\": \"$70,000 base + commission\",\n  \"years_experience_required\": \"3 years in a customer-facing SaaS role\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -250,6 +259,7 @@
         "years_experience_required": 6
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Machine Learning Engineer\",\n  \"company\": \"NVIDIA\",\n  \"location\": \"Santa Clara, CA\",\n  \"salary_range\": null,\n  \"years_experience_required\": 6\n}\n```",
+      "json_parse": false,
       "precision": 1.0,
       "recall": 1.0,
       "f1": 1.0,
@@ -278,6 +288,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Marketing Coordinator\",\n  \"company\": null,\n  \"location\": \"Portland, Oregon\",\n  \"salary_range\": \"$20/hour\",\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 0.6666666666666666,
       "recall": 0.5,
       "f1": 0.5714285714285715,
@@ -306,6 +317,7 @@
         "years_experience_required": "7+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Senior Backend Engineer\",\n  \"company\": \"Figma\",\n  \"location\": \"San Francisco, CA\",\n  \"salary_range\": \"$170,000 \u2013 $220,000\",\n  \"years_experience_required\": \"7+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -334,6 +346,7 @@
         "years_experience_required": "4 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Data Engineer\",\n  \"company\": \"DataFlow Systems\",\n  \"location\": \"Remote (must overlap with EST)\",\n  \"salary_range\": \"$105,000 to $125,000\",\n  \"years_experience_required\": \"4 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -362,6 +375,7 @@
         "years_experience_required": "5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"UX Designer\",\n  \"company\": \"Apple\",\n  \"location\": \"Cupertino\",\n  \"salary_range\": \"$130,000 \u2013 $160,000 per year\",\n  \"years_experience_required\": \"5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -390,6 +404,7 @@
         "years_experience_required": "2 years post-PhD or 5 years with a master's degree"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Biostatistician\",\n  \"company\": \"Boston Medical Center\",\n  \"location\": \"Boston, MA\",\n  \"salary_range\": \"null\",\n  \"years_experience_required\": \"2 years post-PhD or 5 years with a master's degree\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.75,
       "f1": 0.6666666666666665,
@@ -418,6 +433,7 @@
         "years_experience_required": "entry-level"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"IT Support Specialist\",\n  \"company\": null,\n  \"location\": \"Dallas, Texas\",\n  \"salary_range\": \"$18 \u2013 $22/hr\",\n  \"years_experience_required\": \"entry-level\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -446,6 +462,7 @@
         "years_experience_required": "4+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Embedded Systems Engineer\",\n  \"company\": \"Rivian\",\n  \"location\": \"Normal, IL\",\n  \"salary_range\": \"$115k \u2013 $145k\",\n  \"years_experience_required\": \"4+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -474,6 +491,7 @@
         "years_experience_required": "6-10 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Legal Counsel\",\n  \"company\": \"A Series B fintech company\",\n  \"location\": \"Remote (US only)\",\n  \"salary_range\": \"Between $150,000 and $190,000\",\n  \"years_experience_required\": \"6-10 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -502,6 +520,7 @@
         "years_experience_required": "1-2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Content Writer\",\n  \"company\": null,\n  \"location\": \"Miami, FL\",\n  \"salary_range\": \"$50,000/year\",\n  \"years_experience_required\": \"1-2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.75,
       "f1": 0.75,
@@ -533,6 +552,7 @@
         "years_experience_required": "8+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Staff Security Engineer\",\n  \"company\": \"CrowdStrike\",\n  \"location\": [\"Austin, TX\", \"Remote\"],\n  \"salary_range\": \"$175,000 \u2013 $210,000\",\n  \"years_experience_required\": \"8+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -561,6 +581,7 @@
         "years_experience_required": "at least 5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Operations Manager\",\n  \"company\": \"GreenPath Logistics\",\n  \"location\": \"Memphis, TN\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"at least 5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.75,
       "f1": 0.75,
@@ -589,6 +610,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Registered Nurse \u2013 ICU\",\n  \"company\": \"Cedars-Sinai Medical Center\",\n  \"location\": \"Los Angeles, CA\",\n  \"salary_range\": \"$95,000 \u2013 $115,000/year\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -617,6 +639,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Medical Billing Specialist\",\n  \"company\": null,\n  \"location\": \"Phoenix, AZ\",\n  \"salary_range\": \"$17/hr to start with raises at 90 days\",\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 0.6666666666666666,
       "recall": 0.5,
       "f1": 0.5714285714285715,
@@ -645,6 +668,7 @@
         "years_experience_required": 3
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Clinical Research Coordinator\",\n  \"company\": \"Mayo Clinic\",\n  \"location\": \"Rochester MN\",\n  \"salary_range\": \"competitive and commensurate with experience\",\n  \"years_experience_required\": 3\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.75,
       "f1": 0.6666666666666665,
@@ -673,6 +697,7 @@
         "years_experience_required": "at least 1 year"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Pharmacy Technician\",\n  \"company\": null,\n  \"location\": \"Atlanta, GA\",\n  \"salary_range\": \"$16 \u2013 $20/hr\",\n  \"years_experience_required\": \"at least 1 year\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -701,6 +726,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Physical Therapist\",\n  \"company\": \"Apex Rehab Group\",\n  \"location\": \"Boston, MA\",\n  \"salary_range\": \"Starting salary $72,000/year with annual performance bonuses\",\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.6,
       "f1": 0.6666666666666665,
@@ -729,6 +755,7 @@
         "years_experience_required": "3-5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Healthcare Data Analyst\",\n  \"company\": \"Humana\",\n  \"location\": \"Remote\",\n  \"salary_range\": \"$80,000 \u2013 $95,000\",\n  \"years_experience_required\": \"3-5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -757,6 +784,7 @@
         "years_experience_required": "General surgery residency, board-eligible or board-certified"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Attending Surgeon (General Surgery)\",\n  \"company\": \"University of Michigan Health\",\n  \"location\": \"Ann Arbor, MI\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"General surgery residency, board-eligible or board-certified\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.6666666666666666,
       "f1": 0.5714285714285715,
@@ -785,6 +813,7 @@
         "years_experience_required": "No prior medical office experience required but preferred"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Medical Receptionist\",\n  \"company\": null,\n  \"location\": \"San Diego\",\n  \"salary_range\": \"$18/hr\",\n  \"years_experience_required\": \"No prior medical office experience required but preferred\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.6666666666666666,
       "f1": 0.5714285714285715,
@@ -813,6 +842,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Diagnostic Radiologist\",\n  \"company\": \"RadNet\",\n  \"location\": \"multiple locations across California\",\n  \"salary_range\": \"$400,000 \u2013 $550,000/year\",\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -841,6 +871,7 @@
         "years_experience_required": "2+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Healthcare IT Specialist\",\n  \"company\": \"Memorial Hermann Health System\",\n  \"location\": \"Houston, TX\",\n  \"salary_range\": \"$65,000 \u2013 $78,000\",\n  \"years_experience_required\": \"2+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -869,6 +900,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Financial Analyst\",\n  \"company\": \"Goldman Sachs\",\n  \"location\": \"New York\",\n  \"salary_range\": \"Starting salary $110,000 plus year-end bonus\",\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.6,
       "f1": 0.6666666666666665,
@@ -897,6 +929,7 @@
         "years_experience_required": "3-5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Credit Risk Analyst\",\n  \"company\": null,\n  \"location\": \"Charlotte, NC\",\n  \"salary_range\": \"$75,000 to $90,000\",\n  \"years_experience_required\": \"3-5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -925,6 +958,7 @@
         "years_experience_required": "5+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Wealth Management Advisor\",\n  \"company\": \"Fidelity Investments\",\n  \"location\": \"Boston, MA\",\n  \"salary_range\": \"$150,000 \u2013 $250,000\",\n  \"years_experience_required\": \"5+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -953,6 +987,7 @@
         "years_experience_required": "4"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Compliance Officer\",\n  \"company\": null,\n  \"location\": \"Remote\",\n  \"salary_range\": \"$100,000 \u2013 $125,000\",\n  \"years_experience_required\": \"4\"\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.75,
       "f1": 0.75,
@@ -981,6 +1016,7 @@
         "years_experience_required": "Recent graduates with Exam P or FM"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Entry-Level Actuarial Analyst\",\n  \"company\": \"Progressive Insurance\",\n  \"location\": \"Mayfield Village OH\",\n  \"salary_range\": \"$65,000 \u2013 $75,000\",\n  \"years_experience_required\": \"Recent graduates with Exam P or FM\"\n}\n```",
+      "json_parse": false,
       "precision": 0.2,
       "recall": 0.2,
       "f1": 0.20000000000000004,
@@ -1009,6 +1045,7 @@
         "years_experience_required": 6
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Treasury Manager\",\n  \"company\": \"Target Corporation\",\n  \"location\": \"Minneapolis, MN\",\n  \"salary_range\": null,\n  \"years_experience_required\": 6\n}\n```",
+      "json_parse": false,
       "precision": 1.0,
       "recall": 1.0,
       "f1": 1.0,
@@ -1041,6 +1078,7 @@
         "years_experience_required": "2+ years origination experience"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Mortgage Loan Officer\",\n  \"company\": \"Wells Fargo\",\n  \"location\": [\"Phoenix AZ\", \"Las Vegas NV\", \"Salt Lake City UT\"],\n  \"salary_range\": \"$90,000 \u2013 $130,000/year\",\n  \"years_experience_required\": \"2+ years origination experience\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -1069,6 +1107,7 @@
         "years_experience_required": "7 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Portfolio Manager\",\n  \"company\": \"hedge fund based in Stamford, CT\",\n  \"location\": \"Stamford, CT\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"7 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.6666666666666666,
       "f1": 0.5714285714285715,
@@ -1097,6 +1136,7 @@
         "years_experience_required": "3"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Commercial Lines Underwriter\",\n  \"company\": \"Travelers Insurance\",\n  \"location\": \"Hartford, CT\",\n  \"salary_range\": \"$70,000 \u2013 $85,000\",\n  \"years_experience_required\": \"3\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -1125,6 +1165,7 @@
         "years_experience_required": "MBA or 2+ years of analyst experience"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Investment Banking Associate\",\n  \"company\": null,\n  \"location\": \"New York\",\n  \"salary_range\": \"$175,000 base + $100,000+ bonus\",\n  \"years_experience_required\": \"MBA or 2+ years of analyst experience\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -1153,6 +1194,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"High School Mathematics Teacher\",\n  \"company\": \"Chicago Public Schools\",\n  \"location\": \"Chicago, IL\",\n  \"salary_range\": \"$58,000/year\",\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 1.0,
       "recall": 0.8,
       "f1": 0.888888888888889,
@@ -1181,6 +1223,7 @@
         "years_experience_required": "PhD required"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Assistant Professor of Computer Science\",\n  \"company\": \"University of Washington, Seattle\",\n  \"location\": \"Seattle\",\n  \"salary_range\": \"null\",\n  \"years_experience_required\": \"PhD required\"\n}\n```",
+      "json_parse": false,
       "precision": 0.2,
       "recall": 0.3333333333333333,
       "f1": 0.25,
@@ -1209,6 +1252,7 @@
         "years_experience_required": "3"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Instructional Designer\",\n  \"company\": \"Coursera\",\n  \"location\": \"Remote\",\n  \"salary_range\": \"$90,000 \u2013 $110,000\",\n  \"years_experience_required\": \"3\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -1237,6 +1281,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"School Counselor\",\n  \"company\": \"private K-8 school in Scottsdale, AZ\",\n  \"location\": \"Scottsdale, AZ\",\n  \"salary_range\": \"$52,000 \u2013 $62,000\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -1265,6 +1310,7 @@
         "years_experience_required": "4+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Curriculum Developer\",\n  \"company\": \"Khan Academy\",\n  \"location\": \"Remote (US)\",\n  \"salary_range\": \"$80,000 \u2013 $100,000\",\n  \"years_experience_required\": \"4+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -1293,6 +1339,7 @@
         "years_experience_required": "Experience preferred but student teachers encouraged to apply"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Special Education Teacher\",\n  \"company\": \"Los Angeles Unified School District\",\n  \"location\": \"Los Angeles, CA\",\n  \"salary_range\": \"Starting salary $64,000 with step increases\",\n  \"years_experience_required\": \"Experience preferred but student teachers encouraged to apply\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -1321,6 +1368,7 @@
         "years_experience_required": "1 year"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"ESL Instructor\",\n  \"company\": null,\n  \"location\": \"Philadelphia, PA\",\n  \"salary_range\": \"$30/hr\",\n  \"years_experience_required\": \"1 year\"\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.75,
       "f1": 0.75,
@@ -1349,6 +1397,7 @@
         "years_experience_required": "10 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Dean of Students\",\n  \"company\": \"Miami University\",\n  \"location\": \"Oxford, OH\",\n  \"salary_range\": \"commensurate with qualifications\",\n  \"years_experience_required\": \"10 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.75,
       "f1": 0.6666666666666665,
@@ -1377,6 +1426,7 @@
         "years_experience_required": "2-4 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Education Data Analyst\",\n  \"company\": \"NWEA\",\n  \"location\": \"Remote\",\n  \"salary_range\": \"$70,000 \u2013 $85,000\",\n  \"years_experience_required\": \"2-4 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -1405,6 +1455,7 @@
         "years_experience_required": "null"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Teaching Assistant (Graduate)\",\n  \"company\": \"Stanford University\",\n  \"location\": \"Stanford, CA\",\n  \"salary_range\": \"null\",\n  \"years_experience_required\": \"null\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -1433,6 +1484,7 @@
         "years_experience_required": "3+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Store Manager\",\n  \"company\": \"Trader Joe's\",\n  \"location\": \"Boulder, CO\",\n  \"salary_range\": \"$75,000 \u2013 $90,000 plus bonus and profit sharing\",\n  \"years_experience_required\": \"3+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -1461,6 +1513,7 @@
         "years_experience_required": "4 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"E-commerce Manager\",\n  \"company\": \"DTC beauty brand\",\n  \"location\": \"Remote\",\n  \"salary_range\": \"$85,000 \u2013 $100,000\",\n  \"years_experience_required\": \"4 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -1489,6 +1542,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Merchandise Buyer\",\n  \"company\": \"Nordstrom\",\n  \"location\": \"Seattle, WA\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.75,
       "f1": 0.75,
@@ -1517,6 +1571,7 @@
         "years_experience_required": "5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Category Manager\",\n  \"company\": \"Amazon\",\n  \"location\": \"Seattle, WA\",\n  \"salary_range\": \"$130,000 \u2013 $165,000\",\n  \"years_experience_required\": \"5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -1545,6 +1600,7 @@
         "years_experience_required": "Entry-level role \u2014 previous LP experience helpful but not required"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Loss Prevention Specialist\",\n  \"company\": \"undisclosed\",\n  \"location\": \"Las Vegas, NV\",\n  \"salary_range\": \"$20/hr\",\n  \"years_experience_required\": \"Entry-level role \u2014 previous LP experience helpful but not required\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.75,
       "f1": 0.6666666666666665,
@@ -1573,6 +1629,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Visual Merchandiser\",\n  \"company\": \"Anthropologie\",\n  \"location\": \"New York, NY\",\n  \"salary_range\": \"$22 \u2013 $26/hr\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -1601,6 +1658,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Retail Data Analyst\",\n  \"company\": \"Target\",\n  \"location\": \"Minneapolis, MN\",\n  \"salary_range\": \"$85,000 \u2013 $105,000\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -1629,6 +1687,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Fulfillment Center Supervisor\",\n  \"company\": \"Chewy\",\n  \"location\": \"Sparks, NV\",\n  \"salary_range\": \"$60,000/year\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -1657,6 +1716,7 @@
         "years_experience_required": "4+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Customer Experience Manager\",\n  \"company\": \"Subscription box company\",\n  \"location\": \"Austin, TX\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"4+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.6666666666666666,
       "f1": 0.5714285714285715,
@@ -1685,6 +1745,7 @@
         "years_experience_required": "2-3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Supply Chain Analyst\",\n  \"company\": \"Walmart\",\n  \"location\": \"Bentonville, AR\",\n  \"salary_range\": \"$65,000 \u2013 $80,000\",\n  \"years_experience_required\": \"2-3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -1713,6 +1774,7 @@
         "years_experience_required": "3+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Manufacturing Engineer\",\n  \"company\": \"Boeing Commercial Airplanes\",\n  \"location\": \"Everett, WA\",\n  \"salary_range\": \"$90,000 \u2013 $115,000\",\n  \"years_experience_required\": \"3+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -1741,6 +1803,7 @@
         "years_experience_required": "1 year"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Quality Control Inspector\",\n  \"company\": \"Automotive parts supplier (name confidential)\",\n  \"location\": \"Detroit, MI\",\n  \"salary_range\": \"$19 \u2013 $23/hr\",\n  \"years_experience_required\": \"1 year\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -1769,6 +1832,7 @@
         "years_experience_required": "2-5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Process Engineer\",\n  \"company\": \"Procter & Gamble\",\n  \"location\": \"Cincinnati, OH\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"2-5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.75,
       "f1": 0.75,
@@ -1797,6 +1861,7 @@
         "years_experience_required": "10+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Plant Manager\",\n  \"company\": \"A Tier 1 automotive supplier\",\n  \"location\": \"Greenville, SC\",\n  \"salary_range\": \"$130,000 \u2013 $160,000 plus bonus\",\n  \"years_experience_required\": \"10+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -1825,6 +1890,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"CNC Machinist\",\n  \"company\": \"Lockheed Martin Aeronautics\",\n  \"location\": \"Fort Worth, TX\",\n  \"salary_range\": \"$28 \u2013 $34/hr\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -1853,6 +1919,7 @@
         "years_experience_required": "2 years of EHS experience preferred"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Safety Coordinator\",\n  \"company\": \"food processing plant\",\n  \"location\": \"Fresno, CA\",\n  \"salary_range\": \"$55,000 \u2013 $68,000/year\",\n  \"years_experience_required\": \"2 years of EHS experience preferred\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -1881,6 +1948,7 @@
         "years_experience_required": "3+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Production Supervisor \u2014 Night Shift\",\n  \"company\": \"General Mills\",\n  \"location\": \"Buffalo, NY\",\n  \"salary_range\": \"$75,000 base salary plus shift differential\",\n  \"years_experience_required\": \"3+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -1909,6 +1977,7 @@
         "years_experience_required": "5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Maintenance Technician\",\n  \"company\": \"Chemical manufacturer (confidential)\",\n  \"location\": \"Albuquerque, NM\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.6666666666666666,
       "f1": 0.5714285714285715,
@@ -1937,6 +2006,7 @@
         "years_experience_required": "4"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Industrial Designer\",\n  \"company\": \"Dyson\",\n  \"location\": \"Chicago, IL\",\n  \"salary_range\": \"$95,000 \u2013 $120,000\",\n  \"years_experience_required\": \"4\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -1965,6 +2035,7 @@
         "years_experience_required": "7+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Supply Chain Manager\",\n  \"company\": \"Honeywell Performance Materials\",\n  \"location\": \"Phoenix, AZ\",\n  \"salary_range\": \"commensurate with experience\",\n  \"years_experience_required\": \"7+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -1993,6 +2064,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Policy Analyst\",\n  \"company\": \"U.S. Department of Energy\",\n  \"location\": \"Washington, DC\",\n  \"salary_range\": \"$89,834 \u2013 $116,788/year\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -2021,6 +2093,7 @@
         "years_experience_required": "3"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Grant Writer\",\n  \"company\": \"Habitat for Humanity International\",\n  \"location\": \"Remote\",\n  \"salary_range\": \"$60,000 \u2013 $72,000\",\n  \"years_experience_required\": \"3\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -2049,6 +2122,7 @@
         "years_experience_required": "4 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Urban Planner\",\n  \"company\": \"City of San Jose\",\n  \"location\": \"San Jose, CA\",\n  \"salary_range\": \"$95,000 \u2013 $115,000\",\n  \"years_experience_required\": \"4 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -2077,6 +2151,7 @@
         "years_experience_required": "2 years post-licensure"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Licensed Clinical Social Worker\",\n  \"company\": \"nonprofit mental health organization\",\n  \"location\": \"Minneapolis, MN\",\n  \"salary_range\": \"$58,000 \u2013 $68,000\",\n  \"years_experience_required\": \"2 years post-licensure\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -2105,6 +2180,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Environmental Scientist\",\n  \"company\": \"US EPA\",\n  \"location\": \"San Francisco, CA\",\n  \"salary_range\": \"$80,000 \u2013 $104,000\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -2133,6 +2209,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Program Coordinator\",\n  \"company\": \"AmeriCorps\",\n  \"location\": \"Remote (occasional travel)\",\n  \"salary_range\": \"$50,000 \u2013 $60,000\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -2161,6 +2238,7 @@
         "years_experience_required": "5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Public Health Officer\",\n  \"company\": \"LA County Public Health\",\n  \"location\": \"Los Angeles, CA\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -2189,6 +2267,7 @@
         "years_experience_required": "5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Budget Analyst\",\n  \"company\": \"Department of Veterans Affairs\",\n  \"location\": \"Washington, DC\",\n  \"salary_range\": \"$112,015 \u2013 $145,617/year\",\n  \"years_experience_required\": \"5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -2217,6 +2296,7 @@
         "years_experience_required": "1 year of community organizing experience preferred"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Community Outreach Coordinator\",\n  \"company\": null,\n  \"location\": \"Denver, CO\",\n  \"salary_range\": \"$42,000 \u2013 $48,000/year\",\n  \"years_experience_required\": \"1 year of community organizing experience preferred\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -2245,6 +2325,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Foreign Service Officer\",\n  \"company\": \"U.S. Department of State\",\n  \"location\": \"Washington, DC (with overseas postings)\",\n  \"salary_range\": \"$57,510/year\",\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.6,
       "f1": 0.6666666666666665,
@@ -2273,6 +2354,7 @@
         "years_experience_required": "5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Digital Marketing Manager\",\n  \"company\": \"HubSpot\",\n  \"location\": \"Remote (US)\",\n  \"salary_range\": \"$110,000 \u2013 $135,000\",\n  \"years_experience_required\": \"5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -2301,6 +2383,7 @@
         "years_experience_required": 4
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Brand Strategist\",\n  \"company\": \"CPG company in New York\",\n  \"location\": \"New York\",\n  \"salary_range\": null,\n  \"years_experience_required\": 4\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 1.0,
       "f1": 0.8571428571428571,
@@ -2332,6 +2415,7 @@
         "years_experience_required": "3"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"SEO Specialist\",\n  \"company\": \"Moz\",\n  \"location\": [\"Seattle, WA\", \"Remote\"],\n  \"salary_range\": \"$75,000 \u2013 $90,000\",\n  \"years_experience_required\": \"3\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -2360,6 +2444,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Social Media Manager\",\n  \"company\": null,\n  \"location\": \"Los Angeles, CA\",\n  \"salary_range\": \"$55,000 \u2013 $65,000\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -2388,6 +2473,7 @@
         "years_experience_required": "3-5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Copywriter\",\n  \"company\": \"Wieden+Kennedy\",\n  \"location\": \"Portland, OR\",\n  \"salary_range\": \"Competitive; package disclosed during the offer stage\",\n  \"years_experience_required\": \"3-5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.75,
       "f1": 0.6666666666666665,
@@ -2416,6 +2502,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Media Planner\",\n  \"company\": \"GroupM\",\n  \"location\": \"New York, NY\",\n  \"salary_range\": \"$60,000 \u2013 $75,000\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -2444,6 +2531,7 @@
         "years_experience_required": "8+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Creative Director\",\n  \"company\": null,\n  \"location\": \"Nashville, TN\",\n  \"salary_range\": \"$120,000 \u2013 $150,000\",\n  \"years_experience_required\": \"8+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -2472,6 +2560,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Marketing Data Analyst\",\n  \"company\": \"Spotify\",\n  \"location\": \"New York, NY (hybrid)\",\n  \"salary_range\": \"$95,000 \u2013 $115,000\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -2503,6 +2592,7 @@
         "years_experience_required": "4+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Growth Marketing Manager\",\n  \"company\": \"Duolingo\",\n  \"location\": [\"Pittsburgh, PA\", \"Remote\"],\n  \"salary_range\": \"$120,000 \u2013 $145,000\",\n  \"years_experience_required\": \"4+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -2531,6 +2621,7 @@
         "years_experience_required": "5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Public Relations Manager\",\n  \"company\": \"Tesla\",\n  \"location\": \"Austin, TX\",\n  \"salary_range\": \"Not specified\",\n  \"years_experience_required\": \"5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.75,
       "f1": 0.6666666666666665,
@@ -2559,6 +2650,7 @@
         "years_experience_required": "0-2 years post-MBA"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Management Consultant\",\n  \"company\": \"McKinsey & Company\",\n  \"location\": \"Multiple US offices\",\n  \"salary_range\": \"$190,000 plus performance bonus\",\n  \"years_experience_required\": \"0-2 years post-MBA\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -2587,6 +2679,7 @@
         "years_experience_required": "3-5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Strategy Consultant\",\n  \"company\": null,\n  \"location\": \"Washington, DC\",\n  \"salary_range\": \"$130,000 \u2013 $160,000\",\n  \"years_experience_required\": \"3-5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -2615,6 +2708,7 @@
         "years_experience_required": "2+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"IT Consultant\",\n  \"company\": \"Deloitte\",\n  \"location\": \"New York, NY\",\n  \"salary_range\": \"$95,000 \u2013 $120,000\",\n  \"years_experience_required\": \"2+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -2643,6 +2737,7 @@
         "years_experience_required": "4 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"HR Consultant\",\n  \"company\": null,\n  \"location\": \"Remote\",\n  \"salary_range\": \"$90,000 \u2013 $110,000\",\n  \"years_experience_required\": \"4 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -2671,6 +2766,7 @@
         "years_experience_required": "Recent graduates welcome"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Business Analyst\",\n  \"company\": \"Accenture\",\n  \"location\": \"Chicago, IL\",\n  \"salary_range\": \"$75,000/year\",\n  \"years_experience_required\": \"Recent graduates welcome\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -2699,6 +2795,7 @@
         "years_experience_required": "2-4 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Operations Consultant\",\n  \"company\": \"Bain & Company\",\n  \"location\": \"Boston, MA\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"2-4 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.75,
       "f1": 0.75,
@@ -2727,6 +2824,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Risk Consultant\",\n  \"company\": \"PwC\",\n  \"location\": \"San Francisco, CA\",\n  \"salary_range\": \"$90,000 \u2013 $115,000\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -2755,6 +2853,7 @@
         "years_experience_required": "5+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Change Management Consultant\",\n  \"company\": \"management consulting firm (name withheld)\",\n  \"location\": \"Remote\",\n  \"salary_range\": \"$115,000 \u2013 $140,000\",\n  \"years_experience_required\": \"5+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -2783,6 +2882,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Implementation Specialist\",\n  \"company\": \"Salesforce Professional Services\",\n  \"location\": \"Remote (US)\",\n  \"salary_range\": \"$85,000 \u2013 $100,000\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.2,
       "recall": 0.2,
       "f1": 0.20000000000000004,
@@ -2811,6 +2911,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Financial Consultant\",\n  \"company\": \"Edward Jones\",\n  \"location\": \"Multiple locations\",\n  \"salary_range\": \"$50,000 \u2013 $75,000\",\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.6,
       "f1": 0.6666666666666665,
@@ -2839,6 +2940,7 @@
         "years_experience_required": "4"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Video Editor\",\n  \"company\": \"Netflix\",\n  \"location\": \"Los Angeles, CA\",\n  \"salary_range\": \"$100,000 \u2013 $130,000\",\n  \"years_experience_required\": \"4\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -2867,6 +2969,7 @@
         "years_experience_required": "3+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Investigative Journalist\",\n  \"company\": \"a regional newspaper in Tampa, FL\",\n  \"location\": \"Tampa, FL\",\n  \"salary_range\": \"$52,000 \u2013 $62,000\",\n  \"years_experience_required\": \"3+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -2895,6 +2998,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Podcast Producer\",\n  \"company\": \"NPR\",\n  \"location\": \"Washington, DC\",\n  \"salary_range\": \"$70,000 \u2013 $85,000\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -2923,6 +3027,7 @@
         "years_experience_required": "3+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Game Developer (Unreal Engine)\",\n  \"company\": \"Epic Games\",\n  \"location\": \"Cary, NC\",\n  \"salary_range\": \"$120,000 \u2013 $150,000\",\n  \"years_experience_required\": \"3+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -2951,6 +3056,7 @@
         "years_experience_required": "5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"3D Animator\",\n  \"company\": \"Pixar Animation Studios\",\n  \"location\": \"Emeryville, CA\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.75,
       "f1": 0.75,
@@ -2979,6 +3085,7 @@
         "years_experience_required": "4"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Broadcast Engineer\",\n  \"company\": \"CBS News\",\n  \"location\": \"New York, NY\",\n  \"salary_range\": \"$85,000 \u2013 $100,000\",\n  \"years_experience_required\": \"4\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -3007,6 +3114,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Content Strategist\",\n  \"company\": null,\n  \"location\": \"Remote\",\n  \"salary_range\": \"$80,000 \u2013 $95,000\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -3035,6 +3143,7 @@
         "years_experience_required": "5+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Music Producer\",\n  \"company\": \"Independent recording studio\",\n  \"location\": \"Nashville, TN\",\n  \"salary_range\": \"$80,000 \u2013 $120,000/year\",\n  \"years_experience_required\": \"5+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -3063,6 +3172,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Social Media Content Creator\",\n  \"company\": \"Red Bull\",\n  \"location\": \"Santa Monica, CA\",\n  \"salary_range\": \"$60,000 \u2013 $72,000\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -3091,6 +3201,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Film Director of Photography\",\n  \"company\": null,\n  \"location\": \"New York\",\n  \"salary_range\": null,\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -3119,6 +3230,7 @@
         "years_experience_required": "4"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Civil Engineer\",\n  \"company\": \"AECOM\",\n  \"location\": \"Denver, CO\",\n  \"salary_range\": \"$85,000 \u2013 $105,000\",\n  \"years_experience_required\": \"4\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -3147,6 +3259,7 @@
         "years_experience_required": "2+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Mechanical Engineer\",\n  \"company\": \"SpaceX\",\n  \"location\": \"Hawthorne, CA\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"2+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.75,
       "f1": 0.75,
@@ -3175,6 +3288,7 @@
         "years_experience_required": "3-7 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Electrical Engineer\",\n  \"company\": \"Intel\",\n  \"location\": \"Hillsboro, OR\",\n  \"salary_range\": \"$110,000 \u2013 $145,000\",\n  \"years_experience_required\": \"3-7 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -3203,6 +3317,7 @@
         "years_experience_required": "2+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Chemical Engineer\",\n  \"company\": null,\n  \"location\": \"Baton Rouge, LA\",\n  \"salary_range\": \"$80,000 \u2013 $100,000\",\n  \"years_experience_required\": \"2+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -3231,6 +3346,7 @@
         "years_experience_required": "3 years post-graduate experience preferred"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Aerospace Engineer\",\n  \"company\": \"NASA Jet Propulsion Laboratory\",\n  \"location\": \"Pasadena, CA\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"3 years post-graduate experience preferred\"\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.75,
       "f1": 0.75,
@@ -3259,6 +3375,7 @@
         "years_experience_required": "4"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Environmental Engineer\",\n  \"company\": \"Jacobs Engineering\",\n  \"location\": \"Atlanta, GA\",\n  \"salary_range\": \"$90,000 \u2013 $110,000\",\n  \"years_experience_required\": \"4\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -3287,6 +3404,7 @@
         "years_experience_required": "5+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Structural Engineer\",\n  \"company\": \"KPFF Consulting Engineers\",\n  \"location\": \"Portland, OR\",\n  \"salary_range\": \"$105,000 \u2013 $130,000\",\n  \"years_experience_required\": \"5+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -3315,6 +3433,7 @@
         "years_experience_required": "3+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Reservoir Engineer\",\n  \"company\": \"oil & gas company operating in the Permian Basin\",\n  \"location\": \"Houston, TX\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"3+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.25,
       "recall": 0.3333333333333333,
       "f1": 0.28571428571428575,
@@ -3343,6 +3462,7 @@
         "years_experience_required": "2-4 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Biomedical Engineer\",\n  \"company\": \"Medtronic\",\n  \"location\": \"Minneapolis, MN\",\n  \"salary_range\": \"$85,000 \u2013 $105,000\",\n  \"years_experience_required\": \"2-4 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -3371,6 +3491,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Nuclear Engineer\",\n  \"company\": \"U.S. Nuclear Regulatory Commission\",\n  \"location\": \"Rockville, MD\",\n  \"salary_range\": \"$89,834 \u2013 $116,788\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -3399,6 +3520,7 @@
         "years_experience_required": "3-5"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Associate Attorney \u2014 Litigation\",\n  \"company\": \"Latham & Watkins\",\n  \"location\": \"Los Angeles, CA\",\n  \"salary_range\": \"$260,000 \u2013 $330,000\",\n  \"years_experience_required\": \"3-5\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -3427,6 +3549,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Real Estate Paralegal\",\n  \"company\": null,\n  \"location\": \"Phoenix, AZ\",\n  \"salary_range\": \"$55,000 \u2013 $68,000\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.25,
       "recall": 0.25,
       "f1": 0.25,
@@ -3455,6 +3578,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Contract Specialist\",\n  \"company\": \"Department of Defense\",\n  \"location\": \"Arlington, VA\",\n  \"salary_range\": \"$72,750 \u2013 $94,581/year\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -3483,6 +3607,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Compliance Analyst\",\n  \"company\": \"Johnson & Johnson\",\n  \"location\": \"New Brunswick, NJ\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.75,
       "f1": 0.75,
@@ -3511,6 +3636,7 @@
         "years_experience_required": "6 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Legal Operations Manager\",\n  \"company\": \"Fortune 500 company (name undisclosed)\",\n  \"location\": \"Remote\",\n  \"salary_range\": \"$130,000 \u2013 $155,000\",\n  \"years_experience_required\": \"6 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -3539,6 +3665,7 @@
         "years_experience_required": "4+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Patent Attorney\",\n  \"company\": \"IBM\",\n  \"location\": \"Armonk, NY (hybrid)\",\n  \"salary_range\": \"$180,000 \u2013 $220,000\",\n  \"years_experience_required\": \"4+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -3567,6 +3694,7 @@
         "years_experience_required": "5-8"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Corporate Counsel\",\n  \"company\": \"Airbnb\",\n  \"location\": \"San Francisco, CA\",\n  \"salary_range\": \"250000 - 320000\",\n  \"years_experience_required\": \"5-8\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -3595,6 +3723,7 @@
         "years_experience_required": "2+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Immigration Attorney\",\n  \"company\": null,\n  \"location\": \"Houston, TX\",\n  \"salary_range\": \"$75,000 \u2013 $90,000\",\n  \"years_experience_required\": \"2+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -3623,6 +3752,7 @@
         "years_experience_required": "2+ years of residential sales experience"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Real Estate Agent\",\n  \"company\": \"Compass\",\n  \"location\": \"Miami, FL\",\n  \"salary_range\": \"Top agents earn $150,000+/year\",\n  \"years_experience_required\": \"2+ years of residential sales experience\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -3651,6 +3781,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Property Manager\",\n  \"company\": null,\n  \"location\": \"Denver, CO\",\n  \"salary_range\": \"$55,000 \u2013 $65,000 plus leasing bonuses\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -3679,6 +3810,7 @@
         "years_experience_required": "2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Commercial Real Estate Analyst\",\n  \"company\": \"CBRE\",\n  \"location\": \"Dallas, TX\",\n  \"salary_range\": \"$75,000 \u2013 $90,000\",\n  \"years_experience_required\": \"2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -3707,6 +3839,7 @@
         "years_experience_required": "1-2 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Logistics Coordinator\",\n  \"company\": null,\n  \"location\": \"Memphis, TN\",\n  \"salary_range\": \"$45,000 \u2013 $55,000/year\",\n  \"years_experience_required\": \"1-2 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -3735,6 +3868,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Freight Broker\",\n  \"company\": \"CH Robinson\",\n  \"location\": \"Eden Prairie, MN\",\n  \"salary_range\": \"Base salary $45,000 plus uncapped commission\",\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.6,
       "f1": 0.6666666666666665,
@@ -3763,6 +3897,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Warehouse Manager\",\n  \"company\": \"Amazon\",\n  \"location\": \"Robbinsville, NJ\",\n  \"salary_range\": \"$70,000 \u2013 $85,000\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -3791,6 +3926,7 @@
         "years_experience_required": "3-5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Transportation Analyst\",\n  \"company\": null,\n  \"location\": \"Remote\",\n  \"salary_range\": \"$80,000 \u2013 $95,000\",\n  \"years_experience_required\": \"3-5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -3819,6 +3955,7 @@
         "years_experience_required": "3+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Customs Broker\",\n  \"company\": \"DHL Global Forwarding\",\n  \"location\": \"Chicago, IL\",\n  \"salary_range\": \"$65,000 \u2013 $80,000\",\n  \"years_experience_required\": \"3+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.6,
       "recall": 0.6,
       "f1": 0.6,
@@ -3847,6 +3984,7 @@
         "years_experience_required": "10+ years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Principal Software Engineer\",\n  \"company\": \"A pre-IPO AI startup\",\n  \"location\": \"San Francisco\",\n  \"salary_range\": \"$220,000 \u2013 $270,000 plus equity\",\n  \"years_experience_required\": \"10+ years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.2,
       "recall": 0.25,
       "f1": 0.22222222222222224,
@@ -3875,6 +4013,7 @@
         "years_experience_required": "2+ years post-PhD research experience"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Research Scientist \u2014 AI Safety\",\n  \"company\": \"Anthropicor\",\n  \"location\": \"Remote or San Francisco\",\n  \"salary_range\": \"$200,000 \u2013 $300,000\",\n  \"years_experience_required\": \"2+ years post-PhD research experience\"\n}\n```",
+      "json_parse": false,
       "precision": 0.2,
       "recall": 0.25,
       "f1": 0.22222222222222224,
@@ -3903,6 +4042,7 @@
         "years_experience_required": null
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Dental Hygienist\",\n  \"company\": \"Smile Brands\",\n  \"location\": \"Tempe, AZ\",\n  \"salary_range\": \"$38 \u2013 $45/hr\",\n  \"years_experience_required\": null\n}\n```",
+      "json_parse": false,
       "precision": 0.75,
       "recall": 0.6,
       "f1": 0.6666666666666665,
@@ -3931,6 +4071,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Accountant (CPA)\",\n  \"company\": null,\n  \"location\": \"Salt Lake City, UT\",\n  \"salary_range\": \"$70,000 \u2013 $85,000\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.25,
       "recall": 0.25,
       "f1": 0.25,
@@ -3959,6 +4100,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Scrum Master\",\n  \"company\": \"Capital One Technology\",\n  \"location\": \"McLean, VA\",\n  \"salary_range\": \"$105,000 \u2013 $125,000\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -3987,6 +4129,7 @@
         "years_experience_required": "New graduates welcome"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Veterinarian\",\n  \"company\": null,\n  \"location\": \"Raleigh, NC\",\n  \"salary_range\": \"$95,000 \u2013 $115,000 plus production bonus\",\n  \"years_experience_required\": \"New graduates welcome\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -4015,6 +4158,7 @@
         "years_experience_required": "4"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Network Engineer\",\n  \"company\": \"Cisco Systems\",\n  \"location\": \"San Jose, CA\",\n  \"salary_range\": \"$120,000 \u2013 $145,000\",\n  \"years_experience_required\": \"4\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -4043,6 +4187,7 @@
         "years_experience_required": "5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Epidemiologist\",\n  \"company\": \"CDC's National Center for Immunization and Respiratory Diseases\",\n  \"location\": \"Atlanta, GA\",\n  \"salary_range\": \"$112,015 \u2013 $145,617\",\n  \"years_experience_required\": \"5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -4071,6 +4216,7 @@
         "years_experience_required": "3 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Interior Designer\",\n  \"company\": null,\n  \"location\": \"Scottsdale, AZ\",\n  \"salary_range\": \"$55,000 \u2013 $70,000\",\n  \"years_experience_required\": \"3 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -4099,6 +4245,7 @@
         "years_experience_required": "3-5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Talent Acquisition Specialist\",\n  \"company\": \"Meta\",\n  \"location\": \"Menlo Park, CA (hybrid)\",\n  \"salary_range\": \"$115,000 \u2013 $135,000\",\n  \"years_experience_required\": \"3-5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.4,
       "f1": 0.4000000000000001,
@@ -4127,6 +4274,7 @@
         "years_experience_required": "4+"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Exploration Geologist\",\n  \"company\": \"Chevron\",\n  \"location\": \"Houston, TX\",\n  \"salary_range\": null,\n  \"years_experience_required\": \"4+\"\n}\n```",
+      "json_parse": false,
       "precision": 0.5,
       "recall": 0.5,
       "f1": 0.5,
@@ -4155,6 +4303,7 @@
         "years_experience_required": "5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Database Administrator\",\n  \"company\": \"healthcare IT company\",\n  \"location\": \"Nashville, TN\",\n  \"salary_range\": \"$100,000 \u2013 $120,000\",\n  \"years_experience_required\": \"5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,
@@ -4183,6 +4332,7 @@
         "years_experience_required": "6"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Renewable Energy Project Manager\",\n  \"company\": \"NextEra Energy\",\n  \"location\": \"Juno Beach, FL\",\n  \"salary_range\": \"$115,000 \u2013 $140,000\",\n  \"years_experience_required\": \"6\"\n}\n```",
+      "json_parse": false,
       "precision": 0.8,
       "recall": 0.8,
       "f1": 0.8000000000000002,
@@ -4211,6 +4361,7 @@
         "years_experience_required": "5 years"
       },
       "raw_output": "```json\n{\n  \"job_title\": \"Executive Assistant\",\n  \"company\": \"venture capital firm\",\n  \"location\": \"Palo Alto, CA\",\n  \"salary_range\": \"$90,000 \u2013 $110,000\",\n  \"years_experience_required\": \"5 years\"\n}\n```",
+      "json_parse": false,
       "precision": 0.4,
       "recall": 0.5,
       "f1": 0.4444444444444445,

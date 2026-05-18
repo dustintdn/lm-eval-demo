@@ -1,5 +1,6 @@
 import random
-from datasets import load_dataset
+from collections import defaultdict
+from datasets import load_dataset  # type: ignore[import]
 
 from evals.utils import generate, peak_memory_gb
 
@@ -82,10 +83,27 @@ def run(model, tokenizer, device, n_samples: int = 200) -> dict:
     accuracy = sum(r["correct"] for r in results) / n
     tps_overall = total_tokens / total_time_s if total_time_s > 0 else 0.0
 
+    label_stats: dict = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
+    for r in results:
+        gold, pred_l = r["gold"], r["pred"]
+        if r["correct"]:
+            label_stats[gold]["tp"] += 1
+        else:
+            label_stats[gold]["fn"] += 1
+            label_stats[pred_l]["fp"] += 1
+    per_label_f1 = []
+    for stats in label_stats.values():
+        tp, fp, fn = stats["tp"], stats["fp"], stats["fn"]
+        p = tp / (tp + fp) if (tp + fp) > 0 else 0.0
+        r_val = tp / (tp + fn) if (tp + fn) > 0 else 0.0
+        per_label_f1.append(2 * p * r_val / (p + r_val) if (p + r_val) > 0 else 0.0)
+    macro_f1 = sum(per_label_f1) / len(per_label_f1) if per_label_f1 else 0.0
+
     return {
         "task": "classification",
         "n_samples": n,
         "accuracy": round(accuracy, 4),
+        "macro_f1": round(macro_f1, 4),
         "tokens_per_sec": round(tps_overall, 2),
         "mean_ttft_ms": round(total_ttft_s / n * 1000, 1),
         "mean_output_tokens": round(total_tokens / n, 1),
