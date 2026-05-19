@@ -100,19 +100,19 @@ GB memory, accuracy per token/sec.
 ## Repo Structure
 
 ```
-evals/
-  run_evals.py        CLI entrypoint (--model, --task, --n_samples)
-  extraction.py       structured extraction eval loop + field-level F1
-  rag_qa.py           SQuAD eval loop + exact match / F1
-  classification.py   Banking77 eval loop + accuracy
-  utils.py            model loading, generation, timing helpers
-data/
-  job_postings.jsonl  committed synthetic dataset (150 job postings)
-results/
-  summary.csv         one row per model × task, all metrics
-  raw/                per-model JSON outputs — committed so the notebook runs offline
-notebooks/
-  analysis.ipynb      plots, per-field breakdowns, confusion analysis, findings
+├── evals/
+│   ├── run_evals.py        # CLI entrypoint (--model, --task, --n_samples)
+│   ├── extraction.py       # structured extraction eval loop + field-level F1
+│   ├── rag_qa.py           # SQuAD eval loop + exact match / F1
+│   ├── classification.py   # Banking77 eval loop + accuracy
+│   └── utils.py            # model loading, generation, timing helpers
+├── data/
+│   └── job_postings.jsonl  # committed synthetic dataset (150 job postings)
+├── results/
+│   ├── summary.csv         # one row per model × task, all metrics
+│   └── raw/                # per-model JSON outputs — committed so the notebook runs offline
+└── notebooks/
+    └── analysis.ipynb      # plots, per-field breakdowns, confusion analysis, findings
 ```
 
 ---
