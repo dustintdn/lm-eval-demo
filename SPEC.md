@@ -151,8 +151,8 @@ lm-eval-demo/
 
 ## Success Criteria
 
-- [ ] All three models evaluated on all three tasks
-- [ ] `results/summary.csv` populated and committed
-- [ ] Notebook renders end-to-end without errors
-- [ ] README has a clear thesis sentence and at least one surprising finding
-- [ ] Repo is runnable by a stranger with `pip install -r requirements.txt`
+- [X] All three models evaluated on all three tasks
+- [X] `results/summary.csv` populated and committed
+- [X] Notebook renders end-to-end without errors
+- [X] README has a clear thesis sentence and at least one surprising finding
+- [X] Repo is runnable by a stranger with `pip install -r requirements.txt`
