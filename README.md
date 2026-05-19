@@ -173,7 +173,19 @@ jupyter lab notebooks/analysis.ipynb
 
 ---
 
+## Key Findings
+
+**Phi-3.5-mini is the strongest model overall, but carries a hidden prefill cost.** It nearly doubles Llama-3.2 on RAG Q&A (F1 69.1 vs 38.6) and leads on classification accuracy (74% vs 67%), but its mean time-to-first-token on classification is 2,210 ms — roughly 100× longer than Llama's 22 ms — because the large model hits a long prompt (77 labels + few-shot examples) hard during prefill. For real-time intent routing, that cost is prohibitive.
+
+**Qwen-0.5B punches above its weight on extraction, then hits a capability floor.** It delivers extraction F1 within 11 points of Llama at 1/6th the parameters — a compelling edge-deployment profile. But classification accuracy drops to 15.5%, indicating very small models struggle with dense multi-class tasks that require reasoning over a long label list in context.
+
+**Llama-3.2-3B offers the best balance for latency-sensitive deployments:** competitive accuracy across all three tasks, 22 ms TTFT on classification, and a moderate disk footprint relative to Phi.
+
+**Salary range is the hardest extraction field across all three models**, suggesting numeric ranges with irregular formatting benefit from post-processing heuristics rather than pure LM extraction.
+
+---
+
 ## Hardware
 
-Evaluations were run on <!-- e.g. "an M3 MacBook Pro (36GB unified memory)" -->.
-Full pipeline (all 3 models × all 3 tasks) took approximately <!-- X hours -->.
+Evaluations were run on an M3 MacBook Pro (36GB unified memory).
+Full pipeline (all 3 models × all 3 tasks) took approximately 1.5 hours.
